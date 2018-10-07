@@ -218,7 +218,6 @@ void clsSprite::paste(SDL_Surface* sup)
   SDL_BlitSurface(spritePointer[i].getPtr(), NULL, sup,&area);
 }
 
-
 //=============================================================================
 // METODO    : void paste(unsigned int X,unsigned int Y,SDL_Surface* sup)
 // ACCION    : Copia al sprite en las coordenadas (X,Y) de la superficie

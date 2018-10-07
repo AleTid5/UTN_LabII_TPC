@@ -142,6 +142,20 @@ const char ADNPP_VERSION[]="Sistema ADN-X (v. 14.11 estable)";
 
 
 //#############################################################################
+// (03) - PANTALLA
+//        Enumeracion se utiliza como parametros para la direccion del movimiento
+//-----------------------------------------------------------------------------
+enum direction  {
+    UP,
+    DOWN,
+    LEFT,
+    RIGHT
+};
+
+//------------------------------------------------------------------------------
+
+
+//#############################################################################
 // (04) - MODO VIDEO
 //        Enumeracion se utiliza como parametros para la inicializacion del
 //        modo grafico.

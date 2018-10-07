@@ -96,6 +96,7 @@
 #include <adnConsts.h>      // Tipos de datos del sistema adn-X.
 #include <clsLog.h>         // stdout.txt para Linux.
 #include <clsError.h>       // Administrador de errores.
+#include <clsMotor.h>       // Motor principal del juego.
 
 using namespace std;        // Espacio de nombres estandar.
 
@@ -105,39 +106,53 @@ using namespace std;        // Espacio de nombres estandar.
 //=============================================================================
 int main ( int argc, char** argv )
 {
-  //---------------------------------------------------------------------------
-  // Habilitar "stdout.txt" (solo para Linux).
-  //---------------------------------------------------------------------------
-  #ifdef _LINUX
+    //---------------------------------------------------------------------------
+    // Habilitar "stdout.txt" (solo para Linux).
+    //---------------------------------------------------------------------------
+#ifdef _LINUX
     clsLog logFile; // Administrador de informes logs para Linux. (recomendado).
     logFile.open(); // Habilita la salida "stdout.txt"
     system("date"); // Muestra la fecha y hora de ejecucion en el logFile.
-  #endif
+#endif
 
-  //---------------------------------------------------------------------------
-  // IDENTIFICACION DE LA VERSION adn-X EN EL ARCHIVO "stdout.txt".
-  //---------------------------------------------------------------------------
-  cout << "##########################################################" << endl;
-  cout << "           " << ADNPP_VERSION                               << endl;
-  cout << "**********************************************************" << endl;
-  cout <<  endl;
+    //---------------------------------------------------------------------------
+    // IDENTIFICACION DE LA VERSION adn-X EN EL ARCHIVO "stdout.txt".
+    //---------------------------------------------------------------------------
+    cout << "##########################################################" << endl;
+    cout << "           " << ADNPP_VERSION                               << endl;
+    cout << "**********************************************************" << endl;
+    cout <<  endl;
 
-  //-------------------------------------
-  // OBJETOS NECESARIOS PARA EL PROGRAMA
-  clsError error;   // Administrador de errores  (necesario).
+    //-------------------------------------
+    // OBJETOS NECESARIOS PARA EL PROGRAMA
+    clsError error;   // Administrador de errores  (necesario).
+    clsMotor motor;   // Motor
+
+    //--------------------------------
+    // CODIGO DEL PROGRAMA PRINCIPAL
+    try {
+
+        error.set(motor.init()); //Inicio el motor
+        error.set(motor.run()); //Ejecuto el motor
+
+    } catch (int errorCode) {
+        return errorCode;
+    } catch (...) {
+        cout << "Ha ocurrido un error no controlado" << endl;;
+        return -1;
+    }
+
+    //--------------------------------
+    // CODIGO DEL PROGRAMA PRINCIPAL
 
 
-  //--------------------------------
-  // CODIGO DEL PROGRAMA PRINCIPAL
-
-
-  //----------------------------
-  // FIN DEL PROGRAMA PRINCIPAL
-  cout << endl;
-  cout << "**********************************************************" << endl;
-  cout << "       El proyecto ADN-X ha finalizado correctamente      " << endl;
-  cout << "##########################################################" << endl;
-  return error.get(); // Fin normal del programa principal.
+    //----------------------------
+    // FIN DEL PROGRAMA PRINCIPAL
+    cout << endl;
+    cout << "**********************************************************" << endl;
+    cout << "       El proyecto ADN-X ha finalizado correctamente      " << endl;
+    cout << "##########################################################" << endl;
+    return error.get(); // Fin normal del programa principal.
 }
 
 //### FIN DE ARCHIVO ##########################################################

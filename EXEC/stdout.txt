@@ -2,7 +2,15 @@
            Sistema ADN-X (v. 14.11 estable)
 **********************************************************
 
-
-**********************************************************
-       El proyecto ADN-X ha finalizado correctamente      
-##########################################################
+Modo grafico iniciado correctamente.
+Monitor de video iniciado correctamente.
+Sistema de audio iniciado correctamente.
+Se destruyo la imagen0 del sprite IMAGES/bugs/mucus.png
+Se destruyeron la imagenes del sprite IMAGES/bugs/mucus.png
+Se destruyo la imagen0 del sprite IMAGES/bugs/killerbug.png
+Se destruyeron la imagenes del sprite IMAGES/bugs/killerbug.png
+Se destruyo la imagen0 del sprite IMAGES/landscapes/wallpaper.jpg
+Se destruyeron la imagenes del sprite IMAGES/landscapes/wallpaper.jpg
+El texto  se cerro correctamente.
+Monitor de video cerrado correctamente.
+El modo grafico se cerro correctamente.
