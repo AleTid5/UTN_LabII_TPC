@@ -16,5 +16,16 @@ int clsScene::init(const char* path, unsigned int posX, unsigned int posY)
     return error.get();
 }
 
+void clsScene::loadWallpaper(clsScreen* screen)
+{
+    error.set(this->init("IMAGES/landscapes/wallpaper.jpg"));
+    this->paste(screen->getPtr());
+    screen->refresh();
+    clsScene killerText;
+    error.set(killerText.init("IMAGES/landscapes/text-killerbug.png"));
+    killerText.paste(screen->getPtr());
+    screen->refresh();
+}
+
 
 

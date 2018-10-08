@@ -15,8 +15,6 @@ int clsMotor::init()
 
     screen.setTitle("Killer Bug");
 
-    error.set(scene.init("IMAGES/landscapes/wallpaper.jpg"));
-
     error.set(bug.init("IMAGES/bugs/killerbug.png", 50, 100));
 
     error.set(mucus.init("IMAGES/bugs/mucus.png", 50, 100));
@@ -30,8 +28,8 @@ int clsMotor::init()
 int clsMotor::run()
 {
     error.set(0);
-    screen.clean(BLACK);              //Limpio la pantalla
-    scene.paste(screen.getPtr());
+    screen.clean(BLACK);           //Limpio la pantalla
+    scene.loadWallpaper(&screen);
     bug.paste(screen.getPtr());
     screen.refresh();              //Refresco la pantalla
 
