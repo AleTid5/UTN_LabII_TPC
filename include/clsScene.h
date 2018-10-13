@@ -7,7 +7,9 @@ class clsScene : public clsSprite
 {
     public:
         int init(const char*, unsigned int posX = 0, unsigned int posY = 0);
-        void loadWallpaper(clsScreen*);
+        int init(const char path[100][100], unsigned int, unsigned int posX = 0, unsigned int posY = 0);
+        void loadWallpaper(clsScreen*, clsEvent*);
+        void move(clsScreen*);
 
     protected:
         void inherit(){};

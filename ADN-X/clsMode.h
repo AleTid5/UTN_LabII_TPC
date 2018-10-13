@@ -94,6 +94,7 @@ class clsMode
     int getScrWidth();          // Devuelve el ancho de pantalla en pixeles.
     int getScrHeight();         // Devuelve el alto de pantalla en pixeles.
     int getScrDepth();          // Devuelve la profundidad e colores en bits.
+    int setEnvironment(const char*);
 };
 
 #endif // CLSMODE_H

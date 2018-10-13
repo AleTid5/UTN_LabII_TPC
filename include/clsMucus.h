@@ -6,10 +6,11 @@
 
 class clsMucus : public clsScene
 {
-private:
-
 public:
     void spit(clsMusic*);
+    void move(clsScreen*, int, int);
+
+private:
 
 protected:
 

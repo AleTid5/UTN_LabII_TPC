@@ -4,11 +4,37 @@
 *                         FUNCIONES PUBLICAS                       *
 *******************************************************************/
 
+void clsBug::fly(clsScreen* screen)
+{
+    this->setI(0);
+    this->paste(screen->getPtr());
+    screen->refresh();
+}
+
+void clsBug::fly(clsScreen* screen, clsScene* scene)
+{
+    scene->paste(screen->getPtr());
+    this->setI(0);
+    this->paste(screen->getPtr());
+    screen->refresh();
+    scene->paste(screen->getPtr());
+    this->setI(1);
+    this->paste(screen->getPtr());
+    screen->refresh();
+    scene->paste(screen->getPtr());
+    this->setI(2);
+    this->paste(screen->getPtr());
+    screen->refresh();
+    this->setI(1);
+    this->paste(screen->getPtr());
+    screen->refresh();
+}
+
 void clsBug::move(direction dir, clsScene* scene, clsScreen* screen)
 {
-    if (this->canMove(dir, scene, screen)) {
-        scene->paste(screen->getPtr());
+    scene->move(screen);
 
+    if (this->canMove(dir, scene, screen)) {
         if (dir == UP)
             this->setY(this->getY() - this->movement);
         if (dir == DOWN)
@@ -17,24 +43,22 @@ void clsBug::move(direction dir, clsScene* scene, clsScreen* screen)
             this->setX(this->getX() - this->movement);
         if (dir == RIGHT)
             this->setX(this->getX() + this->movement);
-
-        this->paste(screen->getPtr());
-        screen->refresh();
     }
+
+    this->paste(screen->getPtr());
+    screen->refresh();
 }
 
 void clsBug::fire(clsMucus* mucus, clsScene* scene, clsScreen* screen, clsEvent* event, clsMusic* music)
 {
     int posX = this->getX();
+    int posY = this->getY();
+    mucus->spit(music);
     while (posX <= screen->getWidth()) {
-        scene->paste(screen->getPtr());
+        scene->move(screen);
         this->paste(screen->getPtr());
-        mucus->setX(posX + this->getWidth());
-        mucus->setY(this->getY() + 110);
-        mucus->paste(screen->getPtr());
-        screen->refresh();
-        if (posX == this->getX()) mucus->spit(music);
-        posX += 25;
+        mucus->move(screen, posX, posY);
+        posX += 15;
         if (event->wasEvent()) {
             if (event->getEventType() == KEY_PRESSED) { // Verifico si hay evento de teclado
                 if (event->getKey() == KEY_a || event->getKey() == KEY_s ||
@@ -42,12 +66,14 @@ void clsBug::fire(clsMucus* mucus, clsScene* scene, clsScreen* screen, clsEvent*
                     direction dir = event->getKey() == KEY_a ? LEFT :
                                     event->getKey() == KEY_s ? DOWN :
                                     event->getKey() == KEY_d ? RIGHT : UP;
-                    this->movement = 25;
+                    this->movement = 50;
                     this->move(dir, scene, screen); // Muevo el bicho
+                    event->wasEvent();
                 }
             }
         }
     }
+
     this->movement = 5;
 }
 

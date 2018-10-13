@@ -15,9 +15,9 @@
 class clsMotor
 {
 public:
-    int init();
-    int run();
-    int keyCommand(Uint16);
+    void init();
+    void run();
+    void keyCommand(Uint16);
 
 protected:
     clsEvent event;

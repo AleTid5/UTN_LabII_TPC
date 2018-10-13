@@ -132,19 +132,19 @@ int main ( int argc, char** argv )
     // CODIGO DEL PROGRAMA PRINCIPAL
     try {
 
-        error.set(motor.init()); //Inicio el motor
-        error.set(motor.run()); //Ejecuto el motor
+        motor.init(); //Inicio el motor
+        motor.run(); //Ejecuto el motor
 
     } catch (int errorCode) {
+        cout << endl;
+        cout << "**********************************************************" << endl;
+        cout << "       El proyecto ADN-X ha finalizado con ERRORES!!      " << endl;
+        cout << "##########################################################" << endl;
         return errorCode;
     } catch (...) {
         cout << "Ha ocurrido un error no controlado" << endl;;
         return -1;
     }
-
-    //--------------------------------
-    // CODIGO DEL PROGRAMA PRINCIPAL
-
 
     //----------------------------
     // FIN DEL PROGRAMA PRINCIPAL

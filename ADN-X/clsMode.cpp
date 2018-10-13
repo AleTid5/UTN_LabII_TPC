@@ -128,6 +128,18 @@ int clsMode::init(int w, int h, int d)
 }
 
 //=============================================================================
+// METODO    : int init(int w, int h, int d)
+// ACCION    : Inicializa el subsistema de video en forma manual.
+// PARAMETROS: Ninguno
+// DEVUELVE  : int --> codigo de error. (0 = todo bien)
+//-----------------------------------------------------------------------------
+int clsMode::setEnvironment(const char* configuration)
+{
+  error.set(SDL_putenv(configuration));
+  return error.get();
+}
+
+//=============================================================================
 // METODO    : ~clsMode()
 // ACCION    : Destructor.
 // PARAMETROS: NADA.

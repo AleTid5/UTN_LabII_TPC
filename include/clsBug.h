@@ -7,12 +7,14 @@
 
 class clsBug : public clsScene
 {
-private:
-    bool canMove(direction, clsScene*, clsScreen*);
-
 public:
+    void fly(clsScreen*);
+    void fly(clsScreen*, clsScene*);
     void move(direction, clsScene*, clsScreen*);
     void fire(clsMucus*, clsScene*, clsScreen*, clsEvent*, clsMusic*);
+
+private:
+    bool canMove(direction, clsScene*, clsScreen*);
 
 protected:
     unsigned int movement = 5;
