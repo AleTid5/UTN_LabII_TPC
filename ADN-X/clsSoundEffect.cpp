@@ -97,7 +97,8 @@ int clsSoundEffect::loadEffect(const char* path)
 {
     error.set(0);
     effect = Mix_LoadWAV(path);
-    if(effect==NULL) error.set(201);
+    if(effect==NULL)
+        error.set(201);
     return error.get();
 }
 

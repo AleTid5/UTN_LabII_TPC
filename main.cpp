@@ -136,12 +136,17 @@ int main ( int argc, char** argv )
         motor.run(); //Ejecuto el motor
 
     } catch (int errorCode) {
-        cout << endl;
-        cout << "**********************************************************" << endl;
-        cout << "       El proyecto ADN-X ha finalizado con ERRORES!!      " << endl;
-        cout << "##########################################################" << endl;
-        return errorCode;
+        motor.stopRun();
+
+        if (errorCode > 0) {
+            cout << endl;
+            cout << "**********************************************************" << endl;
+            cout << "       El proyecto ADN-X ha finalizado con ERRORES!!      " << endl;
+            cout << "##########################################################" << endl;
+            return errorCode;
+        }
     } catch (...) {
+        motor.stopRun();
         cout << "Ha ocurrido un error no controlado" << endl;;
         return -1;
     }

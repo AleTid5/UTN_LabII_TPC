@@ -75,20 +75,20 @@
 //-----------------------------------------------------------------------------
 void clsDot::set(int x, int y, rgbColor color, SDL_Surface* sup)
 {
-  // Convierte color
-  Uint32 col=SDL_MapRGB(sup->format, color.r, color.g, color.b);
+    // Convierte color
+    Uint32 col=SDL_MapRGB(sup->format, color.r, color.g, color.b);
 
-  // Determina posición de inicio
-  char *buffer=(char*) sup->pixels;
+    // Determina posición de inicio
+    char *buffer=(char*) sup->pixels;
 
-  // Calcula offset para y
-  buffer+=sup->pitch*y;
+    // Calcula offset para y
+    buffer+=sup->pitch*y;
 
-  // Calcula offset para x
-  buffer+=sup->format->BytesPerPixel*x;
+    // Calcula offset para x
+    buffer+=sup->format->BytesPerPixel*x;
 
-  // Copia el pixel
-  memcpy(buffer, &col, sup->format->BytesPerPixel);
+    // Copia el pixel
+    memcpy(buffer, &col, sup->format->BytesPerPixel);
 }
 
 //=============================================================================
@@ -102,32 +102,32 @@ void clsDot::set(int x, int y, rgbColor color, SDL_Surface* sup)
 //----------------------------------------------------------------------
 rgbColor clsDot::get(int x, int y,SDL_Surface* sup)
 {
-  SDL_Color color;
-  rgbColor trueColor;
-  Uint32 col;
+    SDL_Color color;
+    rgbColor trueColor;
+    Uint32 col;
 
-  // Determina posición de inicio
-  char *buffer=(char *) sup->pixels;
+    // Determina posición de inicio
+    char *buffer=(char *) sup->pixels;
 
-  // Calcula offset para y
-  buffer+=sup->pitch*y;
+    // Calcula offset para y
+    buffer+=sup->pitch*y;
 
-  // Calcula offset para x
-  buffer+=sup->format->BytesPerPixel*x;
+    // Calcula offset para x
+    buffer+=sup->format->BytesPerPixel*x;
 
-  // Obtiene el pixel
-  memcpy(&col, buffer, sup->format->BytesPerPixel);
+    // Obtiene el pixel
+    memcpy(&col, buffer, sup->format->BytesPerPixel);
 
-  // Descompone el color
-  SDL_GetRGB(col, sup->format, &color.r, &color.g, &color.b);
+    // Descompone el color
+    SDL_GetRGB(col, sup->format, &color.r, &color.g, &color.b);
 
-  // Genera el color RGB
-  trueColor.r=color.r;
-  trueColor.g=color.g;
-  trueColor.b=color.b;
+    // Genera el color RGB
+    trueColor.r=color.r;
+    trueColor.g=color.g;
+    trueColor.b=color.b;
 
-  // Devuelve el color
-  return trueColor;
+    // Devuelve el color
+    return trueColor;
 }
 
 //### FIN DE ARCHIVO ##########################################################

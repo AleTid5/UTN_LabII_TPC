@@ -71,10 +71,10 @@
 //-----------------------------------------------------------------------------
 void clsRandom::init()
 {
-  time_t t;
-  srand((unsigned) time(&t));
+    time_t t;
+    srand((unsigned) time(&t));
 
-  cout << "Generador de numeros aleatorios iniciado correctamente." << endl;
+    cout << "Generador de numeros aleatorios iniciado correctamente." << endl;
 }
 
 //=============================================================================
@@ -85,7 +85,7 @@ void clsRandom::init()
 //-----------------------------------------------------------------------------
 int clsRandom::getNumber(int n)
 {
-  return rand() % n;
+    return rand() % n;
 }
 
 //### FIN DE ARCHIVO ##########################################################

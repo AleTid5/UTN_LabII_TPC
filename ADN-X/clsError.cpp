@@ -86,7 +86,8 @@ clsError::clsError()
 //-----------------------------------------------------------------------------
 void clsError::set(int err)
 {
-    if (err != 0) throw err ;
+    if (err != 0)
+        throw err ;
     errorId=err;
 }
 
@@ -102,100 +103,119 @@ void clsError::show(bool rtn=false)
     char msg[256];
     switch(errorId)
     {
-         //--------------------------------------------------------------------
-         // <000> TODO OK
-         //--------------------------------------------------------------------
-         case   0: strcpy(msg,"NO HUBO ERRORES");
-                   break;
+    //--------------------------------------------------------------------
+    // <000> TODO OK
+    //--------------------------------------------------------------------
+    case   0:
+        strcpy(msg,"NO HUBO ERRORES");
+        break;
 
-         //--------------------------------------------------------------------
-         // <001> ERROR GENERAL DE DIRECTMEDIA
-         //--------------------------------------------------------------------
-         case   1: strcpy(msg,"ERROR AL INICIAR DIRECTMEDIA.");
-                   break;
+    //--------------------------------------------------------------------
+    // <001> ERROR GENERAL DE DIRECTMEDIA
+    //--------------------------------------------------------------------
+    case   1:
+        strcpy(msg,"ERROR AL INICIAR DIRECTMEDIA.");
+        break;
 
-        //---------------------------------------------------------------------
-        // <100> ERRORES DEL SUBSISTEMA DE VIDEO
-        //---------------------------------------------------------------------
-        case 100: strcpy(msg,"ERROR AL INICIAR SUBSISTEMA DE VIDEO.");
-                  break;
+    //---------------------------------------------------------------------
+    // <100> ERRORES DEL SUBSISTEMA DE VIDEO
+    //---------------------------------------------------------------------
+    case 100:
+        strcpy(msg,"ERROR AL INICIAR SUBSISTEMA DE VIDEO.");
+        break;
 
-        //---------------------------------------------------------------------
-        // <200> ERRORES DEL SUBSISTEMA DE AUDIO
-        //---------------------------------------------------------------------
-        case 200: strcpy(msg,"ERROR AL INICIAR SUBSISTEMA DE AUDIO.");
-                  break;
+    //---------------------------------------------------------------------
+    // <200> ERRORES DEL SUBSISTEMA DE AUDIO
+    //---------------------------------------------------------------------
+    case 200:
+        strcpy(msg,"ERROR AL INICIAR SUBSISTEMA DE AUDIO.");
+        break;
 
-        case 201: strcpy(msg,"ERROR AL CARGAR ACHIVO WAV.");
-                  break;
+    case 201:
+        strcpy(msg,"ERROR AL CARGAR ACHIVO WAV.");
+        break;
 
-        case 202: strcpy(msg,"ERROR AL CARGAR ACHIVO MP3.");
-                  break;
+    case 202:
+        strcpy(msg,"ERROR AL CARGAR ACHIVO MP3.");
+        break;
 
-        //---------------------------------------------------------------------
-        // <300> ERRORES DEL SUBSISTEMA DE TIMERS
-        //---------------------------------------------------------------------
-        case 300: strcpy(msg,"ERROR AL INICIAR SUBSISTEMA DE TIMER.");
-                  break;
+    //---------------------------------------------------------------------
+    // <300> ERRORES DEL SUBSISTEMA DE TIMERS
+    //---------------------------------------------------------------------
+    case 300:
+        strcpy(msg,"ERROR AL INICIAR SUBSISTEMA DE TIMER.");
+        break;
 
-        //---------------------------------------------------------------------
-        // <400> ERRORES DEL SUBSISTEMA DE CD-ROM
-        //---------------------------------------------------------------------
-        case 400: strcpy(msg,"ERROR AL INICIAR SUBSISTEMA DE CD-ROM.");
-                  break;
+    //---------------------------------------------------------------------
+    // <400> ERRORES DEL SUBSISTEMA DE CD-ROM
+    //---------------------------------------------------------------------
+    case 400:
+        strcpy(msg,"ERROR AL INICIAR SUBSISTEMA DE CD-ROM.");
+        break;
 
-        //---------------------------------------------------------------------
-        // <500> ERRORES DEL SUBSISTEMA DE JOYSTICK
-        //---------------------------------------------------------------------
-        case 500: strcpy(msg,"ERROR AL INICIAR SUBSISTEMA DE JOYSTICK.");
-                  break;
+    //---------------------------------------------------------------------
+    // <500> ERRORES DEL SUBSISTEMA DE JOYSTICK
+    //---------------------------------------------------------------------
+    case 500:
+        strcpy(msg,"ERROR AL INICIAR SUBSISTEMA DE JOYSTICK.");
+        break;
 
-        //---------------------------------------------------------------------
-        // <600> ERRORES DE IMAGENES
-        //---------------------------------------------------------------------
-        case 600: strcpy(msg,"ERROR AL CARGAR LA IMAGEN EN MEMORIA RAM.");
-                  break;
+    //---------------------------------------------------------------------
+    // <600> ERRORES DE IMAGENES
+    //---------------------------------------------------------------------
+    case 600:
+        strcpy(msg,"ERROR AL CARGAR LA IMAGEN EN MEMORIA RAM.");
+        break;
 
-        //---------------------------------------------------------------------
-        // <700> ERRORES DE SPRITES
-        //---------------------------------------------------------------------
-        case 700: strcpy(msg,"ERROR AL CARGAR UNA IMAGEN EN EL SPRITE.");
-                  break;
+    //---------------------------------------------------------------------
+    // <700> ERRORES DE SPRITES
+    //---------------------------------------------------------------------
+    case 700:
+        strcpy(msg,"ERROR AL CARGAR UNA IMAGEN EN EL SPRITE.");
+        break;
 
-        case 701: strcpy(msg,"ERROR AL CAMBIAR INDICE DEL VECTOR DE IMAGENES.");
-                  break;
+    case 701:
+        strcpy(msg,"ERROR AL CAMBIAR INDICE DEL VECTOR DE IMAGENES.");
+        break;
 
-        //---------------------------------------------------------------------
-        // <800> ERRORES DE PANTALLAS
-        //---------------------------------------------------------------------
-        case 800: strcpy(msg,"ERROR AL INICIAR LA PANTALLA FISICA.");
-                  break;
+    //---------------------------------------------------------------------
+    // <800> ERRORES DE PANTALLAS
+    //---------------------------------------------------------------------
+    case 800:
+        strcpy(msg,"ERROR AL INICIAR LA PANTALLA FISICA.");
+        break;
 
-        case 801: strcpy(msg,"ERROR AL CREAR LA PANTALLA VIRTUAL.");
-                  break;
+    case 801:
+        strcpy(msg,"ERROR AL CREAR LA PANTALLA VIRTUAL.");
+        break;
 
-        case 802: strcpy(msg,"ERROR AL CARGAR LA IMAGEN EN LA PANTALLA.");
-                  break;
+    case 802:
+        strcpy(msg,"ERROR AL CARGAR LA IMAGEN EN LA PANTALLA.");
+        break;
 
 
-        //---------------------------------------------------------------------
-        // <900> ERRORES DE TEXTO
-        //---------------------------------------------------------------------
-        case 900: strcpy(msg,"ERROR AL INICIAR TEXTO.");
-                  break;
+    //---------------------------------------------------------------------
+    // <900> ERRORES DE TEXTO
+    //---------------------------------------------------------------------
+    case 900:
+        strcpy(msg,"ERROR AL INICIAR TEXTO.");
+        break;
 
-        case 901: strcpy(msg,"ERROR AL CARGAR ARCHIVO TTF.");
-                  break;
+    case 901:
+        strcpy(msg,"ERROR AL CARGAR ARCHIVO TTF.");
+        break;
 
-        //---------------------------------------------------------------------
-        // <1000> ERRORES DE TIMER
-        //---------------------------------------------------------------------
-        case 1000:strcpy(msg,"ERROR AL CARGAR TIMER.");
-                  break;
+    //---------------------------------------------------------------------
+    // <1000> ERRORES DE TIMER
+    //---------------------------------------------------------------------
+    case 1000:
+        strcpy(msg,"ERROR AL CARGAR TIMER.");
+        break;
 
     };
     cout <<msg;
-    if(rtn)cout <<endl;
+    if(rtn)
+        cout <<endl;
 }
 
 //=============================================================================
@@ -204,6 +224,8 @@ void clsError::show(bool rtn=false)
 // PARAMETROS: NADA.
 // DEVUELVE  : Un entero que representa el codigo de error.
 //-----------------------------------------------------------------------------
-int clsError::get(){return errorId;}
+int clsError::get() {
+    return errorId;
+}
 
 //### FIN DE ARCHIVO ##########################################################

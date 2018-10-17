@@ -67,9 +67,9 @@
 
 class clsLog
 {
-  // METODOS
+    // METODOS
 
-  public:
+public:
     void open();   // Habilita el sistema de logs.
     void close();  // Cierra el sistema de logs.
 };

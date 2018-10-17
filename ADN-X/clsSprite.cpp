@@ -71,38 +71,38 @@
 //-----------------------------------------------------------------------------
 clsSprite::clsSprite()
 {
-  items=1;               // Cantidad de imagenes que componen el sprite.
-  i=0;                   // Primer elemento del vector de imagenes del sprite.
-  x=0;                   // Coordenada x del sprite.
-  y=0;                   // Coordenada y del sprite.
-  transparent=BLACK;     // Color considerado transparente  en el sprite.
-  opacity=255;           // Nivel de opacidad (0 = transparente / 255 = opaco).
+    items=1;               // Cantidad de imagenes que componen el sprite.
+    i=0;                   // Primer elemento del vector de imagenes del sprite.
+    x=0;                   // Coordenada x del sprite.
+    y=0;                   // Coordenada y del sprite.
+    transparent=BLACK;     // Color considerado transparente  en el sprite.
+    opacity=255;           // Nivel de opacidad (0 = transparente / 255 = opaco).
 
 
-                     // DATOS PARA DETECTAR CONTACTO CON OTRO SPRITE
-  coord.x1=0;        // Coordenado x inicial del sprite local.
-  coord.y1=0;        // Coordenada y inicial del sprite local.
-  coord.x2=0;        // Coordenada x final del sprite local.
-  coord.y2=0;        // Coordenada y final del sprite local.
-  coord.x3=0;        // Coordenada x inicial del sprite externo.
-  coord.y3=0;        // Coordenada y inicial del sprite externo.
-  coord.x4=0;        // Coordenada x final del sprite externo.
-  coord.y4=0;        // Coordenada y final del sprite externo.
-  coord.w1=0;        // Ancho del sprite local.
-  coord.w2=0;        // Ancho del sprite externo.
-  coord.h1=0;        // Alto del sprite local.
-  coord.h2=0;        // Alto del sprite externo.
-  coord.xi1=0;       // Coordenada x inicial del area de contacto.
-  coord.yi1=0;       // Coordenada y inicial del area de contacto.
-  coord.xi2=0;       // Coordenada x final del area de contacto.
-  coord.yi2=0;       // Coordenada y final del area de contacto.
-  coord.aw=0;        // Ancho del area de contacto.
-  coord.ah=0;        // Alto del area de contacto.
-  coord.ovl=0;       // Caso de superposicion
-                     // (Existen 15 casos, de 0 a 14. El caso 0 significa
-                     //  que no hay contacto).
+    // DATOS PARA DETECTAR CONTACTO CON OTRO SPRITE
+    coord.x1=0;        // Coordenado x inicial del sprite local.
+    coord.y1=0;        // Coordenada y inicial del sprite local.
+    coord.x2=0;        // Coordenada x final del sprite local.
+    coord.y2=0;        // Coordenada y final del sprite local.
+    coord.x3=0;        // Coordenada x inicial del sprite externo.
+    coord.y3=0;        // Coordenada y inicial del sprite externo.
+    coord.x4=0;        // Coordenada x final del sprite externo.
+    coord.y4=0;        // Coordenada y final del sprite externo.
+    coord.w1=0;        // Ancho del sprite local.
+    coord.w2=0;        // Ancho del sprite externo.
+    coord.h1=0;        // Alto del sprite local.
+    coord.h2=0;        // Alto del sprite externo.
+    coord.xi1=0;       // Coordenada x inicial del area de contacto.
+    coord.yi1=0;       // Coordenada y inicial del area de contacto.
+    coord.xi2=0;       // Coordenada x final del area de contacto.
+    coord.yi2=0;       // Coordenada y final del area de contacto.
+    coord.aw=0;        // Ancho del area de contacto.
+    coord.ah=0;        // Alto del area de contacto.
+    coord.ovl=0;       // Caso de superposicion
+    // (Existen 15 casos, de 0 a 14. El caso 0 significa
+    //  que no hay contacto).
 
-  setName("sin Nombre"); // Da nombre al sprite.
+    setName("sin Nombre"); // Da nombre al sprite.
 }
 
 //=============================================================================
@@ -113,20 +113,20 @@ clsSprite::clsSprite()
 //-----------------------------------------------------------------------------
 clsSprite::~clsSprite()
 {
-  for(int p=0; p<getItems();p++)
-  {
-      if(&spritePointer[p] != NULL)
-      {
-          delete spritePointer[p].getPtr();
-          cout << "Se destruyo la imagen"
-               << p
-               << " del sprite "
-               << getName()
-               <<  endl;
-      }
-  }
+    for(int p=0; p<getItems(); p++)
+    {
+        if(&spritePointer[p] != NULL)
+        {
+            delete spritePointer[p].getPtr();
+            cout << "Se destruyo la imagen"
+                 << p
+                 << " del sprite "
+                 << getName()
+                 <<  endl;
+        }
+    }
 
-  cout << "Se destruyeron la imagenes del sprite " << getName() <<  endl;
+    cout << "Se destruyeron la imagenes del sprite " << getName() <<  endl;
 }
 
 //=============================================================================
@@ -141,8 +141,8 @@ clsSprite::~clsSprite()
 //-----------------------------------------------------------------------------
 void clsSprite::setItems(int c)
 {
-  spritePointer = new clsImage[c];
-  items=c;
+    spritePointer = new clsImage[c];
+    items=c;
 }
 //=============================================================================
 // METODO    : void setName(const char* n)
@@ -150,7 +150,9 @@ void clsSprite::setItems(int c)
 // PARAMETROS: char* n -> nuevo nombre.
 // DEVUELVE  : NADA.
 //-----------------------------------------------------------------------------
-void clsSprite::setName(const char* n){strcpy(name,n);}
+void clsSprite::setName(const char* n) {
+    strcpy(name,n);
+}
 
 //=============================================================================
 // METODO    : int load(const char* file)
@@ -161,24 +163,24 @@ void clsSprite::setName(const char* n){strcpy(name,n);}
 //-----------------------------------------------------------------------------
 int clsSprite::load(const char* file)
 {
-  if(spritePointer[i].load(file))
-  {
-      error.set(700);
-      return error.get();
-  }
+    if(spritePointer[i].load(file))
+    {
+        error.set(700);
+        return error.get();
+    }
 
-  SDL_SetColorKey(spritePointer[i].getPtr(),
-                  SDL_SRCCOLORKEY|SDL_RLEACCEL,
-                  SDL_MapRGB(spritePointer[i].getPtr()->format,
-                             transparent.r,
-                             transparent.g,
-                             transparent.b
-                            )
-                 );
-  SDL_SetAlpha(spritePointer[i].getPtr(),SDL_SRCALPHA|SDL_RLEACCEL,255);
+    SDL_SetColorKey(spritePointer[i].getPtr(),
+                    SDL_SRCCOLORKEY|SDL_RLEACCEL,
+                    SDL_MapRGB(spritePointer[i].getPtr()->format,
+                               transparent.r,
+                               transparent.g,
+                               transparent.b
+                              )
+                   );
+    SDL_SetAlpha(spritePointer[i].getPtr(),SDL_SRCALPHA|SDL_RLEACCEL,255);
 
-  error.set(0);
-  return error.get();
+    error.set(0);
+    return error.get();
 }
 
 //=============================================================================
@@ -191,15 +193,15 @@ int clsSprite::load(const char* file)
 int clsSprite::setI(int item)
 {
 
-  if(item < 0 || item >= items)
-  {
-     error.set(701);
-     return error.get();
-  }
+    if(item < 0 || item >= items)
+    {
+        error.set(701);
+        return error.get();
+    }
 
-  i = item;
-  error.set(0);
-  return error.get();
+    i = item;
+    error.set(0);
+    return error.get();
 }
 
 //=============================================================================
@@ -211,11 +213,11 @@ int clsSprite::setI(int item)
 //-----------------------------------------------------------------------------
 void clsSprite::paste(SDL_Surface* sup)
 {
-  rgbColor cDot;
-  int W=spritePointer[i].getPtr()->w;
-  int H=spritePointer[i].getPtr()->h;
-  SDL_Rect area = {getX(),getY(),W,H};
-  SDL_BlitSurface(spritePointer[i].getPtr(), NULL, sup,&area);
+    rgbColor cDot;
+    int W=spritePointer[i].getPtr()->w;
+    int H=spritePointer[i].getPtr()->h;
+    SDL_Rect area = {getX(),getY(),W,H};
+    SDL_BlitSurface(spritePointer[i].getPtr(), NULL, sup,&area);
 }
 
 //=============================================================================
@@ -230,15 +232,15 @@ void clsSprite::paste(SDL_Surface* sup)
 //-----------------------------------------------------------------------------
 void clsSprite::paste(int X,int Y,SDL_Surface* sup)
 {
-  rgbColor cDot;
-  int W=spritePointer[i].getPtr()->w;
-  int H=spritePointer[i].getPtr()->h;
+    rgbColor cDot;
+    int W=spritePointer[i].getPtr()->w;
+    int H=spritePointer[i].getPtr()->h;
 
-  SDL_Rect area = {X,Y,W,H};
-  SDL_BlitSurface(spritePointer[i].getPtr(), NULL, sup,&area);
+    SDL_Rect area = {X,Y,W,H};
+    SDL_BlitSurface(spritePointer[i].getPtr(), NULL, sup,&area);
 
-  setX(X);
-  setY(Y);
+    setX(X);
+    setY(Y);
 }
 
 //=============================================================================
@@ -247,7 +249,9 @@ void clsSprite::paste(int X,int Y,SDL_Surface* sup)
 // PARAMETROS: int X -> nueva coordenada x del sprite.
 // DEVUELVE  : NADA.
 //-----------------------------------------------------------------------------
-void clsSprite::setX(int X){x=X;}
+void clsSprite::setX(int X) {
+    x=X;
+}
 
 
 //=============================================================================
@@ -256,7 +260,9 @@ void clsSprite::setX(int X){x=X;}
 // PARAMETROS: int Y -> nueva coordenada y del sprite.
 // DEVUELVE  : NADA.
 //-----------------------------------------------------------------------------
-void clsSprite::setY(int Y){y=Y;}
+void clsSprite::setY(int Y) {
+    y=Y;
+}
 
 //=============================================================================
 // METODO    : void setOpacity(int level)
@@ -266,10 +272,10 @@ void clsSprite::setY(int Y){y=Y;}
 //-----------------------------------------------------------------------------
 void clsSprite::setOpacity(int level)
 {
-  SDL_SetAlpha(spritePointer[i].getPtr(),
-               SDL_SRCALPHA|SDL_RLEACCEL,level);
+    SDL_SetAlpha(spritePointer[i].getPtr(),
+                 SDL_SRCALPHA|SDL_RLEACCEL,level);
 
-  opacity=level;
+    opacity=level;
 }
 
 //=============================================================================
@@ -278,7 +284,9 @@ void clsSprite::setOpacity(int level)
 // PARAMETROS: NADA
 // DEVUELVE  : int ->  valor de x.
 //-----------------------------------------------------------------------------
-int clsSprite::getX() {return x;}
+int clsSprite::getX() {
+    return x;
+}
 
 //=============================================================================
 // METODO    : int getY()
@@ -286,7 +294,9 @@ int clsSprite::getX() {return x;}
 // PARAMETROS: NADA
 // DEVUELVE  : int ->  valor de y.
 //-----------------------------------------------------------------------------
-int clsSprite::getY() {return y;}
+int clsSprite::getY() {
+    return y;
+}
 
 //=============================================================================
 // METODO    : int getWidth()
@@ -297,7 +307,7 @@ int clsSprite::getY() {return y;}
 //-----------------------------------------------------------------------------
 int clsSprite::getWidth()
 {
-  return spritePointer[i].getPtr()->w;
+    return spritePointer[i].getPtr()->w;
 }
 
 //=============================================================================
@@ -309,7 +319,7 @@ int clsSprite::getWidth()
 //-----------------------------------------------------------------------------
 int clsSprite::getHeight()
 {
-  return spritePointer[i].getPtr()->h;
+    return spritePointer[i].getPtr()->h;
 }
 
 //=============================================================================
@@ -318,7 +328,9 @@ int clsSprite::getHeight()
 // PARAMETROS: NADA
 // DEVUELVE  : int ->  Nivel de opacidad.
 //-----------------------------------------------------------------------------
-int clsSprite::getOpacity(){ return opacity;}
+int clsSprite::getOpacity() {
+    return opacity;
+}
 
 //=============================================================================
 // METODO    : int getI()
@@ -326,7 +338,9 @@ int clsSprite::getOpacity(){ return opacity;}
 // PARAMETROS: NADA
 // DEVUELVE  : int ->  indice actual.
 //-----------------------------------------------------------------------------
-int clsSprite::getI(){ return i;}
+int clsSprite::getI() {
+    return i;
+}
 
 
 //=============================================================================
@@ -335,7 +349,9 @@ int clsSprite::getI(){ return i;}
 // PARAMETROS: NADA
 // DEVUELVE  : char* ->  puntero a la cadena del nombre.
 //-----------------------------------------------------------------------------
-char* clsSprite::getName(){return name;};
+char* clsSprite::getName() {
+    return name;
+};
 
 //=============================================================================
 // METODO    : clsImage* getPtr()
@@ -343,7 +359,9 @@ char* clsSprite::getName(){return name;};
 // PARAMETROS: NADA
 // DEVUELVE  : clsImage* ->  puntero al vector de imagenes.
 //-----------------------------------------------------------------------------
-clsImage* clsSprite::getPtr(){return spritePointer;}
+clsImage* clsSprite::getPtr() {
+    return spritePointer;
+}
 
 
 //=============================================================================
@@ -354,7 +372,8 @@ clsImage* clsSprite::getPtr(){return spritePointer;}
 //-----------------------------------------------------------------------------
 clsImage* clsSprite::getPtr(int i)
 {
-    if(i >= 0 && i < items) return spritePointer+i;
+    if(i >= 0 && i < items)
+        return spritePointer+i;
     return NULL;
 }
 
@@ -365,7 +384,9 @@ clsImage* clsSprite::getPtr(int i)
 // PARAMETROS: NADA
 // DEVUELVE  : int --> cantidad de imagenes
 //-----------------------------------------------------------------------------
-int clsSprite::getItems() {return items;}
+int clsSprite::getItems() {
+    return items;
+}
 
 
 //=============================================================================
@@ -377,7 +398,7 @@ int clsSprite::getItems() {return items;}
 //-----------------------------------------------------------------------------
 void clsSprite::setState(tSpriteState st)
 {
-   state=st;
+    state=st;
 }
 
 //=============================================================================
@@ -389,7 +410,7 @@ void clsSprite::setState(tSpriteState st)
 //-----------------------------------------------------------------------------
 tSpriteState clsSprite::getState()
 {
-   return state;
+    return state;
 }
 
 //=============================================================================
@@ -401,26 +422,26 @@ tSpriteState clsSprite::getState()
 //-----------------------------------------------------------------------------
 bool clsSprite::getContact(clsSprite* spr)
 {
-  coord.ovl=0;
+    coord.ovl=0;
 
-  findLocalValues(); // Establecer los valores del sprite local.
+    findLocalValues(); // Establecer los valores del sprite local.
 
-  findExternValues(spr);// Establecer los valores del sprite externo.
+    findExternValues(spr);// Establecer los valores del sprite externo.
 
-  if(getSuperposition(spr)) // Verificar superposicion de areas.
-  {
-    findContactValues(spr); // Encontrar puntos opacos de contacto.
-
-    if(getMatch(spr)) // // Verificar si existe coincidencia.
+    if(getSuperposition(spr)) // Verificar superposicion de areas.
     {
-      return true;
+        findContactValues(spr); // Encontrar puntos opacos de contacto.
+
+        if(getMatch(spr)) // // Verificar si existe coincidencia.
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
-    else
-    {
-      return false;
-    }
-  }
-  return false;
+    return false;
 }
 
 //=============================================================================
@@ -431,12 +452,12 @@ bool clsSprite::getContact(clsSprite* spr)
 //-----------------------------------------------------------------------------
 void clsSprite::findLocalValues()
 {
-  coord.x1=this->getX();
-  coord.y1=this->getY();
-  coord.w1=this->getWidth();
-  coord.h1=this->getHeight();
-  coord.x2=coord.x1+coord.w1;
-  coord.y2=coord.y1+coord.h1;
+    coord.x1=this->getX();
+    coord.y1=this->getY();
+    coord.w1=this->getWidth();
+    coord.h1=this->getHeight();
+    coord.x2=coord.x1+coord.w1;
+    coord.y2=coord.y1+coord.h1;
 }
 
 //=============================================================================
@@ -447,12 +468,12 @@ void clsSprite::findLocalValues()
 //-----------------------------------------------------------------------------
 void clsSprite::findExternValues(clsSprite* spr)
 {
-  coord.x3=spr->getX();
-  coord.y3=spr->getY();
-  coord.w2=spr->getWidth();
-  coord.h2=spr->getHeight();
-  coord.x4=coord.x3+coord.w2;
-  coord.y4=coord.y3+coord.h2;
+    coord.x3=spr->getX();
+    coord.y3=spr->getY();
+    coord.w2=spr->getWidth();
+    coord.h2=spr->getHeight();
+    coord.x4=coord.x3+coord.w2;
+    coord.y4=coord.y3+coord.h2;
 }
 
 //=============================================================================
@@ -465,13 +486,13 @@ void clsSprite::findExternValues(clsSprite* spr)
 //-----------------------------------------------------------------------------
 bool clsSprite::getSuperposition(clsSprite* spr)
 {
-  if( coord.x2 > coord.x3 && coord.y2 > coord.y3 &&
-      coord.x4 > coord.x1 && coord.y4 > coord.y1
-    )
-  {
-    return true;
-  }
-  return false;
+    if( coord.x2 > coord.x3 && coord.y2 > coord.y3 &&
+            coord.x4 > coord.x1 && coord.y4 > coord.y1
+      )
+    {
+        return true;
+    }
+    return false;
 }
 
 //=============================================================================
@@ -483,194 +504,250 @@ bool clsSprite::getSuperposition(clsSprite* spr)
 int clsSprite::findContactValues(clsSprite* spr)
 {
 
-  coord.ovl=0;
+    coord.ovl=0;
 
-  //---------------------------------------------------------------------------
-  // CASO 01
-  //---------------------------------------------------------------------------
-  if(coord.x1<=coord.x3 && coord.x1<coord.x4 && coord.x2>=coord.x3 &&
-     coord.x2<coord.x4 && coord.y1>=coord.y3 && coord.y1<coord.y4 &&
-     coord.y2>=coord.y3 && coord.y2<coord.y4)
-  {
+    //---------------------------------------------------------------------------
+    // CASO 01
+    //---------------------------------------------------------------------------
+    if(coord.x1<=coord.x3 && coord.x1<coord.x4 && coord.x2>=coord.x3 &&
+            coord.x2<coord.x4 && coord.y1>=coord.y3 && coord.y1<coord.y4 &&
+            coord.y2>=coord.y3 && coord.y2<coord.y4)
+    {
 
-    coord.aw=coord.x2-coord.x3; coord.ah=coord.y2-coord.y1; coord.ovl=1;
+        coord.aw=coord.x2-coord.x3;
+        coord.ah=coord.y2-coord.y1;
+        coord.ovl=1;
 
-    coord.xi1=coord.w1-coord.aw; coord.yi1=0;
-    coord.xi2=0                ; coord.yi2=coord.y1-coord.y3;
+        coord.xi1=coord.w1-coord.aw;
+        coord.yi1=0;
+        coord.xi2=0                ;
+        coord.yi2=coord.y1-coord.y3;
 
-    coord.ovl=1;
-  }
+        coord.ovl=1;
+    }
 
-  //---------------------------------------------------------------------------
-  // CASO 02
-  //---------------------------------------------------------------------------
-  if(coord.x1>coord.x3 && coord.x1<coord.x4 && coord.x2>coord.x3 &&
-     coord.x2>coord.x4 && coord.y1>coord.y3 && coord.y1<coord.y4 &&
-     coord.y2>coord.y3 && coord.y2<coord.y4)
-  {
-    coord.aw=coord.x4-coord.x1 ; coord.ah=coord.y2-coord.y1; coord.ovl=2;
-    coord.xi1=0;               ; coord.yi1=0;
-    coord.xi2=coord.x1-coord.x3; coord.yi2=coord.y1-coord.y3;
+    //---------------------------------------------------------------------------
+    // CASO 02
+    //---------------------------------------------------------------------------
+    if(coord.x1>coord.x3 && coord.x1<coord.x4 && coord.x2>coord.x3 &&
+            coord.x2>coord.x4 && coord.y1>coord.y3 && coord.y1<coord.y4 &&
+            coord.y2>coord.y3 && coord.y2<coord.y4)
+    {
+        coord.aw=coord.x4-coord.x1 ;
+        coord.ah=coord.y2-coord.y1;
+        coord.ovl=2;
+        coord.xi1=0;               ;
+        coord.yi1=0;
+        coord.xi2=coord.x1-coord.x3;
+        coord.yi2=coord.y1-coord.y3;
 
-    coord.ovl=2;
-  }
+        coord.ovl=2;
+    }
 
-  //---------------------------------------------------------------------------
-  // CASO 03
-  //---------------------------------------------------------------------------
-  if(coord.x1>coord.x3 && coord.x1<coord.x4 && coord.x2>coord.x3 &&
-     coord.x2<coord.x4 && coord.y1<coord.y3 && coord.y1<coord.y4 &&
-     coord.y2>coord.y3 && coord.y2<coord.y4)
-  {
-    coord.aw=coord.x2-coord.x1 ; coord.ah=coord.y2-coord.y3; coord.ovl=3;
-    coord.xi1=0                ; coord.yi1=coord.h1-coord.ah;
-    coord.xi2=coord.x1-coord.x3; coord.yi2=0;
-    coord.ovl=3;
-  }
+    //---------------------------------------------------------------------------
+    // CASO 03
+    //---------------------------------------------------------------------------
+    if(coord.x1>coord.x3 && coord.x1<coord.x4 && coord.x2>coord.x3 &&
+            coord.x2<coord.x4 && coord.y1<coord.y3 && coord.y1<coord.y4 &&
+            coord.y2>coord.y3 && coord.y2<coord.y4)
+    {
+        coord.aw=coord.x2-coord.x1 ;
+        coord.ah=coord.y2-coord.y3;
+        coord.ovl=3;
+        coord.xi1=0                ;
+        coord.yi1=coord.h1-coord.ah;
+        coord.xi2=coord.x1-coord.x3;
+        coord.yi2=0;
+        coord.ovl=3;
+    }
 
-  //---------------------------------------------------------------------------
-  // CASO 04
-  //---------------------------------------------------------------------------
-  if(coord.x1>coord.x3 && coord.x1<coord.x4 && coord.x2>coord.x3 &&
-     coord.x2<coord.x4 && coord.y1>coord.y3 && coord.y1<coord.y4 &&
-     coord.y2>coord.y3 && coord.y2>coord.y4)
-  {
-    coord.aw=coord.x2-coord.x1  ; coord.ah=coord.y4-coord.y1; coord.ovl=4;
-    coord.xi1=0                 ; coord.yi1=0;
-    coord.xi2=coord.x1-coord.x3 ; coord.yi2=coord.y1-coord.y3;
-    coord.ovl=4;
-  }
+    //---------------------------------------------------------------------------
+    // CASO 04
+    //---------------------------------------------------------------------------
+    if(coord.x1>coord.x3 && coord.x1<coord.x4 && coord.x2>coord.x3 &&
+            coord.x2<coord.x4 && coord.y1>coord.y3 && coord.y1<coord.y4 &&
+            coord.y2>coord.y3 && coord.y2>coord.y4)
+    {
+        coord.aw=coord.x2-coord.x1  ;
+        coord.ah=coord.y4-coord.y1;
+        coord.ovl=4;
+        coord.xi1=0                 ;
+        coord.yi1=0;
+        coord.xi2=coord.x1-coord.x3 ;
+        coord.yi2=coord.y1-coord.y3;
+        coord.ovl=4;
+    }
 
-  //---------------------------------------------------------------------------
-  // CASO 05
-  //---------------------------------------------------------------------------
-  if(coord.x1<coord.x3 && coord.x1<coord.x4 && coord.x2>coord.x3 &&
-     coord.x2<coord.x4 && coord.y1<coord.y3 && coord.y1<coord.y4 &&
-     coord.y2>coord.y3 && coord.y2>coord.y4)
-  {
-    coord.aw=coord.x2-coord.x3  ; coord.ah=coord.y4-coord.y3; coord.ovl=5;
-    coord.xi1=coord.x3-coord.x1 ; coord.yi1=coord.y3-coord.y1;
-    coord.xi2=0                 ; coord.yi2=0;
-    coord.ovl=5;
-  }
+    //---------------------------------------------------------------------------
+    // CASO 05
+    //---------------------------------------------------------------------------
+    if(coord.x1<coord.x3 && coord.x1<coord.x4 && coord.x2>coord.x3 &&
+            coord.x2<coord.x4 && coord.y1<coord.y3 && coord.y1<coord.y4 &&
+            coord.y2>coord.y3 && coord.y2>coord.y4)
+    {
+        coord.aw=coord.x2-coord.x3  ;
+        coord.ah=coord.y4-coord.y3;
+        coord.ovl=5;
+        coord.xi1=coord.x3-coord.x1 ;
+        coord.yi1=coord.y3-coord.y1;
+        coord.xi2=0                 ;
+        coord.yi2=0;
+        coord.ovl=5;
+    }
 
-  //---------------------------------------------------------------------------
-  // CASO 06
-  //---------------------------------------------------------------------------
-  if(coord.x1>coord.x3 && coord.x1<coord.x4 && coord.x2>coord.x3 &&
-     coord.x2>coord.x4 && coord.y1<coord.y3 && coord.y1<coord.y4 &&
-     coord.y2>coord.y3 && coord.y2>coord.y4)
-  {
-    coord.aw=coord.x4-coord.x1  ; coord.ah=coord.y4-coord.y3; coord.ovl=6;
-    coord.xi1=0                 ; coord.yi1=coord.y3-coord.y1;
-    coord.xi2=coord.w2-coord.aw; coord.yi2=0;
-    coord.ovl=6;
-  }
+    //---------------------------------------------------------------------------
+    // CASO 06
+    //---------------------------------------------------------------------------
+    if(coord.x1>coord.x3 && coord.x1<coord.x4 && coord.x2>coord.x3 &&
+            coord.x2>coord.x4 && coord.y1<coord.y3 && coord.y1<coord.y4 &&
+            coord.y2>coord.y3 && coord.y2>coord.y4)
+    {
+        coord.aw=coord.x4-coord.x1  ;
+        coord.ah=coord.y4-coord.y3;
+        coord.ovl=6;
+        coord.xi1=0                 ;
+        coord.yi1=coord.y3-coord.y1;
+        coord.xi2=coord.w2-coord.aw;
+        coord.yi2=0;
+        coord.ovl=6;
+    }
 
-  //---------------------------------------------------------------------------
-  // CASO 07
-  //---------------------------------------------------------------------------
-  if(coord.x1<coord.x3 && coord.x1<coord.x4 && coord.x2>coord.x3 &&
-     coord.x2>coord.x4 && coord.y1<coord.y3 && coord.y1<coord.y4 &&
-     coord.y2>coord.y3 && coord.y2<coord.y4)
-  {
-    coord.aw=coord.x4-coord.x3  ; coord.ah=coord.y2-coord.y3; coord.ovl=7;
-    coord.xi1=coord.x3-coord.x1 ; coord.yi1=coord.y3-coord.y1;
-    coord.xi2=0                 ; coord.yi2=0;
-    coord.ovl=7;
-  }
+    //---------------------------------------------------------------------------
+    // CASO 07
+    //---------------------------------------------------------------------------
+    if(coord.x1<coord.x3 && coord.x1<coord.x4 && coord.x2>coord.x3 &&
+            coord.x2>coord.x4 && coord.y1<coord.y3 && coord.y1<coord.y4 &&
+            coord.y2>coord.y3 && coord.y2<coord.y4)
+    {
+        coord.aw=coord.x4-coord.x3  ;
+        coord.ah=coord.y2-coord.y3;
+        coord.ovl=7;
+        coord.xi1=coord.x3-coord.x1 ;
+        coord.yi1=coord.y3-coord.y1;
+        coord.xi2=0                 ;
+        coord.yi2=0;
+        coord.ovl=7;
+    }
 
-  //---------------------------------------------------------------------------
-  // CASO 08
-  //---------------------------------------------------------------------------
-  if(coord.x1<coord.x3 && coord.x1<coord.x4 && coord.x2>coord.x3 &&
-     coord.x2>coord.x4 && coord.y1>coord.y3 && coord.y1<coord.y4 &&
-     coord.y2>coord.y3 && coord.y2>coord.y4)
-  {
-    coord.aw=coord.x4-coord.x3  ; coord.ah=coord.y4-coord.y1; coord.ovl=8;
-    coord.xi1=coord.x3-coord.x1 ; coord.yi1=0;
-    coord.xi2=0                 ; coord.yi2=coord.y1-coord.y3;
-    coord.ovl=8;
-  }
+    //---------------------------------------------------------------------------
+    // CASO 08
+    //---------------------------------------------------------------------------
+    if(coord.x1<coord.x3 && coord.x1<coord.x4 && coord.x2>coord.x3 &&
+            coord.x2>coord.x4 && coord.y1>coord.y3 && coord.y1<coord.y4 &&
+            coord.y2>coord.y3 && coord.y2>coord.y4)
+    {
+        coord.aw=coord.x4-coord.x3  ;
+        coord.ah=coord.y4-coord.y1;
+        coord.ovl=8;
+        coord.xi1=coord.x3-coord.x1 ;
+        coord.yi1=0;
+        coord.xi2=0                 ;
+        coord.yi2=coord.y1-coord.y3;
+        coord.ovl=8;
+    }
 
-  //---------------------------------------------------------------------------
-  // CASO 09 (muy raro)
-  //---------------------------------------------------------------------------
-  if(coord.x1>coord.x3 && coord.x1<coord.x4 && coord.x2>coord.x3 &&
-     coord.x2<coord.x4 && coord.y1>coord.y3 && coord.y1<coord.y4 &&
-     coord.y2>coord.y3 && coord.y2<coord.y4)
-  {
-    coord.aw=coord.y2-coord.y1  ; coord.ah=coord.y2-coord.y1; coord.ovl=9;
-    coord.xi1=0                 ; coord.yi1=0;
-    coord.xi2=coord.x1-coord.x3 ; coord.yi2=coord.y1-coord.y3;
-    coord.ovl=9;
-  }
+    //---------------------------------------------------------------------------
+    // CASO 09 (muy raro)
+    //---------------------------------------------------------------------------
+    if(coord.x1>coord.x3 && coord.x1<coord.x4 && coord.x2>coord.x3 &&
+            coord.x2<coord.x4 && coord.y1>coord.y3 && coord.y1<coord.y4 &&
+            coord.y2>coord.y3 && coord.y2<coord.y4)
+    {
+        coord.aw=coord.y2-coord.y1  ;
+        coord.ah=coord.y2-coord.y1;
+        coord.ovl=9;
+        coord.xi1=0                 ;
+        coord.yi1=0;
+        coord.xi2=coord.x1-coord.x3 ;
+        coord.yi2=coord.y1-coord.y3;
+        coord.ovl=9;
+    }
 
-  //---------------------------------------------------------------------------
-  // CASO 10 (muy raro)
-  //---------------------------------------------------------------------------
-  if(coord.x1<coord.x3 && coord.x1<coord.x4 && coord.x2>coord.x3 &&
-     coord.x2>coord.x4 && coord.y1<coord.y3 && coord.y1<coord.y4 &&
-     coord.y2>coord.y3 && coord.y2>coord.y4)
-  {
-    coord.aw=coord.x4-coord.x3  ; coord.ah=coord.y4-coord.y3; coord.ovl=10;
-    coord.xi1=coord.x3-coord.x1 ; coord.yi1=coord.y3-coord.y1;
-    coord.xi2=0                 ; coord.yi2=0;
-    coord.ovl=10;
-  }
+    //---------------------------------------------------------------------------
+    // CASO 10 (muy raro)
+    //---------------------------------------------------------------------------
+    if(coord.x1<coord.x3 && coord.x1<coord.x4 && coord.x2>coord.x3 &&
+            coord.x2>coord.x4 && coord.y1<coord.y3 && coord.y1<coord.y4 &&
+            coord.y2>coord.y3 && coord.y2>coord.y4)
+    {
+        coord.aw=coord.x4-coord.x3  ;
+        coord.ah=coord.y4-coord.y3;
+        coord.ovl=10;
+        coord.xi1=coord.x3-coord.x1 ;
+        coord.yi1=coord.y3-coord.y1;
+        coord.xi2=0                 ;
+        coord.yi2=0;
+        coord.ovl=10;
+    }
 
-  //---------------------------------------------------------------------------
-  // CASO 11
-  //---------------------------------------------------------------------------
-  if(coord.x1<coord.x3 && coord.x1<coord.x4 && coord.x2>coord.x3 &&
-     coord.x2<coord.x4 && coord.y1<coord.y3 && coord.y1<coord.y4 &&
-     coord.y2>coord.y3 && coord.y2<coord.y4)
-  {
-    coord.aw=coord.x2-coord.x3   ; coord.ah=coord.y2-coord.y3; coord.ovl=11;
-    coord.xi1=coord.w1-coord.aw ; coord.yi1=coord.h1-coord.ah;
-    coord.xi2=0                  ; coord.yi2=0;
-    coord.ovl=11;
-  }
+    //---------------------------------------------------------------------------
+    // CASO 11
+    //---------------------------------------------------------------------------
+    if(coord.x1<coord.x3 && coord.x1<coord.x4 && coord.x2>coord.x3 &&
+            coord.x2<coord.x4 && coord.y1<coord.y3 && coord.y1<coord.y4 &&
+            coord.y2>coord.y3 && coord.y2<coord.y4)
+    {
+        coord.aw=coord.x2-coord.x3   ;
+        coord.ah=coord.y2-coord.y3;
+        coord.ovl=11;
+        coord.xi1=coord.w1-coord.aw ;
+        coord.yi1=coord.h1-coord.ah;
+        coord.xi2=0                  ;
+        coord.yi2=0;
+        coord.ovl=11;
+    }
 
-  //---------------------------------------------------------------------------
-  // CASO 12
-  //---------------------------------------------------------------------------
-  if(coord.x1>coord.x3 && coord.x1<coord.x4 && coord.x2>coord.x3 &&
-     coord.x2>coord.x4 && coord.y1<coord.y3 && coord.y1<coord.y4 &&
-     coord.y2>coord.y3 && coord.y2<coord.y4)
-  {
-    coord.aw=coord.x4-coord.x1  ; coord.ah=coord.y2-coord.y3; coord.ovl=12;
-    coord.xi1=0                 ; coord.yi1=coord.h1-coord.ah;
-    coord.xi2=coord.w2-coord.aw; coord.yi2=0;
-    coord.ovl=12;
-  }
+    //---------------------------------------------------------------------------
+    // CASO 12
+    //---------------------------------------------------------------------------
+    if(coord.x1>coord.x3 && coord.x1<coord.x4 && coord.x2>coord.x3 &&
+            coord.x2>coord.x4 && coord.y1<coord.y3 && coord.y1<coord.y4 &&
+            coord.y2>coord.y3 && coord.y2<coord.y4)
+    {
+        coord.aw=coord.x4-coord.x1  ;
+        coord.ah=coord.y2-coord.y3;
+        coord.ovl=12;
+        coord.xi1=0                 ;
+        coord.yi1=coord.h1-coord.ah;
+        coord.xi2=coord.w2-coord.aw;
+        coord.yi2=0;
+        coord.ovl=12;
+    }
 
-  //---------------------------------------------------------------------------
-  // CASO 13
-  //---------------------------------------------------------------------------
-  if(coord.x1<coord.x3 && coord.x1<coord.x4 && coord.x2>coord.x3 &&
-     coord.x2<coord.x4 && coord.y1>coord.y3 && coord.y1<coord.y4 &&
-     coord.y2>coord.y3 && coord.y2>coord.y4)
-  {
-    coord.aw=coord.x2-coord.x3; coord.ah=coord.y4-coord.y1; coord.ovl=13;
-    coord.xi1=coord.w1-coord.aw  ; coord.yi1=0;
-    coord.xi2=0                   ; coord.yi2=coord.h2-coord.ah;
-    coord.ovl=13;
-  }
+    //---------------------------------------------------------------------------
+    // CASO 13
+    //---------------------------------------------------------------------------
+    if(coord.x1<coord.x3 && coord.x1<coord.x4 && coord.x2>coord.x3 &&
+            coord.x2<coord.x4 && coord.y1>coord.y3 && coord.y1<coord.y4 &&
+            coord.y2>coord.y3 && coord.y2>coord.y4)
+    {
+        coord.aw=coord.x2-coord.x3;
+        coord.ah=coord.y4-coord.y1;
+        coord.ovl=13;
+        coord.xi1=coord.w1-coord.aw  ;
+        coord.yi1=0;
+        coord.xi2=0                   ;
+        coord.yi2=coord.h2-coord.ah;
+        coord.ovl=13;
+    }
 
-  //---------------------------------------------------------------------------
-  // CASO 14
-  //---------------------------------------------------------------------------
-  if(coord.x1>coord.x3 && coord.x1<coord.x4 && coord.x2>coord.x3 &&
-     coord.x2>coord.x4 && coord.y1>coord.y3 && coord.y1<coord.y4 &&
-     coord.y2>coord.y3 && coord.y2>coord.y4)
-  {
-    coord.aw=coord.x4-coord.x1  ; coord.ah=coord.y4-coord.y1; coord.ovl=14;
-    coord.xi1=0                 ; coord.yi1=0;
-    coord.xi2=coord.w2-coord.aw; coord.yi2=coord.h2-coord.ah;
-    coord.ovl=14;
-  }
-  return coord.ovl;
+    //---------------------------------------------------------------------------
+    // CASO 14
+    //---------------------------------------------------------------------------
+    if(coord.x1>coord.x3 && coord.x1<coord.x4 && coord.x2>coord.x3 &&
+            coord.x2>coord.x4 && coord.y1>coord.y3 && coord.y1<coord.y4 &&
+            coord.y2>coord.y3 && coord.y2>coord.y4)
+    {
+        coord.aw=coord.x4-coord.x1  ;
+        coord.ah=coord.y4-coord.y1;
+        coord.ovl=14;
+        coord.xi1=0                 ;
+        coord.yi1=0;
+        coord.xi2=coord.w2-coord.aw;
+        coord.yi2=coord.h2-coord.ah;
+        coord.ovl=14;
+    }
+    return coord.ovl;
 }
 
 //=============================================================================
@@ -682,38 +759,38 @@ int clsSprite::findContactValues(clsSprite* spr)
 //-----------------------------------------------------------------------------
 bool clsSprite::getMatch(clsSprite* spr)
 {
-  int xl,yl,xe,ye,xaa,yaa;
-  rgbColor color;
-  clsDot pixel;
+    int xl,yl,xe,ye,xaa,yaa;
+    rgbColor color;
+    clsDot pixel;
 
-   // Buscar punto opaco dentro del area de coincidencia del sprite local.
-  for(yl = coord.yi1; yl < coord.yi1 + coord.ah; yl++)
-  {
-
-    for (xl = coord.xi1; xl < coord.xi1 + coord.aw ; xl++)
+    // Buscar punto opaco dentro del area de coincidencia del sprite local.
+    for(yl = coord.yi1; yl < coord.yi1 + coord.ah; yl++)
     {
-      color=pixel.get(xl,yl,this->spritePointer[this->getI()].getPtr());
 
-      if( color.r!=BLACK.r || color.g!=BLACK.g || color.b!=BLACK.b)
-      {
-        // Se encontro un punto opaco dentro del area de contacto del sprite
-        // local.
-        xaa=xl-coord.xi1;
-        yaa=yl-coord.yi1;
-        xe=coord.xi2+xaa;
-        ye=coord.yi2+yaa;
-
-        // Verificar opacidad el punto coincidente del sprite externo
-        color=pixel.get(xe,ye,spr->getPtr()->getPtr());
-        if(color.r!=BLACK.r || color.g!=BLACK.g || color.b!=BLACK.b)
+        for (xl = coord.xi1; xl < coord.xi1 + coord.aw ; xl++)
         {
-          // Hay coincidencia de puntos opacos entre las dos areas.
-          return true;
+            color=pixel.get(xl,yl,this->spritePointer[this->getI()].getPtr());
+
+            if( color.r!=BLACK.r || color.g!=BLACK.g || color.b!=BLACK.b)
+            {
+                // Se encontro un punto opaco dentro del area de contacto del sprite
+                // local.
+                xaa=xl-coord.xi1;
+                yaa=yl-coord.yi1;
+                xe=coord.xi2+xaa;
+                ye=coord.yi2+yaa;
+
+                // Verificar opacidad el punto coincidente del sprite externo
+                color=pixel.get(xe,ye,spr->getPtr()->getPtr());
+                if(color.r!=BLACK.r || color.g!=BLACK.g || color.b!=BLACK.b)
+                {
+                    // Hay coincidencia de puntos opacos entre las dos areas.
+                    return true;
+                }
+            }
         }
-      }
     }
-  }
-  return false;
+    return false;
 }
 
 //### FIN DE ARCHIVO ##########################################################

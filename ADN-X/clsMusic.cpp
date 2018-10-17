@@ -96,7 +96,8 @@ int clsMusic::loadMusic(const char* path)
 {
     error.set(0);
     music = Mix_LoadMUS(path);
-    if(music==NULL) error.set(202);
+    if(music==NULL)
+        error.set(202);
     return error.get();
 }
 

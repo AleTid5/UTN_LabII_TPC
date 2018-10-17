@@ -71,9 +71,9 @@ using namespace std;
 
 class clsMode
 {
- // ATRIBUTOS
+// ATRIBUTOS
 
-  protected:
+protected:
     int sdlError;   // Codigos de error devueltos por las SDL.
     clsError error; // Administrador de errores.
     int scrWidth;   // Ancho de pantalla en pixeles.
@@ -81,16 +81,16 @@ class clsMode
     int scrDepth;   // Profundidad de colores en bits.
 
 
-  // METODOS
+    // METODOS
 
-  public:
+public:
     ~clsMode();                 // Destructor.
     int init(graphicVideoMode); // Inicializa el subsistema de video en forma
-                                // automatica.
+    // automatica.
     int init(int,int,int);      // Inicializa el subsistema de video en forma
-                                // manual.
+    // manual.
     void crashPrevent();        // Cierra todo el sistema si se produce un
-                                // cuelgue.
+    // cuelgue.
     int getScrWidth();          // Devuelve el ancho de pantalla en pixeles.
     int getScrHeight();         // Devuelve el alto de pantalla en pixeles.
     int getScrDepth();          // Devuelve la profundidad e colores en bits.

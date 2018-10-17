@@ -71,9 +71,9 @@ using namespace std;
 
 class clsText
 {
-  // ATRIBUTOS
+    // ATRIBUTOS
 
-  protected:
+protected:
     clsError error;              // Administrador de errores
     char fontName[256];          // Nombre de la fuente atual.
     char fontFile[256];          // Nombre del archivo actual.
@@ -86,11 +86,11 @@ class clsText
     int Height;                  // Altura total del texto;
     int Width;                   // Ancho total del texto;
 
-  // METODOS
+    // METODOS
 
-  public:
+public:
     int init();                          // Inicializa el modo texto para el
-                                         // modo grafico.
+    // modo grafico.
     ~clsText();                          // Destructor.
     int  loadFont(const char*, int);     // Carga un archivo fuente tipo ttf.
     void setFontColor(rgbColor);         // Cambia el color de la fuente.

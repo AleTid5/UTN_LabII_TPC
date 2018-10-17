@@ -71,7 +71,7 @@ using namespace std;
 
 class clsRandom
 {
-  public:
+public:
     void init();         // Inicializa la secuencia de numeros aleatorios.
     int  getNumber(int); // Genera y devuelve un numero al azar.
 };

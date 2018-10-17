@@ -71,9 +71,9 @@ using namespace std;
 
 class clsScreen
 {
-  // ATRIBUTOS
+    // ATRIBUTOS
 
-  protected:
+protected:
     clsError error;             // Administrador de errores.
     SDL_Surface* screenPointer; // Puntero a la imagen asignada.
     int width;                  // Ancho de la pantalla en pixeles.
@@ -82,8 +82,8 @@ class clsScreen
     titlebar title;      // Habilitacion de la barra de titulo.
 
 
-  // METODOS
-  public:
+    // METODOS
+public:
     void clean(rgbColor);          // Borra la pantalla con color por parametro
     void setColor(rgbColor);       // Establece el color de la pantalla.
     SDL_Surface* getPtr();         // Devuelve el puntero a la imagen.
@@ -99,7 +99,7 @@ class clsScreen
     void setTitle(const char*); // Pone titulo a la ventana.
 
     void refresh();       // Refresca la pantalla del monitor para que se
-                          // vean los cambios.
+    // vean los cambios.
     ~clsScreen();         // Destructor.
     titlebar getTitle();  // Informa si la barra de titulo esta habilitada.
 };

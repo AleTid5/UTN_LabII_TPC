@@ -1,0 +1,6 @@
+/EXEC/*.exe
+*.b
+.layout
+.depend
+/*.depend
+/*.layout

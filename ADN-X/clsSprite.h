@@ -76,7 +76,7 @@ using namespace std;
 
 class clsSprite
 {
-   protected:
+protected:
     clsError error;           // Administrador de errores.
     clsImage* spritePointer;  // Puntero al vector de imagenes.
     int items;                // Cantidad total de items del vector de imagenes.
@@ -91,31 +91,31 @@ class clsSprite
 
     tCoord coord;             // Estructura con datos de contacto.
 
-  protected:
+protected:
     virtual void inherit()=0;     // Convierte a la clase en abstracta.
     void findLocalValues();       // Busca coordenadas iniciales,
-                                  // ancho y alto del sprite local.
+    // ancho y alto del sprite local.
 
     void findExternValues(clsSprite*); // Busca coordenadas iniciales,
-                                       // ancho y alto del sprite externo.
+    // ancho y alto del sprite externo.
 
     int findContactValues(clsSprite*);// Busca valores del area de
-                                      // contacto.
+    // contacto.
 
     bool getSuperposition(clsSprite*);// Detecta si hay superposicion de
-                                      // areas entre el sprite local y
-                                      // un sprite externo.
+    // areas entre el sprite local y
+    // un sprite externo.
 
     bool getMatch(clsSprite*);        // Detecta puntos de coincidencia
-                                      // dentro del area de contacto.
+    // dentro del area de contacto.
 
-  public:
+public:
     clsSprite();                   // Constructor por defecto.
     virtual ~clsSprite();          // Destructor implicito.
     int load(const char*);         // Carga una imagen en el elemento actual
-                                   // del sprite
+    // del sprite
     void paste(SDL_Surface*);      // Copia el sprite en sus propias coordenadas
-                                   // sobre la superficie destino.
+    // sobre la superficie destino.
 
 
     void paste(int,                // Copia el sprite en las coordenadas x, y de
@@ -124,7 +124,7 @@ class clsSprite
 
     void setName(const char*);     // Pone un nuevo nombre al sprite.
     void setItems(int);            // Asigna un vector de imagenes a un objeto
-                                   // que aun no lo tiene.
+    // que aun no lo tiene.
     int setI(int);                 // Cambia el indice del vector de imagenes.
     void setX(int);                // Cambia la coordenada x del sprite.
     void setY(int);                // Cambia la coordenada y del sprite.
@@ -138,14 +138,14 @@ class clsSprite
     int getHeight();               // Devuelve el ancho de la imagen actual.
     int getOpacity();              // Devuelve el nivel de opacidad del sprite.
     int getI();                    // Devuelve el indice actual del vector de
-                                   // imagenes.
+    // imagenes.
     clsImage* getPtr();            // Devuelve un puntero al vector de imagenes.
     clsImage* getPtr(int);         // Devuelve un puntero a la imagen i del vector.
     int getItems();                // Devuelve el total de imagenes.
     tSpriteState getState();       // Devuelve el estado del sprite.
 
     bool getContact(clsSprite*);   // Detecta contacto del sprite LOCAL con otro
-                                   // sprite externo.
+    // sprite externo.
 };
 
 #endif // CLSSPRITE_H

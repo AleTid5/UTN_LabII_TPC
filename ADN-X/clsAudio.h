@@ -73,21 +73,21 @@ class clsAudio
 {
     // ATRIBUTOS
 
-    protected:
-      int sdlError;       // Codigos de error devueltos por las SDL.
-      clsError error;     // Administrador de errores.
-      int frecuence;      // Frecuencia (valores: 22050, 48000, 44100, etc.).
-      int channels;       // Canales (1 = mono / 2 = estereo).
-      int channel;        // Canal de efecto;
-      int buffer;         // Comunmente 4096, aunque se le puede aumentar o
-                          // disminuir.
-      Uint16 format;      // AUDIO_S16, es el más habitual y equivale a
-                          // 16 bits estereo.
+protected:
+    int sdlError;       // Codigos de error devueltos por las SDL.
+    clsError error;     // Administrador de errores.
+    int frecuence;      // Frecuencia (valores: 22050, 48000, 44100, etc.).
+    int channels;       // Canales (1 = mono / 2 = estereo).
+    int channel;        // Canal de efecto;
+    int buffer;         // Comunmente 4096, aunque se le puede aumentar o
+    // disminuir.
+    Uint16 format;      // AUDIO_S16, es el más habitual y equivale a
+    // 16 bits estereo.
     // METODOS
 
-    public:
-      int init();         // Inicializa el sistema de audio.
-      void closeAudio();  // Cierra el dispositivo de audio.
+public:
+    int init();         // Inicializa el sistema de audio.
+    void closeAudio();  // Cierra el dispositivo de audio.
 };
 
 #endif // CLSAUDIO_H

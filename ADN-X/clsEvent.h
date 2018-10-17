@@ -80,7 +80,7 @@ class clsEvent
     Uint16 getKey();        // Devuelve la tecla presionada.
     SDLMod getKeyMode();    // Devuelve el estado de las teclas especiales
                             // (CAPSLOCK, NUMLOCK, CTRL, SHIFT y ALT).
-    Uint8 getMouseButton(); // Devuelve el boton del mouse presionado.
+  Uint8 getMouseButton(); // Devuelve el boton del mouse presionado.
     Uint16 getCursorX();    // Devuelve la coordenada x del puntero del mouse.
     Uint16 getCursorY();    // Devuelve la coordenada y del puntero del mouse.
 };

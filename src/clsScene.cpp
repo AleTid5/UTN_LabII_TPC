@@ -31,9 +31,20 @@ int clsScene::init(const char path[100][100], unsigned int countOfImages, unsign
     return error.get();
 }
 
+int clsScene::initText()
+{
+    error.set(this->text.init());
+
+    error.set(this->text.loadFont("FONTS/FreeMono.ttf", 25));
+
+    return 0;
+}
+
 void clsScene::loadWallpaper(clsScreen* screen, clsEvent* event)
 {
-    const char pathes[100][100] = {"IMAGES/landscapes/wallpaper.jpg", "IMAGES/landscapes/landscape.jpg"};
+    const char pathes[100][100] = {
+        "IMAGES/landscapes/wallpaper.jpg",
+        "IMAGES/landscapes/landscape.jpg"};
 
     error.set(this->init(pathes, 2, 0, 0));
     this->setI(0);
@@ -86,9 +97,80 @@ void clsScene::loadWallpaper(clsScreen* screen, clsEvent* event)
 
 void clsScene::move(clsScreen* screen)
 {
+    this->setI(1);
     if (-1 * this->getX() == this->getWidth() - 1370) this->setX(-4);
+
     this->setX(this->getX() - 4);
     this->paste(screen->getPtr());
+
+    clsScene statusBar;
+    statusBar.init("IMAGES/landscapes/status-bar.png", 0, 0);
+    statusBar.paste(screen->getPtr());
+
+    this->showTimer(screen);
+}
+
+void clsScene::startTimer()
+{
+    this->timer.start();
+}
+
+void clsScene::showTimer(clsScreen* screen)
+{
+    this->timer.update();
+    string timeString = to_string(this->timer.getState() / 1000);
+    const char *time = timeString.c_str();
+    this->text.setFontColor(WHITE);
+    this->text.write(time, screen->getWidth() / 2 - this->text.getWidth() / 2, 15, screen->getPtr());
+}
+
+void clsScene::showMenu(clsScreen* screen)
+{
+    const char pathes[100][100] = {
+        "IMAGES/menu/startPost.png",
+        "IMAGES/menu/startPostPlay.png",
+        "IMAGES/menu/startPostContinue.png",
+        "IMAGES/menu/startPostScore.png",
+        "IMAGES/menu/startPostExit.png"
+    };
+
+    clsScene* menu = new clsScene;
+    menu->error.set(menu->init(pathes, 5, 300, 100));
+    menu->setI(0);
+    menu->paste(screen->getPtr());
+    screen->refresh();
+    this->dispatchOption(menu, screen);
+
+}
+
+void clsScene::dispatchOption(clsScene* menu, clsScreen* screen)
+{
+    clsEvent* event = new clsEvent;
+
+    while (event->getMouseButton() != MOUSE_LEFT_BUTTON || menu->getI() == 0) {
+        Uint16 posX = event->getCursorX();
+        Uint16 posY = event->getCursorY();
+
+        menu->setI(0);
+
+        if (posX >= 360 && posX <= 750 && posY >= 100 && posY <= 225)
+            menu->setI(1);
+        else if (posX >= 300 && posX <= 630 && posY >= 225 && posY <= 290)
+            menu->setI(2);
+        else if (posX >= 450 && posX <= 675 && posY >= 290 && posY <= 350)
+            menu->setI(3);
+        else if (posX >= 415 && posX <= 675 && posY >= 410 && posY <= 475)
+            menu->setI(4);
+
+        this->paste(screen->getPtr());
+        menu->paste(screen->getPtr());
+        screen->refresh();
+        event->wasEvent();
+    }
+
+    if (menu->getI() == 4) throw 0;
+
+    if (menu->getI() == 1) {}// JUGAR
 }
 
 

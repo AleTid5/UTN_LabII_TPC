@@ -71,8 +71,8 @@
 //-----------------------------------------------------------------------------
 void clsScreen::clean(rgbColor bc=BLACK)
 {
-  uint32_t background = SDL_MapRGB(screenPointer->format,bc.r,bc.g,bc.b);
-  SDL_FillRect(screenPointer, NULL, background);
+    uint32_t background = SDL_MapRGB(screenPointer->format,bc.r,bc.g,bc.b);
+    SDL_FillRect(screenPointer, NULL, background);
 }
 
 //=============================================================================
@@ -83,7 +83,7 @@ void clsScreen::clean(rgbColor bc=BLACK)
 //-----------------------------------------------------------------------------
 void clsScreen::setColor(rgbColor bc)
 {
-  SDL_MapRGB(screenPointer->format,bc.r,bc.g,bc.b);
+    SDL_MapRGB(screenPointer->format,bc.r,bc.g,bc.b);
 }
 
 //=============================================================================
@@ -92,7 +92,9 @@ void clsScreen::setColor(rgbColor bc)
 // PARAMETROS: NADA.
 // DEVUELVE  : SDL_Surface* -> puntero a la superficie.
 //-----------------------------------------------------------------------------
-SDL_Surface* clsScreen::getPtr() { return screenPointer;}
+SDL_Surface* clsScreen::getPtr() {
+    return screenPointer;
+}
 
 //=============================================================================
 // METODO    : int getWidth().
@@ -100,7 +102,9 @@ SDL_Surface* clsScreen::getPtr() { return screenPointer;}
 // PARAMETROS: NADA.
 // DEVUELVE  : int -> ancho en pixeles.
 //-----------------------------------------------------------------------------
-int clsScreen::getWidth(){return width;}
+int clsScreen::getWidth() {
+    return width;
+}
 
 //=============================================================================
 // METODO    : int getHeight().
@@ -108,7 +112,9 @@ int clsScreen::getWidth(){return width;}
 // PARAMETROS: NADA.
 // DEVUELVE  : int -> alto en pixeles.
 //-----------------------------------------------------------------------------
-int clsScreen::getHeight(){return height;}
+int clsScreen::getHeight() {
+    return height;
+}
 
 //=============================================================================
 // METODO    : rgbColor getColor().
@@ -116,7 +122,9 @@ int clsScreen::getHeight(){return height;}
 // PARAMETROS: NADA.
 // DEVUELVE  : rgbColor -> color de pantalla.
 //-----------------------------------------------------------------------------
-rgbColor clsScreen::getColor(){return color;}
+rgbColor clsScreen::getColor() {
+    return color;
+}
 //=============================================================================
 // METODO    : int init(unsigned int anch,unsigned int alt,
 //                      unsigned int bpp,bool barra,Uint32_t flags)
@@ -153,28 +161,28 @@ rgbColor clsScreen::getColor(){return color;}
 int clsScreen::init(int w, int h, int d,
                     titlebar bar, uint32_t flags)
 {
-  if(flags)
-  {
-    screenPointer = SDL_SetVideoMode(w,h,d,HARDWARE|DOUBLEBUFFER|flags);
-  }
-  else
-  {
-    screenPointer = SDL_SetVideoMode(w,h,d,HARDWARE|DOUBLEBUFFER);
-  }
-  if (screenPointer==NULL)
-  {
-    error.set(800);
+    if(flags)
+    {
+        screenPointer = SDL_SetVideoMode(w,h,d,HARDWARE|DOUBLEBUFFER|flags);
+    }
+    else
+    {
+        screenPointer = SDL_SetVideoMode(w,h,d,HARDWARE|DOUBLEBUFFER);
+    }
+    if (screenPointer==NULL)
+    {
+        error.set(800);
+        return error.get();
+    }
+
+    title = bar;
+    width  = w;
+    height  = h;
+    color = BLACK;
+
+    cout << "Monitor de video iniciado correctamente." << endl;
+    error.set(0);
     return error.get();
-  }
-
-  title = bar;
-  width  = w;
-  height  = h;
-  color = BLACK;
-
-  cout << "Monitor de video iniciado correctamente." << endl;
-  error.set(0);
-  return error.get();
 }
 
 //=============================================================================
@@ -187,7 +195,8 @@ int clsScreen::init(int w, int h, int d,
 //-----------------------------------------------------------------------------
 void clsScreen::setTitle(const char* t)
 {
-  if(title==ENABLED) SDL_WM_SetCaption(t, NULL);
+    if(title==ENABLED)
+        SDL_WM_SetCaption(t, NULL);
 }
 
 //=============================================================================
@@ -197,7 +206,9 @@ void clsScreen::setTitle(const char* t)
 // PARAMETROS: NADA.
 // DEVUELVE  : NADA.
 //-----------------------------------------------------------------------------
-void clsScreen::refresh(){SDL_Flip(screenPointer);}
+void clsScreen::refresh() {
+    SDL_Flip(screenPointer);
+}
 
 //=============================================================================
 // METODO    : titlebar getTitle().
@@ -205,7 +216,9 @@ void clsScreen::refresh(){SDL_Flip(screenPointer);}
 // PARAMETROS: NADA.
 // DEVUELVE  : titlebar -> ENABLE = true / DESABLE = false
 //-----------------------------------------------------------------------------
-titlebar clsScreen::getTitle(){return title;}
+titlebar clsScreen::getTitle() {
+    return title;
+}
 
 
 //=============================================================================
@@ -216,8 +229,9 @@ titlebar clsScreen::getTitle(){return title;}
 //-----------------------------------------------------------------------------
 clsScreen::~clsScreen()
 {
-  if(screenPointer != NULL) SDL_FreeSurface(screenPointer);
-  cout << "Monitor de video cerrado correctamente." << endl;
+    if(screenPointer != NULL)
+        SDL_FreeSurface(screenPointer);
+    cout << "Monitor de video cerrado correctamente." << endl;
 }
 
 //### FIN DE ARCHIVO ##########################################################

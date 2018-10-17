@@ -60,16 +60,19 @@ void clsBug::fire(clsMucus* mucus, clsScene* scene, clsScreen* screen, clsEvent*
         mucus->move(screen, posX, posY);
         posX += 15;
         if (event->wasEvent()) {
-            if (event->getEventType() == KEY_PRESSED) { // Verifico si hay evento de teclado
-                if (event->getKey() == KEY_a || event->getKey() == KEY_s ||
-                    event->getKey() == KEY_w || event->getKey() == KEY_d ) {
-                    direction dir = event->getKey() == KEY_a ? LEFT :
-                                    event->getKey() == KEY_s ? DOWN :
-                                    event->getKey() == KEY_d ? RIGHT : UP;
-                    this->movement = 50;
-                    this->move(dir, scene, screen); // Muevo el bicho
-                    event->wasEvent();
-                }
+            while (event->getEventType() == KEY_PRESSED &&
+                    (event->getKey() == KEY_a || event->getKey() == KEY_s ||
+                     event->getKey() == KEY_w || event->getKey() == KEY_d)) { // Verifico si hay evento de teclado
+
+                direction dir = event->getKey() == KEY_a ? LEFT :
+                                event->getKey() == KEY_s ? DOWN :
+                                event->getKey() == KEY_d ? RIGHT : UP;
+
+                mucus->move(screen, posX, posY);
+                posX += 15;
+                this->move(dir, scene, screen); // Muevo el bicho
+
+                event->wasEvent();
             }
         }
     }
@@ -89,7 +92,7 @@ bool clsBug::canMove(direction dir, clsScene* scene, clsScreen* screen)
     unsigned int posY = this->getY();
 
     if (dir == UP) {
-        return (posY - this->movement > 0);
+        return (posY - this->movement > 53);
     }
 
     if (dir == DOWN) {

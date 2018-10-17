@@ -1,13 +1,14 @@
 #ifndef CLSMOTOR_H
 #define CLSMOTOR_H
+#include <adnConsts.h>
+#include <clsAudio.h>
+#include <clsError.h>
 #include <clsEvent.h>
 #include <clsMode.h>
-#include <clsScreen.h>
-#include <clsError.h>
-#include <clsText.h>
-#include <clsAudio.h>
 #include <clsMusic.h>
-#include <adnConsts.h>
+#include <clsScreen.h>
+#include <clsText.h>
+
 #include <clsScene.h>
 #include <clsMucus.h>
 #include <clsBug.h>
@@ -18,15 +19,17 @@ public:
     void init();
     void run();
     void keyCommand(Uint16);
+    void stopRun();
+    bool isKeyPressable(Uint16);
 
 protected:
+    clsAudio audio;
+    clsError error;
     clsEvent event;
     clsMode mode;
-    clsScreen screen;
-    clsError error;
-    clsText text;
-    clsAudio audio;
     clsMusic music;
+    clsScreen screen;
+    clsText text;
     clsScene scene;
     clsBug bug;
     clsMucus mucus;

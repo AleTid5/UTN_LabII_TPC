@@ -70,17 +70,17 @@ class clsImage
 {
     // ATRIBUTOS
 
-    protected:
-        clsError error;             // Administrador de errores.
-        SDL_Surface* imagePointer;  // Superficie de pixeles.
+protected:
+    clsError error;             // Administrador de errores.
+    SDL_Surface* imagePointer;  // Superficie de pixeles.
 
     // METODOS
 
-    public:
-        int load(const char*); // Carga un archivo de imagen en memoria RAM.
-        void unload();         // Destructor explicito.
-        ~clsImage();           // Destructor implicito.
-        SDL_Surface* getPtr(); // Devuelve el puntero a la imagen.
+public:
+    int load(const char*); // Carga un archivo de imagen en memoria RAM.
+    void unload();         // Destructor explicito.
+    ~clsImage();           // Destructor implicito.
+    SDL_Surface* getPtr(); // Devuelve el puntero a la imagen.
 };
 
 #endif // CLSIMAGE_H

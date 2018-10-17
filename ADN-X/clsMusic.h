@@ -75,20 +75,20 @@ class clsMusic
 {
     // ATRIBUTOS
 
-    protected:
-      clsError error;     // Administrador de errores.
-      char name[80];      // Nombre del objeto.
-      Mix_Music *music;   // Puntero al archivo de musica.
+protected:
+    clsError error;     // Administrador de errores.
+    char name[80];      // Nombre del objeto.
+    Mix_Music *music;   // Puntero al archivo de musica.
 
     // METODOS
 
-    public:
-      int loadMusic(const char*); // Carga un archivo de musica (tipo mp3).
-      void playMusic(int);        // Ejecuta un archivo de musica.
-      void stopMusic();           // Detiene la musica.
-      void closeMusic();          // Libera la memoria tomada para la musica.
-      void setName(const char*);  // Establece el nombre del objeto.
-      char* getName();            // Devuelve el nombre del objeto.
+public:
+    int loadMusic(const char*); // Carga un archivo de musica (tipo mp3).
+    void playMusic(int);        // Ejecuta un archivo de musica.
+    void stopMusic();           // Detiene la musica.
+    void closeMusic();          // Libera la memoria tomada para la musica.
+    void setName(const char*);  // Establece el nombre del objeto.
+    char* getName();            // Devuelve el nombre del objeto.
 };
 
 #endif // CLSMUSIC_H

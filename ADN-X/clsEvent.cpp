@@ -71,11 +71,11 @@
 //-----------------------------------------------------------------------------
 bool clsEvent::wasEvent()
 {
-  if (SDL_PollEvent(&event))
-  {
-    return true;
-  }
-  return false;
+    if (SDL_PollEvent(&event))
+    {
+        return true;
+    }
+    return false;
 }
 
 //=============================================================================
@@ -84,7 +84,9 @@ bool clsEvent::wasEvent()
 // PARAMETROS: NADA.
 // DEVUELVE  : Uint8 -> tipo de evento SDL producido.
 //-----------------------------------------------------------------------------
-Uint8 clsEvent::getEventType() {return event.type;}
+Uint8 clsEvent::getEventType() {
+    return event.type;
+}
 
 //=============================================================================
 // METODO    : Uint16 getKey()
@@ -104,7 +106,9 @@ Uint16 clsEvent::getKey()
 // PARAMETROS: NADA.
 // DEVUELVE  : SDLMod -> Estado SDL de la tecla especial.
 //-----------------------------------------------------------------------------
-SDLMod clsEvent::getKeyMode() {return event.key.keysym.mod;}
+SDLMod clsEvent::getKeyMode() {
+    return event.key.keysym.mod;
+}
 
 //=============================================================================
 // METODO    : Uint8 getMouseButtom()
@@ -112,7 +116,9 @@ SDLMod clsEvent::getKeyMode() {return event.key.keysym.mod;}
 // PARAMETROS: NADA.
 // DEVUELVE  : Uint8 -> boton presionado.
 //-----------------------------------------------------------------------------
-Uint8 clsEvent::getMouseButton() {return event.button.button;}
+Uint8 clsEvent::getMouseButton() {
+    return event.button.button;
+}
 
 //=============================================================================
 // METODO    : Uint16 getCursorX()
@@ -120,7 +126,9 @@ Uint8 clsEvent::getMouseButton() {return event.button.button;}
 // PARAMETROS: NADA.
 // DEVUELVE  : Uint16 -> coordenada x.
 //-----------------------------------------------------------------------------
-Uint16 clsEvent::getCursorX() {return event.button.x;}
+Uint16 clsEvent::getCursorX() {
+    return event.button.x;
+}
 
 //=============================================================================
 // METODO    : Uint16 getCursorY()
@@ -128,6 +136,8 @@ Uint16 clsEvent::getCursorX() {return event.button.x;}
 // PARAMETROS: NADA.
 // DEVUELVE  : Uint16 -> coordenada x.
 //-----------------------------------------------------------------------------
-Uint16 clsEvent::getCursorY() {return event.button.y;}
+Uint16 clsEvent::getCursorY() {
+    return event.button.y;
+}
 
 //### FIN DE ARCHIVO ##########################################################

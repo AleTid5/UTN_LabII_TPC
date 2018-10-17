@@ -67,25 +67,25 @@
 
 class clsTimer
 {
-  // ATRIBUTOS
+    // ATRIBUTOS
 
-  protected:
+protected:
     clsEvent event;  // administrador de eventos
     int initialtime; // contiene el valor de arranque.
     int now;         // contiene el tiempo transcurrido desde el arranque.
 
-  // METODOS
+    // METODOS
 
-  public:
+public:
     void wait(int);          // Espera la cantidad de milisegundos pasados por
-                             // parametro.
+    // parametro.
     void waitForKey(Uint16); // Espera que se presione una tecla pasada como
-                             // parametro.
+    // parametro.
     void start();            // Pone en marcha el timer.
     void update();           // Actualiza el tiempo del timer.
 
     int getTicks();    // Devuelve la cantidad de milisegundos pasados desde el
-                       // momento que se incializo el modo grafico.
+    // momento que se incializo el modo grafico.
     int getState();    // Devuelve el tiempo transcurrido desde el arranque.
 
 };

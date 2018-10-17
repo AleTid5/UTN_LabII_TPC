@@ -69,7 +69,9 @@
 // PARAMETROS: NADA.
 // DEVUELVE  : SDL_Surface* -> puntero a la imagen.
 //-----------------------------------------------------------------------------
-SDL_Surface* clsImage::getPtr(){return imagePointer;};
+SDL_Surface* clsImage::getPtr() {
+    return imagePointer;
+};
 
 //=============================================================================
 // METODO    : int load(const char* archivo)
@@ -79,21 +81,21 @@ SDL_Surface* clsImage::getPtr(){return imagePointer;};
 //-----------------------------------------------------------------------------
 int clsImage::load(const char* archivo)
 {
-  imagePointer = IMG_Load(archivo);
-  if(imagePointer == NULL)
-  {
-    error.set(600);
+    imagePointer = IMG_Load(archivo);
+    if(imagePointer == NULL)
+    {
+        error.set(600);
+        return error.get();
+    }
+
+    SDL_SetColorKey(imagePointer,
+                    SDL_SRCCOLORKEY|SDL_RLEACCEL,
+                    SDL_MapRGB(imagePointer->format,PINK.r,PINK.g,PINK.b));
+
+    SDL_SetAlpha(imagePointer,SDL_SRCALPHA|SDL_RLEACCEL,255);
+
+    error.set(0);
     return error.get();
-  }
-
-  SDL_SetColorKey(imagePointer,
-                  SDL_SRCCOLORKEY|SDL_RLEACCEL,
-                  SDL_MapRGB(imagePointer->format,PINK.r,PINK.g,PINK.b));
-
-  SDL_SetAlpha(imagePointer,SDL_SRCALPHA|SDL_RLEACCEL,255);
-
-  error.set(0);
-  return error.get();
 };
 
 //=============================================================================
@@ -104,7 +106,8 @@ int clsImage::load(const char* archivo)
 //-----------------------------------------------------------------------------
 void clsImage::unload()
 {
-  if(imagePointer) SDL_FreeSurface(imagePointer);
+    if(imagePointer)
+        SDL_FreeSurface(imagePointer);
 };
 
 //=============================================================================
@@ -115,8 +118,10 @@ void clsImage::unload()
 //-----------------------------------------------------------------------------
 clsImage::~clsImage()
 {
-  if(imagePointer) delete imagePointer;
-  if(imagePointer != NULL) SDL_FreeSurface(imagePointer);
+    if(imagePointer)
+        delete imagePointer;
+    if(imagePointer != NULL)
+        SDL_FreeSurface(imagePointer);
 };
 
 //### FIN DE ARCHIVO ##########################################################

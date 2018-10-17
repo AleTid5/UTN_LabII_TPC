@@ -67,17 +67,17 @@
 
 class clsDot
 {
-  // ATRIBUTOS
-  protected:
+    // ATRIBUTOS
+protected:
 
-  // METODOS
-  public:
+    // METODOS
+public:
     void set(int x, int y, rgbColor, SDL_Surface*);  // Dibuja un punto de
-                                                     // color en una supeficie
-                                                     // dada.
+    // color en una supeficie
+    // dada.
     rgbColor get(int x, int y, SDL_Surface*);        // Lee el color un punto
-                                                     // desde una superficie
-                                                     // dada.
+    // desde una superficie
+    // dada.
 };
 
 #endif // CLSDOT_H

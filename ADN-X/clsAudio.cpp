@@ -71,26 +71,27 @@
 //-----------------------------------------------------------------------------
 int clsAudio::init()
 {
-  sdlError=SDL_InitSubSystem(SDL_INIT_AUDIO);
-  if(sdlError<0)
-  {
-    error.set(200); // <200> ERRORES DE SUBSISTEMA DE AUDIO
+    sdlError=SDL_InitSubSystem(SDL_INIT_AUDIO);
+    if(sdlError<0)
+    {
+        error.set(200); // <200> ERRORES DE SUBSISTEMA DE AUDIO
+        return error.get();
+    }
+
+    frecuence = 22050; // Maximo que percibe el oido humano.
+    channels  = 2;     // Estereo
+    buffer    = 4096;
+    format    = AUDIO_S16;
+
+    channel=0;
+
+
+    error.set(Mix_OpenAudio(frecuence, format, channels, buffer));
+    if(error.get())
+        return error.get();
+
+    cout << "Sistema de audio iniciado correctamente." << endl;
     return error.get();
-  }
-
-  frecuence = 22050; // Maximo que percibe el oido humano.
-  channels  = 2;     // Estereo
-  buffer    = 4096;
-  format    = AUDIO_S16;
-
-  channel=0;
-
-
-  error.set(Mix_OpenAudio(frecuence, format, channels, buffer));
-  if(error.get()) return error.get();
-
-  cout << "Sistema de audio iniciado correctamente." << endl;
-  return error.get();
 }
 
 //=============================================================================

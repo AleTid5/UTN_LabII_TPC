@@ -74,21 +74,21 @@ class clsSoundEffect
 {
     // ATRIBUTOS
 
-    protected:
-      clsError error;     // Administrador de errores.
-      char name[80];      // Nombre del objeto mixer.
-      int channel;        // Canal de efecto;
-      Mix_Chunk *effect;  // Puntero al archivo de efecto de sonido.
+protected:
+    clsError error;     // Administrador de errores.
+    char name[80];      // Nombre del objeto mixer.
+    int channel;        // Canal de efecto;
+    Mix_Chunk *effect;  // Puntero al archivo de efecto de sonido.
 
     // METODOS
 
-    public:
-        int loadEffect(const char*);// Carga un efecto de sonido (tipo wav).
-        void playEffect(int,int);   // Ejecuta un efecto de sonido.
-        void stopEffect();          // Detiene el efecto.
-        void closeEffect();         // Libera la memoria tomada para el efecto.
-        void setName(const char*);  // Establece el nombre del objeto mixer.
-        char* getName();            // Devuelve el nombre del objeto mixer.
+public:
+    int loadEffect(const char*);// Carga un efecto de sonido (tipo wav).
+    void playEffect(int,int);   // Ejecuta un efecto de sonido.
+    void stopEffect();          // Detiene el efecto.
+    void closeEffect();         // Libera la memoria tomada para el efecto.
+    void setName(const char*);  // Establece el nombre del objeto mixer.
+    char* getName();            // Devuelve el nombre del objeto mixer.
 };
 
 #endif // CLSSOUNDEFFECT_H

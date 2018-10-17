@@ -72,7 +72,7 @@
 //-----------------------------------------------------------------------------
 int clsTimer::getTicks()
 {
-  return (int) SDL_GetTicks();
+    return (int) SDL_GetTicks();
 }
 
 //=============================================================================
@@ -84,7 +84,7 @@ int clsTimer::getTicks()
 //-----------------------------------------------------------------------------
 void clsTimer::wait(int mls)
 {
-  SDL_Delay(mls);
+    SDL_Delay(mls);
 }
 
 //=============================================================================
@@ -95,7 +95,7 @@ void clsTimer::wait(int mls)
 //-----------------------------------------------------------------------------
 void clsTimer::start()
 {
-  initialtime=getTicks();
+    initialtime=getTicks();
 }
 
 //=============================================================================
@@ -106,7 +106,7 @@ void clsTimer::start()
 //-----------------------------------------------------------------------------
 void clsTimer::update()
 {
-  now = getTicks() - initialtime;
+    now = getTicks() - initialtime;
 }
 
 //=============================================================================
@@ -117,8 +117,8 @@ void clsTimer::update()
 //-----------------------------------------------------------------------------
 int clsTimer::getState()
 {
-  update();
-  return now;
+    update();
+    return now;
 }
 
 //=============================================================================
@@ -134,8 +134,8 @@ void clsTimer::waitForKey(Uint16 t)
     Uint16 key;
     do
     {
-       if(event.wasEvent())
-       {
+        if(event.wasEvent())
+        {
             if(event.getEventType()==KEY_PRESSED)
             {
                 key=event.getKey();
@@ -144,7 +144,7 @@ void clsTimer::waitForKey(Uint16 t)
                     end=true;
                 }
             }
-       }
+        }
     } while(!end);
 }
 

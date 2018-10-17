@@ -65,18 +65,18 @@
 
 class clsError
 {
-  // ATRIBUTOS
+    // ATRIBUTOS
 
-  protected:
+protected:
     int errorId;    // Codigos de error devueltos por el sistema Amadeo
 
-  // METODOS
+    // METODOS
 
-  public:
+public:
     clsError();     // Constructor.
 
     void show(bool);// Muestra el mensaje de error asociado con el codigo
-                    // de errorId.
+    // de errorId.
 
     void set(int);  // Establece el codigo de error del sistema.
 

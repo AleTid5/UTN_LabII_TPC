@@ -77,21 +77,21 @@
 //-----------------------------------------------------------------------------
 int clsText::init()
 {
-  if(TTF_Init() < 0)
-  {
-    error.set(900);
+    if(TTF_Init() < 0)
+    {
+        error.set(900);
+        return error.get();
+    }
+
+    style=NORMAL;
+    texture=SOLID;
+    Height=20;
+    Width=20;
+    fontColor=BLACK;
+    backColor=GRAY;
+
+    error.set(0);
     return error.get();
-  }
-
-  style=NORMAL;
-  texture=SOLID;
-  Height=20;
-  Width=20;
-  fontColor=BLACK;
-  backColor=GRAY;
-
-  error.set(0);
-  return error.get();
 }
 
 //=============================================================================
@@ -102,7 +102,7 @@ int clsText::init()
 //-----------------------------------------------------------------------------
 clsText::~clsText()
 {
-  cout << "El texto " << getFontFile() << " se cerro correctamente." << endl;
+    cout << "El texto " << getFontFile() << " se cerro correctamente." << endl;
 }
 
 //=============================================================================
@@ -114,40 +114,40 @@ clsText::~clsText()
 //-----------------------------------------------------------------------------
 int clsText::loadFont(const char* file, int size)
 {
-  char aux[256];
-  int i,j;
+    char aux[256];
+    int i,j;
 
-  font=TTF_OpenFont(file,size);
-  if(font==NULL)
-  {
-    error.set(901);
-    return error.get();
-  }
+    font=TTF_OpenFont(file,size);
+    if(font==NULL)
+    {
+        error.set(901);
+        return error.get();
+    }
 
-  i=strlen(file)-1;
-  while(file[i]!='/' && file[i]!='\\')
-  {
-    i--;
-  }
+    i=strlen(file)-1;
+    while(file[i]!='/' && file[i]!='\\')
+    {
+        i--;
+    }
 
-  i++;
-  j=0;
-  while(file[i]!='\0')
-  {
-    aux[j]=file[i];
     i++;
-    j++;
-  }
-  aux[j-4]='\0';
+    j=0;
+    while(file[i]!='\0')
+    {
+        aux[j]=file[i];
+        i++;
+        j++;
+    }
+    aux[j-4]='\0';
 
-  strcpy(fontName,aux);
-  strcpy(fontFile,file);
+    strcpy(fontName,aux);
+    strcpy(fontFile,file);
 
-  Width=size;
-  Height=size;
+    Width=size;
+    Height=size;
 
-  error.set(0);
-  return error.get();
+    error.set(0);
+    return error.get();
 
 }
 
@@ -159,7 +159,7 @@ int clsText::loadFont(const char* file, int size)
 //-----------------------------------------------------------------------------
 void clsText::setFontColor(rgbColor color)
 {
-  fontColor=color;
+    fontColor=color;
 }
 
 //=============================================================================
@@ -170,7 +170,7 @@ void clsText::setFontColor(rgbColor color)
 //-----------------------------------------------------------------------------
 void clsText::setBackColor(rgbColor color)
 {
-  backColor=color;
+    backColor=color;
 }
 
 //=============================================================================
@@ -182,7 +182,7 @@ void clsText::setBackColor(rgbColor color)
 //-----------------------------------------------------------------------------
 void clsText::setStyle(tFontStyle sty)
 {
-  style=sty;
+    style=sty;
 }
 
 //=============================================================================
@@ -194,7 +194,7 @@ void clsText::setStyle(tFontStyle sty)
 //-----------------------------------------------------------------------------
 void clsText::setTexture(tFontTexture tex)
 {
-  texture=tex;
+    texture=tex;
 }
 
 //=============================================================================
@@ -205,14 +205,14 @@ void clsText::setTexture(tFontTexture tex)
 //-----------------------------------------------------------------------------
 int clsText::setFontFile(const char* str)
 {
-  error.set(loadFont(str,Width));
-  if(error.get())
-  {
-    return error.get();
-  }
+    error.set(loadFont(str,Width));
+    if(error.get())
+    {
+        return error.get();
+    }
 
-  error.set(0);
-  return error.get();
+    error.set(0);
+    return error.get();
 }
 //=============================================================================
 // METODO    : void centredWrite(char* texto,int y,SDL_Surfacr* scr)
@@ -224,48 +224,53 @@ int clsText::setFontFile(const char* str)
 //-----------------------------------------------------------------------------
 void clsText::centredWrite(const char* text,int y,SDL_Surface* scr)
 {
-  SDL_Color fcolor;
-  SDL_Color bcolor;
+    SDL_Color fcolor;
+    SDL_Color bcolor;
 
-  fcolor.r=fontColor.r;
-  fcolor.g=fontColor.g;
-  fcolor.b=fontColor.b;
+    fcolor.r=fontColor.r;
+    fcolor.g=fontColor.g;
+    fcolor.b=fontColor.b;
 
-  bcolor.r=backColor.r;
-  bcolor.g=backColor.g;
-  bcolor.b=backColor.b;
+    bcolor.r=backColor.r;
+    bcolor.g=backColor.g;
+    bcolor.b=backColor.b;
 
-  SDL_Rect area;
+    SDL_Rect area;
 
-  TTF_SizeText(font,text,&Width,&Height);
+    TTF_SizeText(font,text,&Width,&Height);
 
-  switch(style)
-  {
-    case NORMAL   : TTF_SetFontStyle(font,TTF_STYLE_NORMAL);
-                    break;
-    case BOLD     : TTF_SetFontStyle(font,TTF_STYLE_BOLD);
-                    break;
-    case ITALIC   : TTF_SetFontStyle(font,TTF_STYLE_ITALIC);
-                    break;
-  }
+    switch(style)
+    {
+    case NORMAL   :
+        TTF_SetFontStyle(font,TTF_STYLE_NORMAL);
+        break;
+    case BOLD     :
+        TTF_SetFontStyle(font,TTF_STYLE_BOLD);
+        break;
+    case ITALIC   :
+        TTF_SetFontStyle(font,TTF_STYLE_ITALIC);
+        break;
+    }
 
-  switch(texture)
-  {
-    case SOLID   : frame = TTF_RenderText_Solid(font,text,fcolor);
-                   break;
-    case SHADED  : frame = TTF_RenderText_Shaded(font,text,fcolor,bcolor);
-                   break;
-  }
+    switch(texture)
+    {
+    case SOLID   :
+        frame = TTF_RenderText_Solid(font,text,fcolor);
+        break;
+    case SHADED  :
+        frame = TTF_RenderText_Shaded(font,text,fcolor,bcolor);
+        break;
+    }
 
-  int x=(scr->w - this->getWidth())/2;
+    int x=(scr->w - this->getWidth())/2;
 
-  area.x=x;
-  area.y=y;
-  area.w=frame->w;
-  area.h=frame->h;
+    area.x=x;
+    area.y=y;
+    area.w=frame->w;
+    area.h=frame->h;
 
-  SDL_BlitSurface(frame,NULL,scr,&area);
-  SDL_FreeSurface(frame);
+    SDL_BlitSurface(frame,NULL,scr,&area);
+    SDL_FreeSurface(frame);
 }
 
 //=============================================================================
@@ -279,44 +284,49 @@ void clsText::centredWrite(const char* text,int y,SDL_Surface* scr)
 //-----------------------------------------------------------------------------
 void clsText::write(const char* text,int x,int y,SDL_Surface* scr)
 {
-  SDL_Color fcolor;
-  SDL_Color bcolor;
+    SDL_Color fcolor;
+    SDL_Color bcolor;
 
-  fcolor.r=fontColor.r;
-  fcolor.g=fontColor.g;
-  fcolor.b=fontColor.b;
+    fcolor.r=fontColor.r;
+    fcolor.g=fontColor.g;
+    fcolor.b=fontColor.b;
 
-  bcolor.r=backColor.r;
-  bcolor.g=backColor.g;
-  bcolor.b=backColor.b;
+    bcolor.r=backColor.r;
+    bcolor.g=backColor.g;
+    bcolor.b=backColor.b;
 
-  SDL_Rect area;
+    SDL_Rect area;
 
-  TTF_SizeText(font,text,&Width,&Height);
+    TTF_SizeText(font,text,&Width,&Height);
 
-  switch(style)
-  {
-    case NORMAL   : TTF_SetFontStyle(font,TTF_STYLE_NORMAL);
-                    break;
-    case BOLD     : TTF_SetFontStyle(font,TTF_STYLE_BOLD);
-                    break;
-    case ITALIC   : TTF_SetFontStyle(font,TTF_STYLE_ITALIC);
-                    break;
-  }
+    switch(style)
+    {
+    case NORMAL   :
+        TTF_SetFontStyle(font,TTF_STYLE_NORMAL);
+        break;
+    case BOLD     :
+        TTF_SetFontStyle(font,TTF_STYLE_BOLD);
+        break;
+    case ITALIC   :
+        TTF_SetFontStyle(font,TTF_STYLE_ITALIC);
+        break;
+    }
 
-  switch(texture)
-  {
-    case SOLID     : frame = TTF_RenderText_Solid(font,text,fcolor);
-                    break;
-    case SHADED:    frame = TTF_RenderText_Shaded(font,text,fcolor,bcolor);
-                    break;
-  }
-  area.x=x;
-  area.y=y;
-  area.w=frame->w;
-  area.h=frame->h;
-  SDL_BlitSurface(frame,NULL,scr,&area);
-  SDL_FreeSurface(frame);
+    switch(texture)
+    {
+    case SOLID     :
+        frame = TTF_RenderText_Solid(font,text,fcolor);
+        break;
+    case SHADED:
+        frame = TTF_RenderText_Shaded(font,text,fcolor,bcolor);
+        break;
+    }
+    area.x=x;
+    area.y=y;
+    area.w=frame->w;
+    area.h=frame->h;
+    SDL_BlitSurface(frame,NULL,scr,&area);
+    SDL_FreeSurface(frame);
 }
 
 //=============================================================================
@@ -330,33 +340,36 @@ void clsText::write(const char* text,int x,int y,SDL_Surface* scr)
 //-----------------------------------------------------------------------------
 void clsText::writeBlended(const char* text,int x,int y,SDL_Surface* scr)
 {
-  SDL_Color fcolor;
-  fcolor.r=fontColor.r;
-  fcolor.g=fontColor.g;
-  fcolor.b=fontColor.b;
+    SDL_Color fcolor;
+    fcolor.r=fontColor.r;
+    fcolor.g=fontColor.g;
+    fcolor.b=fontColor.b;
 
-  SDL_Rect area;
+    SDL_Rect area;
 
-  TTF_SizeText(font,text,&Width,&Height);
+    TTF_SizeText(font,text,&Width,&Height);
 
-  switch(style)
-  {
-    case NORMAL   : TTF_SetFontStyle(font,TTF_STYLE_NORMAL);
-                    break;
-    case BOLD     : TTF_SetFontStyle(font,TTF_STYLE_BOLD);
-                    break;
-    case ITALIC   : TTF_SetFontStyle(font,TTF_STYLE_ITALIC);
-                    break;
-  }
+    switch(style)
+    {
+    case NORMAL   :
+        TTF_SetFontStyle(font,TTF_STYLE_NORMAL);
+        break;
+    case BOLD     :
+        TTF_SetFontStyle(font,TTF_STYLE_BOLD);
+        break;
+    case ITALIC   :
+        TTF_SetFontStyle(font,TTF_STYLE_ITALIC);
+        break;
+    }
 
-  frame = TTF_RenderText_Blended(font,text,fcolor);
+    frame = TTF_RenderText_Blended(font,text,fcolor);
 
-  area.x=x;
-  area.y=y;
-  area.w=frame->w;
-  area.h=frame->h;
-  SDL_BlitSurface(frame,NULL,scr,&area);
-  SDL_FreeSurface(frame);
+    area.x=x;
+    area.y=y;
+    area.w=frame->w;
+    area.h=frame->h;
+    SDL_BlitSurface(frame,NULL,scr,&area);
+    SDL_FreeSurface(frame);
 }
 
 //=============================================================================
@@ -365,7 +378,9 @@ void clsText::writeBlended(const char* text,int x,int y,SDL_Surface* scr)
 // PARAMETROS: NADA.
 // DEVUELVE  : SDL_Color -> color de fuente.
 //-----------------------------------------------------------------------------
-rgbColor clsText::getFontColor(){return fontColor;};
+rgbColor clsText::getFontColor() {
+    return fontColor;
+};
 
 //=============================================================================
 // METODO    : rgbColor getBackColor()
@@ -373,7 +388,9 @@ rgbColor clsText::getFontColor(){return fontColor;};
 // PARAMETROS: NADA.
 // DEVUELVE  : SDL_Color -> color de fondo.
 //-----------------------------------------------------------------------------
-rgbColor clsText::getBackColor(){return backColor;};
+rgbColor clsText::getBackColor() {
+    return backColor;
+};
 
 //=============================================================================
 // METODO    : tFontStyle getStyle()
@@ -381,7 +398,9 @@ rgbColor clsText::getBackColor(){return backColor;};
 // PARAMETROS: NADA.
 // DEVUELVE  : tFontStyle -> Estilo.
 //-----------------------------------------------------------------------------
-tFontStyle clsText::getStyle(){return style;};
+tFontStyle clsText::getStyle() {
+    return style;
+};
 
 //=============================================================================
 // METODO    : tFontTexture getTexture()
@@ -389,7 +408,9 @@ tFontStyle clsText::getStyle(){return style;};
 // PARAMETROS: NADA.
 // DEVUELVE  : tFontTexture -> Textura.
 //-----------------------------------------------------------------------------
-tFontTexture clsText::getTexture(){return texture;};
+tFontTexture clsText::getTexture() {
+    return texture;
+};
 
 //=============================================================================
 // METODO    : int getWidth()
@@ -397,7 +418,9 @@ tFontTexture clsText::getTexture(){return texture;};
 // PARAMETROS: NADA.
 // DEVUELVE  : int -> ancho en pixeles.
 //-----------------------------------------------------------------------------
-int clsText::getWidth(){return Width;}
+int clsText::getWidth() {
+    return Width;
+}
 
 //=============================================================================
 // METODO    : int getHeight()
@@ -405,7 +428,9 @@ int clsText::getWidth(){return Width;}
 // PARAMETROS: NADA.
 // DEVUELVE  : int -> alto en pixeles.
 //-----------------------------------------------------------------------------
-int clsText::getHeight(){return Height;}
+int clsText::getHeight() {
+    return Height;
+}
 
 //=============================================================================
 // METODO    : char* getFontName().
@@ -413,7 +438,9 @@ int clsText::getHeight(){return Height;}
 // PARAMETROS: NADA.
 // DEVUELVE  : char* --> nombre de la fuente.
 //-----------------------------------------------------------------------------
-char* clsText::getFontName(){return fontName;}
+char* clsText::getFontName() {
+    return fontName;
+}
 
 //=============================================================================
 // METODO    : char* getFontFile().
@@ -421,6 +448,8 @@ char* clsText::getFontName(){return fontName;}
 // PARAMETROS: NADA.
 // DEVUELVE  : char* --> nombre del archivo.
 //-----------------------------------------------------------------------------
-char* clsText::getFontFile(){return fontFile;}
+char* clsText::getFontFile() {
+    return fontFile;
+}
 
 //### FIN DE ARCHIVO ##########################################################
