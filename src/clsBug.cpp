@@ -6,33 +6,15 @@
 
 void clsBug::fly(clsScreen* screen)
 {
-    this->setI(0);
+    this->setI(this->evolution);
     this->paste(screen->getPtr());
-    screen->refresh();
-}
-
-void clsBug::fly(clsScreen* screen, clsScene* scene)
-{
-    scene->paste(screen->getPtr());
-    this->setI(0);
-    this->paste(screen->getPtr());
-    screen->refresh();
-    scene->paste(screen->getPtr());
-    this->setI(1);
-    this->paste(screen->getPtr());
-    screen->refresh();
-    scene->paste(screen->getPtr());
-    this->setI(2);
-    this->paste(screen->getPtr());
-    screen->refresh();
-    this->setI(1);
-    this->paste(screen->getPtr());
-    screen->refresh();
 }
 
 void clsBug::move(direction dir, clsScene* scene, clsScreen* screen)
 {
     scene->move(screen);
+    this->energy->updateLife(screen);
+    this->energy->updateEvolution(screen);
 
     if (this->canMove(dir, scene, screen)) {
         if (dir == UP)
@@ -46,7 +28,6 @@ void clsBug::move(direction dir, clsScene* scene, clsScreen* screen)
     }
 
     this->paste(screen->getPtr());
-    screen->refresh();
 }
 
 void clsBug::fire(clsMucus* mucus, clsScene* scene, clsScreen* screen, clsEvent* event, clsMusic* music)
@@ -56,6 +37,8 @@ void clsBug::fire(clsMucus* mucus, clsScene* scene, clsScreen* screen, clsEvent*
     mucus->spit(music);
     while (posX <= screen->getWidth()) {
         scene->move(screen);
+        this->energy->updateLife(screen);
+        this->energy->updateEvolution(screen);
         this->paste(screen->getPtr());
         mucus->move(screen, posX, posY);
         posX += 15;

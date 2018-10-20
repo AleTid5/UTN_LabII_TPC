@@ -7,6 +7,7 @@
 class clsMucus : public clsScene
 {
 public:
+    clsMucus();
     void spit(clsMusic*);
     void move(clsScreen*, int, int);
 

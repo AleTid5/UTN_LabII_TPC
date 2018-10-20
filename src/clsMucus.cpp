@@ -3,6 +3,10 @@
 /*******************************************************************
 *                         FUNCIONES PUBLICAS                       *
 *******************************************************************/
+clsMucus::clsMucus()
+{
+    this->init("IMAGES/bugs/mucus.png", 50, 100);
+}
 
 void clsMucus::spit(clsMusic* music)
 {

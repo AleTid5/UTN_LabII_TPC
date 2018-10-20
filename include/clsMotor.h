@@ -10,7 +10,6 @@
 #include <clsText.h>
 
 #include <clsScene.h>
-#include <clsMucus.h>
 #include <clsBug.h>
 
 class clsMotor
@@ -32,7 +31,8 @@ protected:
     clsText text;
     clsScene scene;
     clsBug bug;
-    clsMucus mucus;
+    clsBug enemie[35];
+    //clsMucus mucus;
 
 private:
 };

@@ -5,1932 +5,132 @@
 Modo grafico iniciado correctamente.
 Monitor de video iniciado correctamente.
 Sistema de audio iniciado correctamente.
-El texto  se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/killer-text.¿t
-Se destruyeron la imagenes del sprite IMAGES/landscapes/killer-text.¿t
-El texto  se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/start-text.jpg
-Se destruyeron la imagenes del sprite IMAGES/landscapes/start-text.jpg
-El texto  se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto  se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto HÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto IÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto JÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto KÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto LÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto MÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto NÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto OÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto PÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto QÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto RÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto SÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto TÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto UÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto VÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto WÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto XÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto YÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto  se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto `ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto aÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto bÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto cÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto dÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto eÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto fÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto gÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto hÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto iÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto jÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto kÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto lÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto mÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto nÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto oÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto pÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto qÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto rÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto sÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto  se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto ‘ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto ’ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto “ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto ”ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto •ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto –ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto —ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto ˜ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto ™ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto šÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto ›ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto œÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto ŸÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto  ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto @ùdàñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto ‚ÇÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto ‚ÉÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto ‚ËÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto ‚ÍÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto ‚ÏÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto ‚ÑÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto ‚ÓÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto ‚ÕÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto ‚×ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto ‚ÙÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto ‚ÛÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto ‚ßÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto ‚áÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto ‚ãÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto ‚åÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto ‚çÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto ‚éÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto ‚ëÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto ‚íÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto ‚ïÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto ‚ñÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto ‚óÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto ‚õÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto ‚÷ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto @ùdàñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto  se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :	ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto  se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto : ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :!ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :"ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :#ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :$ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :%ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :&ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :'ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :(ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :)ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :*ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :+ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto  se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :-ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto  se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto  se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :0ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto  se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :2ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto  se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :4ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto  se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :6ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto  se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :8ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto  se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto ::ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto  se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :<ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto  se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :>ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto  se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto  se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :AÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto  se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :CÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto  se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :EÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto  se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto  se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :JÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :KÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :LÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :MÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :NÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :OÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :PÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :QÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :RÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :SÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :TÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :UÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :VÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :WÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :XÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto  se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ZÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :[ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :\ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :]ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :^ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :_ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :`ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :aÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto  se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :iÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :jÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :kÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :lÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :mÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :nÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :oÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto  se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :qÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto  se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :‹ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ŒÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :‘ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :’ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :“ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :”ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :•ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :–ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :—ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :˜ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :™ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :šÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :›ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto  se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :½ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :¾ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :¿ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÀÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÁÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÂÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÃÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÄÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÅÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÆÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÇÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÈÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÉÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÊÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ËÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÌÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÍÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÎÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÏÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ĞÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÑÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÒÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÓÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÔÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÕÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÖÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :×ÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ØÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÙÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto  se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :ÛÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto  se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :İÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto  se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto  se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :àÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto  se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :âÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto  se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :äÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto  se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto :æÅÈÿÿÿÿÿ˜6 se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
-El texto àñl se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/landscapes/status-bar.png
-Se destruyeron la imagenes del sprite IMAGES/landscapes/status-bar.png
+El texto ˆfm se cerro correctamente.
+Se destruyo la imagen0 del sprite IMAGES/landscapes/killer-text.jp
+Se destruyeron la imagenes del sprite IMAGES/landscapes/killer-text.jp
 Sistema de audio finalizado correctamente.
 
 **********************************************************
        El proyecto ADN-X ha finalizado correctamente      
 ##########################################################
+El texto À se cerro correctamente.
+Se destruyo la imagen0 del sprite IMAGES/enemies/enemie2.png
+Se destruyeron la imagenes del sprite IMAGES/enemies/enemie2.png
+El texto t se cerro correctamente.
+Se destruyo la imagen0 del sprite IMAGES/enemies/enemie3.png
+Se destruyeron la imagenes del sprite IMAGES/enemies/enemie3.png
+El texto hJ se cerro correctamente.
+Se destruyo la imagen0 del sprite IMAGES/enemies/enemie4.png
+Se destruyeron la imagenes del sprite IMAGES/enemies/enemie4.png
 El texto  se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/bugs/mucus.png
-Se destruyeron la imagenes del sprite IMAGES/bugs/mucus.png
-El texto r se cerro correctamente.
-Se destruyo la imagen0 del sprite IMAGES/bugs/killerbug.png
-Se destruyeron la imagenes del sprite IMAGES/bugs/killerbug.png
+Se destruyo la imagen0 del sprite IMAGES/enemies/enemie1.png
+Se destruyeron la imagenes del sprite IMAGES/enemies/enemie1.png
+El texto  se cerro correctamente.
+Se destruyo la imagen0 del sprite IMAGES/enemies/enemie3.png
+Se destruyeron la imagenes del sprite IMAGES/enemies/enemie3.png
+El texto àñm se cerro correctamente.
+Se destruyo la imagen0 del sprite IMAGES/enemies/enemie1.png
+Se destruyeron la imagenes del sprite IMAGES/enemies/enemie1.png
+El texto 5ˆDw se cerro correctamente.
+Se destruyo la imagen0 del sprite IMAGES/enemies/enemie4.png
+Se destruyeron la imagenes del sprite IMAGES/enemies/enemie4.png
+El texto C se cerro correctamente.
+Se destruyo la imagen0 del sprite IMAGES/enemies/enemie3.png
+Se destruyeron la imagenes del sprite IMAGES/enemies/enemie3.png
+El texto  se cerro correctamente.
+Se destruyo la imagen0 del sprite IMAGES/enemies/enemie2.png
+Se destruyeron la imagenes del sprite IMAGES/enemies/enemie2.png
+El texto  se cerro correctamente.
+Se destruyo la imagen0 del sprite IMAGES/enemies/enemie1.png
+Se destruyeron la imagenes del sprite IMAGES/enemies/enemie1.png
+El texto  se cerro correctamente.
+Se destruyo la imagen0 del sprite IMAGES/enemies/enemie4.png
+Se destruyeron la imagenes del sprite IMAGES/enemies/enemie4.png
+El texto èÛm se cerro correctamente.
+Se destruyo la imagen0 del sprite IMAGES/enemies/enemie1.png
+Se destruyeron la imagenes del sprite IMAGES/enemies/enemie1.png
+El texto ‘Dw<Úm se cerro correctamente.
+Se destruyo la imagen0 del sprite IMAGES/enemies/enemie2.png
+Se destruyeron la imagenes del sprite IMAGES/enemies/enemie2.png
+El texto  se cerro correctamente.
+Se destruyo la imagen0 del sprite IMAGES/enemies/enemie3.png
+Se destruyeron la imagenes del sprite IMAGES/enemies/enemie3.png
+El texto •]ÓÜÓm se cerro correctamente.
+Se destruyo la imagen0 del sprite IMAGES/enemies/enemie4.png
+Se destruyeron la imagenes del sprite IMAGES/enemies/enemie4.png
+El texto d se cerro correctamente.
+Se destruyo la imagen0 del sprite IMAGES/enemies/enemie1.png
+Se destruyeron la imagenes del sprite IMAGES/enemies/enemie1.png
+El texto % se cerro correctamente.
+Se destruyo la imagen0 del sprite IMAGES/enemies/enemie3.png
+Se destruyeron la imagenes del sprite IMAGES/enemies/enemie3.png
+El texto  se cerro correctamente.
+Se destruyo la imagen0 del sprite IMAGES/enemies/enemie1.png
+Se destruyeron la imagenes del sprite IMAGES/enemies/enemie1.png
+El texto  se cerro correctamente.
+Se destruyo la imagen0 del sprite IMAGES/enemies/enemie4.png
+Se destruyeron la imagenes del sprite IMAGES/enemies/enemie4.png
+El texto 5ˆDw se cerro correctamente.
+Se destruyo la imagen0 del sprite IMAGES/enemies/enemie3.png
+Se destruyeron la imagenes del sprite IMAGES/enemies/enemie3.png
+El texto  se cerro correctamente.
+Se destruyo la imagen0 del sprite IMAGES/enemies/enemie2.png
+Se destruyeron la imagenes del sprite IMAGES/enemies/enemie2.png
+El texto  se cerro correctamente.
+Se destruyo la imagen0 del sprite IMAGES/enemies/enemie1.png
+Se destruyeron la imagenes del sprite IMAGES/enemies/enemie1.png
+El texto  se cerro correctamente.
+Se destruyo la imagen0 del sprite IMAGES/enemies/enemie4.png
+Se destruyeron la imagenes del sprite IMAGES/enemies/enemie4.png
+El texto  se cerro correctamente.
+Se destruyo la imagen0 del sprite IMAGES/enemies/enemie1.png
+Se destruyeron la imagenes del sprite IMAGES/enemies/enemie1.png
+El texto  se cerro correctamente.
+Se destruyo la imagen0 del sprite IMAGES/enemies/enemie2.png
+Se destruyeron la imagenes del sprite IMAGES/enemies/enemie2.png
+El texto  se cerro correctamente.
+Se destruyo la imagen0 del sprite IMAGES/enemies/enemie3.png
+Se destruyeron la imagenes del sprite IMAGES/enemies/enemie3.png
+El texto  se cerro correctamente.
+Se destruyo la imagen0 del sprite IMAGES/enemies/enemie4.png
+Se destruyeron la imagenes del sprite IMAGES/enemies/enemie4.png
+El texto  se cerro correctamente.
+Se destruyo la imagen0 del sprite IMAGES/enemies/enemie1.png
+Se destruyeron la imagenes del sprite IMAGES/enemies/enemie1.png
+El texto  se cerro correctamente.
+Se destruyo la imagen0 del sprite IMAGES/enemies/enemie3.png
+Se destruyeron la imagenes del sprite IMAGES/enemies/enemie3.png
+El texto  se cerro correctamente.
+Se destruyo la imagen0 del sprite IMAGES/enemies/enemie1.png
+Se destruyeron la imagenes del sprite IMAGES/enemies/enemie1.png
+El texto  se cerro correctamente.
+Se destruyo la imagen0 del sprite IMAGES/enemies/enemie4.png
+Se destruyeron la imagenes del sprite IMAGES/enemies/enemie4.png
+El texto  se cerro correctamente.
+Se destruyo la imagen0 del sprite IMAGES/enemies/enemie3.png
+Se destruyeron la imagenes del sprite IMAGES/enemies/enemie3.png
+El texto  se cerro correctamente.
+Se destruyo la imagen0 del sprite IMAGES/enemies/enemie2.png
+Se destruyeron la imagenes del sprite IMAGES/enemies/enemie2.png
+El texto  se cerro correctamente.
+Se destruyo la imagen0 del sprite IMAGES/enemies/enemie1.png
+Se destruyeron la imagenes del sprite IMAGES/enemies/enemie1.png
+El texto  se cerro correctamente.
+Se destruyo la imagen0 del sprite IMAGES/enemies/enemie4.png
+Se destruyeron la imagenes del sprite IMAGES/enemies/enemie4.png
+El texto  se cerro correctamente.
+Se destruyo la imagen0 del sprite IMAGES/bugs/killerbug7.png
+Se destruyo la imagen1 del sprite IMAGES/bugs/killerbug7.png
+Se destruyo la imagen2 del sprite IMAGES/bugs/killerbug7.png
+Se destruyo la imagen3 del sprite IMAGES/bugs/killerbug7.png
+Se destruyo la imagen4 del sprite IMAGES/bugs/killerbug7.png
+Se destruyo la imagen5 del sprite IMAGES/bugs/killerbug7.png
+Se destruyo la imagen6 del sprite IMAGES/bugs/killerbug7.png
+Se destruyeron la imagenes del sprite IMAGES/bugs/killerbug7.png
 El texto FONTS/FreeMono.ttf se cerro correctamente.
 Se destruyo la imagen0 del sprite IMAGES/landscapes/landscape.jpg
 Se destruyo la imagen1 del sprite IMAGES/landscapes/landscape.jpg
 Se destruyeron la imagenes del sprite IMAGES/landscapes/landscape.jpg
-El texto *Dwlôl se cerro correctamente.
+El texto  se cerro correctamente.
 Monitor de video cerrado correctamente.
 El modo grafico se cerro correctamente.
