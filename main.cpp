@@ -137,6 +137,7 @@ int main ( int argc, char** argv )
 
     } catch (int errorCode) {
         motor.stopRun();
+        //motor.bug.save();
 
         if (errorCode > 0) {
             cout << endl;

@@ -6,6 +6,7 @@
 #include <clsEvent.h>
 #include <clsMode.h>
 #include <clsMusic.h>
+#include <clsRandom.h>
 #include <clsScreen.h>
 #include <clsText.h>
 
@@ -27,11 +28,12 @@ protected:
     clsEvent event;
     clsMode mode;
     clsMusic music;
+    clsRandom random;
     clsScreen screen;
     clsText text;
     clsScene scene;
     clsBug bug;
-    clsBug enemie[35];
+    clsBug enemie[36];
     //clsMucus mucus;
 
 private:

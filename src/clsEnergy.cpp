@@ -1,15 +1,16 @@
 #include "clsEnergy.h"
 
-clsEnergy::clsEnergy()
+clsEnergy::clsEnergy(unsigned int life)
 {
     const char energies[100][100] = {
         "IMAGES/bugs/life.png",
         "IMAGES/bugs/evolution.png"};
 
     this->init(energies, 2, 50, 100);
+    this->setLife(life);
 }
 
-void clsEnergy::updateLife(clsScreen* screen)
+void clsEnergy::updateStatusBar(clsScreen* screen, clsScene* scene, unsigned int enemiesKilled)
 {
     int life = this->getLife();
     unsigned int posX = 70;
@@ -21,25 +22,37 @@ void clsEnergy::updateLife(clsScreen* screen)
         this->paste(screen->getPtr());
         posX += 20;
     }
-}
 
-void clsEnergy::updateEvolution(clsScreen* screen)
-{
     int evolution = this->getEvolution();
-    unsigned int posX = 895;
+    posX = 895;
     this->setI(1);
     this->setY(12);
 
     for (; evolution > 0 && evolution <= 50; evolution -= 5) {
         this->setX(posX);
         this->paste(screen->getPtr());
-        posX += 40;
+        posX += 20;
+        this->setX(posX);
+        this->paste(screen->getPtr());
+        posX += 20;
     }
+
+    scene->addKill(screen, enemiesKilled, 500, 15);
+}
+
+unsigned int clsEnergy::getDamage()
+{
+    return this->damage;
 }
 
 int clsEnergy::getEvolution()
 {
     return this->evolution;
+}
+
+unsigned int clsEnergy::getPlusEnergy()
+{
+    return this->plusEnergy;
 }
 
 int clsEnergy::getLife()

@@ -213,10 +213,9 @@ int clsSprite::setI(int item)
 //-----------------------------------------------------------------------------
 void clsSprite::paste(SDL_Surface* sup)
 {
-    rgbColor cDot;
-    int W=spritePointer[i].getPtr()->w;
-    int H=spritePointer[i].getPtr()->h;
-    SDL_Rect area = {getX(),getY(),W,H};
+    Uint16 W=spritePointer[i].getPtr()->w;
+    Uint16 H=spritePointer[i].getPtr()->h;
+    SDL_Rect area = {(Sint16) getX(),(Sint16) getY(),W,H};
     SDL_BlitSurface(spritePointer[i].getPtr(), NULL, sup,&area);
 }
 
@@ -232,11 +231,10 @@ void clsSprite::paste(SDL_Surface* sup)
 //-----------------------------------------------------------------------------
 void clsSprite::paste(int X,int Y,SDL_Surface* sup)
 {
-    rgbColor cDot;
-    int W=spritePointer[i].getPtr()->w;
-    int H=spritePointer[i].getPtr()->h;
+    Uint16 W=spritePointer[i].getPtr()->w;
+    Uint16 H=spritePointer[i].getPtr()->h;
 
-    SDL_Rect area = {X,Y,W,H};
+    SDL_Rect area = {(Sint16) X,(Sint16) Y,W,H};
     SDL_BlitSurface(spritePointer[i].getPtr(), NULL, sup,&area);
 
     setX(X);

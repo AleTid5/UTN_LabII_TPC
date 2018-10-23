@@ -124,6 +124,14 @@ void clsScene::showTimer(clsScreen* screen)
     this->text.write(time, screen->getWidth() / 2 - this->text.getWidth() / 2, 15, screen->getPtr());
 }
 
+void clsScene::addKill(clsScreen* screen, unsigned int killedNumber, unsigned int posX, unsigned int posY)
+{
+    string killedNumberStr = to_string(killedNumber);
+    const char *killedBugs = killedNumberStr.c_str();
+    this->text.setFontColor(WHITE);
+    this->text.write(killedBugs, posX, posY, screen->getPtr());
+}
+
 void clsScene::showMenu(clsScreen* screen)
 {
     const char pathes[100][100] = {
