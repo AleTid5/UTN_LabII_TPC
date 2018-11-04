@@ -67,22 +67,23 @@
 
 class clsEvent
 {
-  // ATRIBUTOS
+    // ATRIBUTOS
 
-  protected:
+protected:
     SDL_Event event;   // Registro del evento.
 
-  // METODOS
+    // METODOS
 
-  public:
+public:
     bool wasEvent();        // Informa si se produjo o no un evento.
     Uint8 getEventType();   // Devuelve el tipo de evento producido.
     Uint16 getKey();        // Devuelve la tecla presionada.
     SDLMod getKeyMode();    // Devuelve el estado de las teclas especiales
                             // (CAPSLOCK, NUMLOCK, CTRL, SHIFT y ALT).
-  Uint8 getMouseButton(); // Devuelve el boton del mouse presionado.
+    Uint8 getMouseButton(); // Devuelve el boton del mouse presionado.
     Uint16 getCursorX();    // Devuelve la coordenada x del puntero del mouse.
     Uint16 getCursorY();    // Devuelve la coordenada y del puntero del mouse.
+    void setEventType(Uint8); // Establece el tipo de evento.
 };
 
 #endif // CLSEVENT_H

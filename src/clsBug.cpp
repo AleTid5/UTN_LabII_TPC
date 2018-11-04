@@ -15,9 +15,9 @@ void clsBug::fly(clsScreen* screen, clsRandom* random)
 {
     this->setI(0);
 
-    if (this->getX() <= 1200 && this->getX() > 0 && this->getY() > 50 && this->getY() < 750) {
+    if (this->getX() <= 1200 && this->getX() > 0 && this->getY() > 50 && this->getY() < 700) {
 
-        int randomNumber = random->getNumber(3);
+        int randomNumber = random->getNumber(10);
         int randomNumberX = 0;
         int randomNumberY = 0;
 
@@ -27,7 +27,7 @@ void clsBug::fly(clsScreen* screen, clsRandom* random)
         if (randomNumberX > 0 && randomNumberX <= 1200)
             this->setX(randomNumberX);
 
-        if (randomNumberY > 50 && randomNumberY < 750)
+        if (randomNumberY > 50 && randomNumberY < 500)
             this->setY(randomNumberY);
 
         this->paste(screen->getPtr());
@@ -36,7 +36,6 @@ void clsBug::fly(clsScreen* screen, clsRandom* random)
 
 void clsBug::move(direction dir, clsScene* scene, clsScreen* screen)
 {
-    scene->move(screen);
     this->energy->updateStatusBar(screen, scene, this->getEnemiesKilled());
 
     if (this->canMove(dir, scene, screen)) {
@@ -55,67 +54,48 @@ void clsBug::move(direction dir, clsScene* scene, clsScreen* screen)
 
 void clsBug::fire(clsBug* enemies, clsScene* scene, clsScreen* screen, clsEvent* event, clsMusic* music, clsRandom* random)
 {
-    int posX = this->getX();
-    int posY = this->getY();
-    this->mucus->spit(music);
-    while (posX <= screen->getWidth() - this->mucus->getWidth() - 75) {
-        scene->move(screen);
-
-        for (int i = 0; i < 35; i++) {
-            enemies[i].fly(screen, random);
-            enemies[i].enemyFire(this, scene, screen, music);
-        }
-
-        this->energy->updateStatusBar(screen, scene, this->getEnemiesKilled());
-        this->paste(screen->getPtr());
-        this->mucus->move(screen, posX, posY);
-        this->checkEnemieKilled(enemies, screen, scene, posX, posY);
-
-        posX += 15;
-        if (event->wasEvent()) {
-            while (event->getEventType() == KEY_PRESSED &&
-                    posX <= screen->getWidth() - this->mucus->getWidth() - 75) { // Verifico si hay evento de teclado
-
-                if (event->getKey() != KEY_a && event->getKey() != KEY_s &&
-                        event->getKey() != KEY_w && event->getKey() != KEY_d)
-                    break; // Si no es de movimiento
-
-                direction dir = event->getKey() == KEY_a ? LEFT :
-                                event->getKey() == KEY_s ? DOWN :
-                                event->getKey() == KEY_d ? RIGHT:
-                                event->getKey() == KEY_w ? UP : INVALID;
-
-                this->mucus->move(screen, posX, posY);
-                this->checkEnemieKilled(enemies, screen, scene, posX, posY);
-                posX += 15;
-                this->move(dir, scene, screen); // Muevo el bicho
-
-                for (int i = 0; i < 35; i++) {
-                    enemies[i].fly(screen, random);
-                    enemies[i].enemyFire(this, scene, screen, music);
-                }
-
-                event->wasEvent();
-            }
-        }
+    if (! this->mucus->isAttacking()) {
+            this->mucus->setAttackStatus(true);
+            this->mucus->setX(this->getX() + this->mucus->getWidth());
+            this->mucus->setY(this->getY() + 110);
+            this->mucus->spit(music);
     }
 
-    this->movement = 5;
+    if (this->mucus->getX() <= (screen->getWidth() - this->mucus->getWidth() - 75) && this->mucus->isAttacking()) {
+        this->energy->updateStatusBar(screen, scene, this->getEnemiesKilled());
+        this->paste(screen->getPtr());
+        this->mucus->setX(this->mucus->getX() + 15);
+        this->mucus->paste(screen->getPtr());
+        this->checkEnemieKilled(enemies, screen, scene);
+        return;
+    }
+
+    this->mucus->setAttackStatus(false);
 }
 
 void clsBug::enemyFire(clsBug* bug, clsScene* scene, clsScreen* screen, clsMusic* music)
 {
     if (this->getX() < 1200 && this->getX() > 0 && this->getY() > 50 && this->getY() < 750) {
-        if (this->mucus->getX() > 0 && this->mucus->getX() <= 1200)
-            this->mucus->setX(this->mucus->getX() - 5);
-        else
-            this->mucus->setX(this->getX());
+        if (! this->mucus->isAttacking() && ((bug->getY() - 50) <= this->getY() && (bug->getY() + 50) >= this->getY())) {
+            this->mucus->setAttackStatus(true);
+            this->mucus->setX(this->getX() - 100);
+            this->mucus->setY(this->getY() + 80);
+        }
 
-        this->mucus->paste(screen->getPtr());
+        if (this->mucus->isAttacking()) {
+            this->mucus->setX(this->mucus->getX() - this->mucus->getFireSpeed());
+            this->mucus->paste(screen->getPtr());
 
-        if (this->mucus->getContact(bug)) {
-            this->mucus->setX(-200);
-            bug->energy->setLife(bug->energy->getLife() - this->energy->getDamage());
+            bool contact = this->mucus->getContact(bug);
+
+            if (contact) {
+                bug->energy->setLife(bug->energy->getLife() - this->energy->getDamage());
+                this->mucus->setX(-500);
+                this->mucus->paste(screen->getPtr());
+            }
+
+            if (contact || this->mucus->getX() <= 0)
+                this->mucus->setAttackStatus(false);
         }
     }
 }
@@ -136,44 +116,70 @@ unsigned int clsBug::getEnemiesKilled()
     return this->enemiesKilled;
 }
 
+void clsBug::setEnemiesKilled(unsigned int enemiesKilled)
+{
+    this->enemiesKilled = enemiesKilled;
+}
+
+void clsBug::setEvolutionLevel(unsigned int evolutionLevel)
+{
+    this->evolutionLevel = evolutionLevel;
+}
+
+void clsBug::setSpeed(unsigned int speed)
+{
+    this->movement = speed;
+}
+
 /*******************************************************************
 *                         FUNCIONES PRIVADAS                       *
 *******************************************************************/
 
 bool clsBug::canMove(direction dir, clsScene* scene, clsScreen* screen)
 {
-    unsigned int width = screen->getWidth();
-    unsigned int height = screen->getHeight();
-    unsigned int posX = this->getX();
-    unsigned int posY = this->getY();
+    int posX = this->getX();
+    int posY = this->getY();
+    bool canMove = false;
 
     if (dir == UP) {
-        return (posY - this->movement > 53);
+        canMove = (int) (posY - this->movement) >= 53;
+        if (! canMove) this->setY(53);
+        return canMove;
     }
 
     if (dir == DOWN) {
+        int height = screen->getHeight();
         posY += this->getHeight();
-        return (posY + this->movement < height);
+        canMove = (posY + this->movement) < (unsigned int) height;
+        if (! canMove) this->setY(height - this->getHeight());
+        return canMove;
     }
 
     if (dir == LEFT) {
-        return (posX - this->movement > 0);
+        canMove = (int) (posX - this->movement) >= 0;
+        if (! canMove) this->setX(0);
+        return canMove;
     }
 
     if (dir == RIGHT) {
+        int width = screen->getWidth();
         posX += this->getWidth();
-        return (posX + this->movement < width);
+        canMove = (posX + this->movement) < (unsigned int) width;
+        if (! canMove) this->setX(width - this->getWidth());
+        return canMove;
     }
 
-    return false;
+    return canMove;
 }
 
-void clsBug::checkEnemieKilled(clsBug* enemies, clsScreen* screen, clsScene* scene, int posX, int &posY)
+void clsBug::checkEnemieKilled(clsBug* enemies, clsScreen* screen, clsScene* scene)
 {
     for (int i = 0; i < 35; i++) {
         if (this->mucus->getContact(&enemies[i])) {
-            posY = 4500;
-            this->mucus->move(screen, posX, posY);
+            this->mucus->setAttackStatus(false);
+            this->mucus->setX(-50);
+            this->mucus->paste(screen->getPtr());
+
             enemies[i].energy->setLife(enemies[i].energy->getLife() - this->energy->getDamage());
 
             if (enemies[i].energy->getLife() == 0) {
@@ -184,7 +190,7 @@ void clsBug::checkEnemieKilled(clsBug* enemies, clsScreen* screen, clsScene* sce
 
             this->energy->setEvolution(this->energy->getEvolution() + this->energy->getPlusEnergy());
 
-            if (this->enemiesKilled > 0 && ! (bool) (this->enemiesKilled % 3)) {
+            if (this->enemiesKilled > 0 && ! (bool) (this->enemiesKilled % 3)) { // Mueve bloque de 3 bichos
                 for (int j = this->enemiesKilled - 1; j < 35; j++) {
                     enemies[j].setX(enemies[j].getX() - 300);
                     enemies[j].paste(screen->getPtr());
@@ -195,6 +201,10 @@ void clsBug::checkEnemieKilled(clsBug* enemies, clsScreen* screen, clsScene* sce
                 this->energy->setEvolution(0);
                 this->evolutionLevel++;
                 this->energy->setLife(100);
+                this->movement += 10;
+                for (int j = 0; j < 35; j++)
+                    enemies[j].mucus->setFireSpeed(enemies[j].mucus->getFireSpeed() + 5);
+
             }
         }
     }

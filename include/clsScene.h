@@ -3,6 +3,7 @@
 #include <clsSprite.h>
 #include <clsText.h>
 #include <clsTimer.h>
+#include <stdio.h>
 
 class clsScene : public clsSprite
 {
@@ -16,6 +17,9 @@ public:
     void startTimer();
     void showTimer(clsScreen*);
     void showMenu(clsScreen*);
+    int getTime();
+    void setTime(int);
+    int getOptionSelected();
 
 protected:
     void inherit() {};
@@ -24,6 +28,7 @@ private:
     clsTimer timer;
     clsText text;
     void dispatchOption(clsScene*, clsScreen*);
+    int optionSelected;
 };
 
 #endif // CLSSCENE_H

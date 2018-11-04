@@ -18,15 +18,18 @@ public:
     void die(clsScreen*);
     unsigned int getEnemiesKilled();
     unsigned int getEvolutionLevel();
+    void setEnemiesKilled(unsigned int);
+    void setEvolutionLevel(unsigned int);
+    void setSpeed(unsigned int);
     clsEnergy* energy;
     clsMucus* mucus;
 
 private:
     bool canMove(direction, clsScene*, clsScreen*);
-    void checkEnemieKilled(clsBug*, clsScreen*, clsScene*, int, int &posY);
+    void checkEnemieKilled(clsBug*, clsScreen*, clsScene*);
 
 protected:
-    unsigned int movement = 5;
+    unsigned int movement = 10;
     unsigned int evolutionLevel = 0;
     unsigned int enemiesKilled = 0;
 };

@@ -60,6 +60,11 @@ int clsEnergy::getLife()
     return this->life;
 }
 
+void clsEnergy::setDamage(unsigned int damage)
+{
+    this->damage = damage;
+}
+
 void clsEnergy::setEvolution(int evolution)
 {
     this->evolution = evolution;

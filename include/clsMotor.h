@@ -10,17 +10,18 @@
 #include <clsScreen.h>
 #include <clsText.h>
 
+#include <clsPressableKey.h>
 #include <clsScene.h>
+#include <clsGame.h>
 #include <clsBug.h>
 
 class clsMotor
 {
 public:
     void init();
-    void run();
-    void keyCommand(Uint16);
+    void run(bool playAgain = false);
+    void keyCommand();
     void stopRun();
-    bool isKeyPressable(Uint16);
 
 protected:
     clsAudio audio;
@@ -31,12 +32,16 @@ protected:
     clsRandom random;
     clsScreen screen;
     clsText text;
+    clsPressableKey pressableKey[10];
     clsScene scene;
     clsBug bug;
     clsBug enemie[36];
-    //clsMucus mucus;
 
 private:
+    void bringGameToLife(clsScreen*, clsScene*, clsMusic*, clsRandom*, clsBug*, clsBug*);
+    void initializeGame();
+    bool setKeyPressed(Uint16, bool);
+    void saveOnExit();
 };
 
 #endif // CLSMOTOR_H

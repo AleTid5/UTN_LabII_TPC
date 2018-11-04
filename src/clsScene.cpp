@@ -115,19 +115,34 @@ void clsScene::startTimer()
     this->timer.start();
 }
 
+void clsScene::setTime(int time)
+{
+    this->timer.setTime(time);
+}
+
+int clsScene::getTime()
+{
+    return this->timer.getPlayiedTime();
+}
+
+int clsScene::getOptionSelected()
+{
+    return this->optionSelected;
+}
+
 void clsScene::showTimer(clsScreen* screen)
 {
     this->timer.update();
-    string timeString = to_string(this->timer.getState() / 1000);
-    const char *time = timeString.c_str();
     this->text.setFontColor(WHITE);
-    this->text.write(time, screen->getWidth() / 2 - this->text.getWidth() / 2, 15, screen->getPtr());
+    char number[5];
+    itoa(this->timer.getState() / 1000, number, 10);
+    this->text.write(number, screen->getWidth() / 2 - this->text.getWidth() / 2, 15, screen->getPtr());
 }
 
 void clsScene::addKill(clsScreen* screen, unsigned int killedNumber, unsigned int posX, unsigned int posY)
 {
-    string killedNumberStr = to_string(killedNumber);
-    const char *killedBugs = killedNumberStr.c_str();
+    char killedBugs[5];
+    itoa(killedNumber, killedBugs, 10);
     this->text.setFontColor(WHITE);
     this->text.write(killedBugs, posX, posY, screen->getPtr());
 }
@@ -176,9 +191,9 @@ void clsScene::dispatchOption(clsScene* menu, clsScreen* screen)
         event->wasEvent();
     }
 
-    if (menu->getI() == 4) throw 0;
+    this->optionSelected = menu->getI();
 
-    if (menu->getI() == 1) {}// JUGAR
+    if (optionSelected == 4) throw 0;
 }
 
 

@@ -76,6 +76,18 @@ int clsTimer::getTicks()
 }
 
 //=============================================================================
+// METODO    : int getTicks()
+// ACCION    : Devuelve la cantidad de milisegundos transcurridos desde el
+//             momento en que se inicializo el modo grafico.
+// PARAMETROS: NADA.
+// DEVUELVE  : int -> cantidad de milisegundos.
+//-----------------------------------------------------------------------------
+int clsTimer::getPlayiedTime()
+{
+    return this->getTicks() - this->initialtime + this->additionalTime;
+}
+
+//=============================================================================
 // METODO    : void wait(int mls)
 // ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
 //             parametro.
@@ -99,6 +111,17 @@ void clsTimer::start()
 }
 
 //=============================================================================
+// METODO    : void setTime()
+// ACCION    : Establece el tiempo de partida.
+// PARAMETROS: int time -> Tiempo inicial.
+// DEVUELVE  : NADA.
+//-----------------------------------------------------------------------------
+void clsTimer::setTime(int time)
+{
+    additionalTime = time;
+}
+
+//=============================================================================
 // METODO    : void update()
 // ACCION    : Actualiza el tiempo transcurrido desde la puesta en marcha.
 // PARAMETROS: NADA.
@@ -106,7 +129,7 @@ void clsTimer::start()
 //-----------------------------------------------------------------------------
 void clsTimer::update()
 {
-    now = getTicks() - initialtime;
+    now = getTicks() - initialtime + additionalTime;
 }
 
 //=============================================================================

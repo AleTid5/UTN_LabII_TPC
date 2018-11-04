@@ -104,7 +104,7 @@ using namespace std;        // Espacio de nombres estandar.
 //#############################################################################
 //                           PROGRAMA PRINCIPAL
 //=============================================================================
-int main ( int argc, char** argv )
+int main (int argc, char **argv)
 {
     //---------------------------------------------------------------------------
     // Habilitar "stdout.txt" (solo para Linux).

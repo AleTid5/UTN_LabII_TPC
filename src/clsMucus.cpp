@@ -13,10 +13,22 @@ void clsMucus::spit(clsMusic* music)
     music->playMusic(0);
 }
 
-void clsMucus::move(clsScreen* screen, int posX, int posY)
+bool clsMucus::isAttacking()
 {
-    this->setX(posX + this->getWidth());
-    this->setY(posY + 110);
-    this->paste(screen->getPtr());
-    screen->refresh();
+    return this->attacking;
+}
+
+unsigned int clsMucus::getFireSpeed()
+{
+    return fireSpeed;
+}
+
+void clsMucus::setAttackStatus(bool attacking)
+{
+    this->attacking = attacking;
+}
+
+void clsMucus::setFireSpeed(unsigned int fireSpeed)
+{
+    this->fireSpeed = fireSpeed;
 }

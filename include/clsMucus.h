@@ -8,10 +8,15 @@ class clsMucus : public clsScene
 {
 public:
     clsMucus();
+    bool isAttacking();
     void spit(clsMusic*);
-    void move(clsScreen*, int, int);
+    unsigned int getFireSpeed();
+    void setAttackStatus(bool);
+    void setFireSpeed(unsigned int);
 
 private:
+    bool attacking = false;
+    unsigned int fireSpeed = 5;
 
 protected:
 

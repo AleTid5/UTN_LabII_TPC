@@ -8,10 +8,11 @@ class clsEnergy : public clsScene
         clsEnergy(unsigned int life);
         void initialize(clsScreen*);
         void updateStatusBar(clsScreen*, clsScene*, unsigned int);
-        unsigned int getDamage();
         int getEvolution();
-        unsigned int getPlusEnergy();
         int getLife();
+        unsigned int getDamage();
+        unsigned int getPlusEnergy();
+        void setDamage(unsigned int);
         void setEvolution(int);
         void setLife(int);
 
@@ -20,7 +21,7 @@ class clsEnergy : public clsScene
     private:
         int life;
         int evolution;
-        unsigned const int damage = 25;
+        unsigned int damage = 25;
         unsigned const int plusEnergy = 10;
 };
 

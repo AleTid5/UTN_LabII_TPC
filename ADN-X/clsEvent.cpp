@@ -71,11 +71,7 @@
 //-----------------------------------------------------------------------------
 bool clsEvent::wasEvent()
 {
-    if (SDL_PollEvent(&event))
-    {
-        return true;
-    }
-    return false;
+    return SDL_PollEvent(&event);
 }
 
 //=============================================================================
@@ -86,6 +82,16 @@ bool clsEvent::wasEvent()
 //-----------------------------------------------------------------------------
 Uint8 clsEvent::getEventType() {
     return event.type;
+}
+
+//=============================================================================
+// METODO    : Uint8 setEvenType()
+// ACCION    : Establece el tipo de evento producido.
+// PARAMETROS: Uint8 -> tipo de evento SDL producido.
+// DEVUELVE  : NADA.
+//-----------------------------------------------------------------------------
+void clsEvent::setEventType(Uint8 type) {
+    this->event.type = type;
 }
 
 //=============================================================================

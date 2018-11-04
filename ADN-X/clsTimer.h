@@ -71,6 +71,7 @@ class clsTimer
 
 protected:
     clsEvent event;  // administrador de eventos
+    int additionalTime = 0; // Valor adicional.
     int initialtime; // contiene el valor de arranque.
     int now;         // contiene el tiempo transcurrido desde el arranque.
 
@@ -82,8 +83,10 @@ public:
     void waitForKey(Uint16); // Espera que se presione una tecla pasada como
     // parametro.
     void start();            // Pone en marcha el timer.
+    void setTime(int);       // Establece el tiempo de partida.
     void update();           // Actualiza el tiempo del timer.
 
+    int getPlayiedTime();    // Devuelve la cantidad de milisegundos jugados.
     int getTicks();    // Devuelve la cantidad de milisegundos pasados desde el
     // momento que se incializo el modo grafico.
     int getState();    // Devuelve el tiempo transcurrido desde el arranque.
