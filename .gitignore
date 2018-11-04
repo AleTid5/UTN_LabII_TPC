@@ -1,5 +1,9 @@
 /EXEC/*.exe
 *.b
+*.o
+*.xml
+*.iml
+*.txt
 .layout
 .depend
 /*.depend
