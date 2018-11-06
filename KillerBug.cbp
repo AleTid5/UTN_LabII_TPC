@@ -7,7 +7,7 @@
 		<Option compiler="gcc" />
 		<Option show_notes="1">
 			<notes>
-				<![CDATA[#########################################
+				<![CDATA[################################################################
 
  AVIS SOFTWARE   
 (Productos de Software Libre)           
@@ -17,10 +17,10 @@ adn-X (Sistma de clases para el modo gráfico en C++)
 
 AUTOR: Ruben Alberto Calabuig.
 
-#########################################
+#########################################################
       EL SOFTWARE LIBRE NO ES UNA CUESTIÓN ECONÓMICA 
                                   SINO UNA CUESTIÓN ÉTICA
-****************************************************************
+*********************************************************
 
 Avis Software es marca registrada.
 
@@ -40,7 +40,7 @@ junto con este programa, si no es así, escriba a la Free Software
 Foundation, Inc, 59 Temple Place - Suite 330, Boston, MA 02111-1307, 
 EE.UU.
 
-=========================================
+=========================================================
 
 ¿Qué es Avis adn++?
 
@@ -52,7 +52,12 @@ El objetivo de adn++, es introducir a los alumnos en la OOP
 
 Avis adn++ es un producto registrado de Avis SOFTWARE.
 
-#########################################
+=========================================================
+Juego: 			  KILLER BUG
+Alumno: 		  Alejandro Tidele
+Fecha de entrega: 15/11/2018
+
+#########################################################
 ]]>
 			</notes>
 		</Option>
@@ -149,15 +154,23 @@ Avis adn++ es un producto registrado de Avis SOFTWARE.
 		<Unit filename="LOG/stdout.txt" />
 		<Unit filename="include/clsBug.h" />
 		<Unit filename="include/clsEnergy.h" />
+		<Unit filename="include/clsGame.h" />
+		<Unit filename="include/clsLife.h" />
 		<Unit filename="include/clsMotor.h" />
 		<Unit filename="include/clsMucus.h" />
+		<Unit filename="include/clsPressableKey.h" />
 		<Unit filename="include/clsScene.h" />
+		<Unit filename="include/clsStatusBar.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/clsBug.cpp" />
 		<Unit filename="src/clsEnergy.cpp" />
+		<Unit filename="src/clsGame.cpp" />
+		<Unit filename="src/clsLife.h" />
 		<Unit filename="src/clsMotor.cpp" />
 		<Unit filename="src/clsMucus.cpp" />
+		<Unit filename="src/clsPressableKey.cpp" />
 		<Unit filename="src/clsScene.cpp" />
+		<Unit filename="src/clsStatusBar.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

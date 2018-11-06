@@ -42,6 +42,7 @@ private:
     void initializeGame();
     bool setKeyPressed(Uint16, bool);
     void saveOnExit();
+    void gameOver();
 };
 
 #endif // CLSMOTOR_H

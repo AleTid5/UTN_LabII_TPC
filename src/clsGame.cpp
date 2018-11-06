@@ -13,3 +13,7 @@ void clsGame::read(const char * filename, const char * mode) {
     this->wasRead = (bool) fread(this, sizeof * this, 1, file);
     fclose(file);
 }
+
+void clsGame::removeFile(const char * file) {
+    remove(file);
+}

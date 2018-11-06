@@ -50,43 +50,40 @@ void clsScene::loadWallpaper(clsScreen* screen, clsEvent* event)
     this->setI(0);
     this->paste(screen->getPtr());
     screen->refresh();
-    clsScene killerTextImage;
-    error.set(killerTextImage.init("IMAGES/landscapes/killer-text.jpg"));
+    clsScene beginText[2];
+    error.set(beginText[0].init("IMAGES/landscapes/killer-text.jpg"));
     clsTimer timer;
-    killerTextImage.setOpacity(1);
-    killerTextImage.setX(screen->getWidth() / 2 - killerTextImage.getWidth() / 2);
-    killerTextImage.setY(screen->getHeight() / 2 - killerTextImage.getHeight() / 2);
+    beginText[0].setOpacity(0);
+    beginText[0].setX(screen->getWidth() / 2 - beginText[0].getWidth() / 2);
+    beginText[0].setY(screen->getHeight() / 2 - beginText[0].getHeight() / 2);
+    beginText[1].init("IMAGES/landscapes/start-text.jpg", 0, beginText[0].getY() + beginText[0].getHeight() + 50); // 50px debajo
+    beginText[1].setOpacity(0);
+    beginText[1].setX(screen->getWidth() / 2 - beginText[1].getWidth() / 2);
 
-    while (killerTextImage.getOpacity() <= 45) {
+    while (beginText[0].getOpacity() < 255) {
         event->wasEvent();
         if (event->getKey() == KEY_ESCAPE) throw 0;
-        killerTextImage.setOpacity(killerTextImage.getOpacity() + 1);
-        killerTextImage.paste(screen->getPtr());
+        this->paste(screen->getPtr());
+        beginText[0].setOpacity(beginText[0].getOpacity() + 5);
+        beginText[0].paste(screen->getPtr());
         screen->refresh();
-        timer.wait(50);
     }
 
-    int posY = killerTextImage.getY() + killerTextImage.getHeight() + 50; // 50px debajo
-    clsScene txtAux = killerTextImage; // Me guardo el primer texto.
-    txtAux.setOpacity(255);
-
-    killerTextImage.init("IMAGES/landscapes/start-text.jpg", 0, posY);
-    killerTextImage.setOpacity(0);
-    killerTextImage.setX(screen->getWidth() / 2 - killerTextImage.getWidth() / 2);
     bool ascendant = true;
+
     while (event->getKey() != KEY_ENTER) {
         event->wasEvent();
 
         if (event->getKey() == KEY_ESCAPE) throw 0;
 
-        killerTextImage.setOpacity(killerTextImage.getOpacity() + (ascendant ? 5 : - 5));
+        beginText[1].setOpacity(beginText[1].getOpacity() + (ascendant ? 5 : - 5));
 
-        if (killerTextImage.getOpacity() == 255 || killerTextImage.getOpacity() == 0)
+        if (beginText[1].getOpacity() == 255 || beginText[1].getOpacity() == 0)
             ascendant = ! ascendant;
 
         this->paste(screen->getPtr());
-        txtAux.paste(screen->getPtr());
-        killerTextImage.paste(screen->getPtr());
+        beginText[0].paste(screen->getPtr());
+        beginText[1].paste(screen->getPtr());
         screen->refresh();
     }
 
@@ -139,7 +136,7 @@ void clsScene::showTimer(clsScreen* screen)
     this->text.write(number, screen->getWidth() / 2 - this->text.getWidth() / 2, 15, screen->getPtr());
 }
 
-void clsScene::addKill(clsScreen* screen, unsigned int killedNumber, unsigned int posX, unsigned int posY)
+void clsScene::writeText(clsScreen* screen, unsigned int killedNumber, unsigned int posX, unsigned int posY)
 {
     char killedBugs[5];
     itoa(killedNumber, killedBugs, 10);

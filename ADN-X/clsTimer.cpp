@@ -107,6 +107,7 @@ void clsTimer::wait(int mls)
 //-----------------------------------------------------------------------------
 void clsTimer::start()
 {
+    this->additionalTime = 0;
     initialtime=getTicks();
 }
 

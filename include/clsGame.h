@@ -1,6 +1,7 @@
 #ifndef CLSGAME_H
 #define CLSGAME_H
 
+#include <stdio.h>
 #include <clsBug.h>
 
 class clsGame
@@ -11,9 +12,10 @@ class clsGame
     int life;
     int time;
     int enemies[36][2];
+    bool wasRead = false;
     void save(const char*, const char*);
     void read(const char*, const char*);
-    bool wasRead = false;
+    void removeFile(const char*);
 
     protected:
 

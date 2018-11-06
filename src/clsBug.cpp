@@ -185,7 +185,7 @@ void clsBug::checkEnemieKilled(clsBug* enemies, clsScreen* screen, clsScene* sce
             if (enemies[i].energy->getLife() == 0) {
                 enemies[i].die(screen);
                 this->enemiesKilled++;
-                scene->addKill(screen, this->enemiesKilled, enemies[i].getX(), enemies[i].getY() + (enemies[i].getWidth() / 2));
+                scene->writeText(screen, this->enemiesKilled, enemies[i].getX(), enemies[i].getY() + (enemies[i].getWidth() / 2));
             }
 
             this->energy->setEvolution(this->energy->getEvolution() + this->energy->getPlusEnergy());

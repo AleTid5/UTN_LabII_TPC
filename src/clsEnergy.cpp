@@ -37,7 +37,7 @@ void clsEnergy::updateStatusBar(clsScreen* screen, clsScene* scene, unsigned int
         posX += 20;
     }
 
-    scene->addKill(screen, enemiesKilled, 500, 15);
+    scene->writeText(screen, enemiesKilled, 500, 27);
 }
 
 unsigned int clsEnergy::getDamage()

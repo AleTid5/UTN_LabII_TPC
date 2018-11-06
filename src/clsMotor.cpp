@@ -89,7 +89,7 @@ void clsMotor::run(bool playAgain)
 
     int sleepTime = 0;
 
-    while (bug.energy->getLife() > 0) { // Ciclo del programa
+    while (bug.energy->getLife() > 0 && enemie[35].energy->getLife() > 0) { // Ciclo del programa
 
         bringGameToLife(&screen, &scene, &music, &random, &bug, enemie);
 
@@ -109,9 +109,9 @@ void clsMotor::run(bool playAgain)
         }
     }
 
-    //Perdió
-    init();
-    run(true);
+    this->gameOver();
+    this->init();
+    this->run(true);
 }
 
 void clsMotor::keyCommand()
@@ -164,6 +164,7 @@ void clsMotor::initializeGame()
             enemie[i].setX(game.enemies[i][0]);
             enemie[i].setY(game.enemies[i][1]);
         }
+        game.removeFile("Game_Data/resume.b"); // Elimino el archivo para que no retome si pierde o gana
     }
 
     bug.setEnemiesKilled(enemiesKilled);
@@ -222,4 +223,30 @@ void clsMotor::saveOnExit()
         game.enemies[i][1] = enemie[i].getY();
     }
     game.save("Game_Data/resume.b", "wb+");
+}
+
+void clsMotor::gameOver() {
+    int playiedTime = scene.timer.getPlayiedTime();
+    clsScene gameOver[3];
+    gameOver[0].init("IMAGES/landscapes/gameOver.png", 50, -50);
+    gameOver[1].init("IMAGES/landscapes/start-text.png", 500, 600);
+    gameOver[2].init("IMAGES/landscapes/points.png", 750, 95);
+
+    bool ascendant = true;
+    while (event.getKey() != KEY_ENTER) {
+        event.wasEvent();
+
+        gameOver[0].setY(gameOver[0].getY() + (ascendant ? 1 : - 1));
+
+        if (gameOver[0].getY() == -50 || gameOver[0].getY() == 0)
+            ascendant = ! ascendant;
+
+        scene.paste(screen.getPtr());
+        gameOver[0].paste(screen.getPtr());
+        gameOver[1].paste(screen.getPtr());
+        gameOver[2].paste(screen.getPtr());
+        scene.writeText(&screen, playiedTime / 1000, 885, 130);
+        scene.writeText(&screen, bug.getEnemiesKilled(), 885, 250);
+        screen.refresh();
+    }
 }
