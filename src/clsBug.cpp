@@ -6,16 +6,14 @@
 
 void clsBug::fly(clsScreen* screen)
 {
-    //this->setI(this->evolutionLevel);
     this->setI(0);
     this->paste(screen->getPtr());
 }
 
-void clsBug::fly(clsScreen* screen, clsRandom* random)
+void clsBug::fly(clsScreen* screen, clsRandom* random, int maxWidth, int maxHeight)
 {
     this->setI(0);
-
-    if (this->getX() <= 1200 && this->getX() > 0 && this->getY() > 50 && this->getY() < 700) {
+    if (this->getX() <= maxWidth && this->getX() > 0 && this->getY() > 50 && this->getY() < maxHeight) {
 
         int randomNumber = random->getNumber(10);
         int randomNumberX = 0;
@@ -24,7 +22,7 @@ void clsBug::fly(clsScreen* screen, clsRandom* random)
         randomNumberX = this->getX() + (randomNumber % 2 ? randomNumber : randomNumber * -1);
         randomNumberY = this->getY() + (randomNumber % 2 ? randomNumber : randomNumber * -1);
 
-        if (randomNumberX > 0 && randomNumberX <= 1200)
+        if (randomNumberX > 0 && randomNumberX <= maxWidth)
             this->setX(randomNumberX);
 
         if (randomNumberY > 50 && randomNumberY < 500)
@@ -36,8 +34,6 @@ void clsBug::fly(clsScreen* screen, clsRandom* random)
 
 void clsBug::move(direction dir, clsScene* scene, clsScreen* screen)
 {
-    this->energy->updateStatusBar(screen, scene, this->getEnemiesKilled());
-
     if (this->canMove(dir, scene, screen)) {
         if (dir == UP)
             this->setY(this->getY() - this->movement);
@@ -55,14 +51,13 @@ void clsBug::move(direction dir, clsScene* scene, clsScreen* screen)
 void clsBug::fire(clsBug* enemies, clsScene* scene, clsScreen* screen, clsEvent* event, clsMusic* music, clsRandom* random)
 {
     if (! this->mucus->isAttacking()) {
-            this->mucus->setAttackStatus(true);
-            this->mucus->setX(this->getX() + this->mucus->getWidth());
-            this->mucus->setY(this->getY() + 110);
-            this->mucus->spit(music);
+        this->mucus->setAttackStatus(true);
+        this->mucus->setX(this->getX() + this->mucus->getWidth());
+        this->mucus->setY(this->getY() + 110);
+        this->mucus->spit(music);
     }
 
     if (this->mucus->getX() <= (screen->getWidth() - this->mucus->getWidth() - 75) && this->mucus->isAttacking()) {
-        this->energy->updateStatusBar(screen, scene, this->getEnemiesKilled());
         this->paste(screen->getPtr());
         this->mucus->setX(this->mucus->getX() + 15);
         this->mucus->paste(screen->getPtr());
@@ -174,6 +169,24 @@ bool clsBug::canMove(direction dir, clsScene* scene, clsScreen* screen)
 
 void clsBug::checkEnemieKilled(clsBug* enemies, clsScreen* screen, clsScene* scene)
 {
+    if (this->evolutionLevel == 7) {
+        if (this->mucus->getContact(&enemies[35])) {
+            this->mucus->setAttackStatus(false);
+            this->mucus->setX(-50);
+            this->mucus->paste(screen->getPtr());
+
+            enemies[35].energy->setLife(enemies[35].energy->getLife() - this->energy->getDamage());
+
+            if (enemies[35].energy->getLife() == 0) {
+                enemies[35].die(screen);
+                this->enemiesKilled++;
+                scene->writeText(screen, this->enemiesKilled, enemies[35].getX(), enemies[35].getY() + (enemies[35].getWidth() / 2));
+            }
+        }
+
+        return;
+    }
+
     for (int i = 0; i < 35; i++) {
         if (this->mucus->getContact(&enemies[i])) {
             this->mucus->setAttackStatus(false);
@@ -197,14 +210,18 @@ void clsBug::checkEnemieKilled(clsBug* enemies, clsScreen* screen, clsScene* sce
                 }
             }
 
-            if (this->energy->getEvolution() == 50 && this->evolutionLevel < 7) {
+            if (this->energy->getEvolution() == 50) {
                 this->energy->setEvolution(0);
                 this->evolutionLevel++;
                 this->energy->setLife(100);
-                this->movement += 10;
+                this->movement += 4;
                 for (int j = 0; j < 35; j++)
                     enemies[j].mucus->setFireSpeed(enemies[j].mucus->getFireSpeed() + 5);
 
+            }
+
+            if (this->evolutionLevel == 7) {
+                this->energy->setEvolution(50);
             }
         }
     }

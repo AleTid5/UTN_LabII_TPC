@@ -1,5 +1,5 @@
-#ifndef CLSMOTOR_H
-#define CLSMOTOR_H
+#ifndef CLSENGINE_H
+#define CLSENGINE_H
 #include <adnConsts.h>
 #include <clsAudio.h>
 #include <clsError.h>
@@ -12,16 +12,17 @@
 
 #include <clsPressableKey.h>
 #include <clsScene.h>
-#include <clsGame.h>
+#include <clsGameData.h>
 #include <clsBug.h>
 
-class clsMotor
+class clsEngine
 {
 public:
     void init();
     void run(bool playAgain = false);
     void keyCommand();
     void stopRun();
+    void comeBackSoon();
 
 protected:
     clsAudio audio;
@@ -32,17 +33,18 @@ protected:
     clsRandom random;
     clsScreen screen;
     clsText text;
-    clsPressableKey pressableKey[10];
+    clsPressableKey pressableKey[11];
     clsScene scene;
     clsBug bug;
     clsBug enemie[36];
 
 private:
-    void bringGameToLife(clsScreen*, clsScene*, clsMusic*, clsRandom*, clsBug*, clsBug*);
+    void bringGameToLife();
+    void gameOver();
     void initializeGame();
+    void pause();
     bool setKeyPressed(Uint16, bool);
     void saveOnExit();
-    void gameOver();
 };
 
-#endif // CLSMOTOR_H
+#endif // CLSENGINE_H

@@ -154,9 +154,8 @@ Fecha de entrega: 15/11/2018
 		<Unit filename="LOG/stdout.txt" />
 		<Unit filename="include/clsBug.h" />
 		<Unit filename="include/clsEnergy.h" />
-		<Unit filename="include/clsGame.h" />
-		<Unit filename="include/clsLife.h" />
-		<Unit filename="include/clsMotor.h" />
+		<Unit filename="include/clsEngine.h" />
+		<Unit filename="include/clsGameData.h" />
 		<Unit filename="include/clsMucus.h" />
 		<Unit filename="include/clsPressableKey.h" />
 		<Unit filename="include/clsScene.h" />
@@ -164,12 +163,12 @@ Fecha de entrega: 15/11/2018
 		<Unit filename="main.cpp" />
 		<Unit filename="src/clsBug.cpp" />
 		<Unit filename="src/clsEnergy.cpp" />
-		<Unit filename="src/clsGame.cpp" />
-		<Unit filename="src/clsLife.h" />
-		<Unit filename="src/clsMotor.cpp" />
+		<Unit filename="src/clsEngine.cpp" />
+		<Unit filename="src/clsGameData.cpp" />
 		<Unit filename="src/clsMucus.cpp" />
 		<Unit filename="src/clsPressableKey.cpp" />
 		<Unit filename="src/clsScene.cpp" />
+		<Unit filename="src/clsStatusBar.cpp" />
 		<Unit filename="src/clsStatusBar.h" />
 		<Extensions>
 			<code_completion />

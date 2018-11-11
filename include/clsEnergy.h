@@ -7,7 +7,7 @@ class clsEnergy : public clsScene
     public:
         clsEnergy(unsigned int life);
         void initialize(clsScreen*);
-        void updateStatusBar(clsScreen*, clsScene*, unsigned int);
+        void updateStatusBar(clsScreen*, clsScene*, unsigned int, int);
         int getEvolution();
         int getLife();
         unsigned int getDamage();

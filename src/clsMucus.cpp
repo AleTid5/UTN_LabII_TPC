@@ -10,7 +10,7 @@ clsMucus::clsMucus()
 
 void clsMucus::spit(clsMusic* music)
 {
-    music->playMusic(0);
+    //music->playMusic(0);
 }
 
 bool clsMucus::isAttacking()

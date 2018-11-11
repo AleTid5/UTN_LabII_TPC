@@ -144,6 +144,14 @@ void clsScene::writeText(clsScreen* screen, unsigned int killedNumber, unsigned 
     this->text.write(killedBugs, posX, posY, screen->getPtr());
 }
 
+void clsScene::writeText(clsScreen* screen, const char* text, unsigned int posX, unsigned int posY)
+{
+    char textArray[5];
+    strcpy(textArray, text);
+    this->text.setFontColor(WHITE);
+    this->text.write(textArray, posX, posY, screen->getPtr());
+}
+
 void clsScene::showMenu(clsScreen* screen)
 {
     const char pathes[100][100] = {
@@ -151,16 +159,16 @@ void clsScene::showMenu(clsScreen* screen)
         "IMAGES/menu/startPostPlay.png",
         "IMAGES/menu/startPostContinue.png",
         "IMAGES/menu/startPostScore.png",
-        "IMAGES/menu/startPostExit.png"
+        "IMAGES/menu/startPostExit.png",
+        "IMAGES/menu/startHelp.png"
     };
 
     clsScene* menu = new clsScene;
-    menu->error.set(menu->init(pathes, 5, 300, 100));
+    menu->error.set(menu->init(pathes, 6, 300, 10));
     menu->setI(0);
     menu->paste(screen->getPtr());
     screen->refresh();
     this->dispatchOption(menu, screen);
-
 }
 
 void clsScene::dispatchOption(clsScene* menu, clsScreen* screen)
@@ -173,13 +181,15 @@ void clsScene::dispatchOption(clsScene* menu, clsScreen* screen)
 
         menu->setI(0);
 
-        if (posX >= 360 && posX <= 750 && posY >= 100 && posY <= 225)
+        if (posX >= 465 && posX <= 610 && posY >= 10 && posY <= 150)
+            menu->setI(5);
+        if (posX >= 360 && posX <= 750 && posY >= 160 && posY <= 285)
             menu->setI(1);
-        else if (posX >= 300 && posX <= 630 && posY >= 225 && posY <= 290)
+        else if (posX >= 300 && posX <= 630 && posY >= 285 && posY <= 350)
             menu->setI(2);
-        else if (posX >= 450 && posX <= 675 && posY >= 290 && posY <= 350)
+        else if (posX >= 450 && posX <= 675 && posY >= 350 && posY <= 410)
             menu->setI(3);
-        else if (posX >= 415 && posX <= 675 && posY >= 410 && posY <= 475)
+        else if (posX >= 415 && posX <= 675 && posY >= 450 && posY <= 535)
             menu->setI(4);
 
         this->paste(screen->getPtr());
@@ -192,6 +202,3 @@ void clsScene::dispatchOption(clsScene* menu, clsScreen* screen)
 
     if (optionSelected == 4) throw 0;
 }
-
-
-

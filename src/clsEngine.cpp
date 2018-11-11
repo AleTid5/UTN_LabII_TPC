@@ -1,6 +1,6 @@
-#include "clsMotor.h"
+#include "clsEngine.h"
 
-void clsMotor::init()
+void clsEngine::init()
 {
     error.set(mode.init(1366, 750, 0)); //Inicio el modo grafico (Quito 18px de altura por la bara del titulo)
     error.set(mode.setEnvironment("SDL_VIDEO_WINDOW_POS=center"));
@@ -65,40 +65,35 @@ void clsMotor::init()
     pressableKey[7] = KEY_LEFT;
     pressableKey[8] = KEY_SPACE;
     pressableKey[9] = KEY_ESCAPE;
+    pressableKey[10] = KEY_p;
 
     error.set(audio.init());
     error.set(music.loadMusic("SOUNDS/bugs/spit.mp3"));
     error.set(scene.initText());
     random.init();
 }
-void clsMotor::run(bool playAgain)
+void clsEngine::run(bool playAgain)
 {
     screen.clean(BLACK); // Limpio la pantalla
+
     if (! playAgain)
         scene.loadWallpaper(&screen, &event);
+
     scene.showMenu(&screen);
     this->initializeGame();
-
     clsTimer timer;
     timer.start();
 
-    const int FRAMES_PER_SECOND = 30;
+    const int FRAMES_PER_SECOND = 25;
     const int SKIP_TICKS = 1000 / FRAMES_PER_SECOND;
-
     int nextTicks = timer.getTicks();
-
     int sleepTime = 0;
 
     while (bug.energy->getLife() > 0 && enemie[35].energy->getLife() > 0) { // Ciclo del programa
-
-        bringGameToLife(&screen, &scene, &music, &random, &bug, enemie);
-
-        if (bug.mucus->isAttacking())
-            bug.fire(enemie, &scene, &screen, &event, &music, &random);
-
+        bringGameToLife();
         screen.refresh();
-
         event.wasEvent();
+
         this->setKeyPressed(event.getKey(), event.getEventType() == KEY_PRESSED);
         this->keyCommand(); // Administro la tecla
 
@@ -114,7 +109,7 @@ void clsMotor::run(bool playAgain)
     this->run(true);
 }
 
-void clsMotor::keyCommand()
+void clsEngine::keyCommand()
 {
     if (pressableKey[9].isKeyPressed()) {
         this->saveOnExit();
@@ -129,37 +124,84 @@ void clsMotor::keyCommand()
         bug.move(RIGHT, &scene, &screen);
     if (pressableKey[6].isKeyPressed() || pressableKey[7].isKeyPressed())
         bug.move(LEFT, &scene, &screen);
-    if (pressableKey[8].isKeyPressed())
+    if (pressableKey[8].isKeyPressed() && ! bug.mucus->isAttacking())
         bug.fire(enemie, &scene, &screen, &event, &music, &random);
+    if (pressableKey[10].isKeyPressed())
+        this->pause();
 
     error.set(error.get());
 }
 
-void clsMotor::stopRun()
+void clsEngine::stopRun()
 {
     music.stopMusic();
     music.closeMusic();
     audio.closeAudio();
 }
 
-void clsMotor::initializeGame()
+void clsEngine::initializeGame()
 {
+    if (5 == scene.getOptionSelected()) {
+        clsScene help;
+        help.init("IMAGES/landscapes/howtoplay.png", 0, 0);
+        help.paste(screen.getPtr());
+        screen.refresh();
+        scene.timer.waitForKey(KEY_ENTER);
+        this->run(true);
+    }
+
+    if (3 == scene.getOptionSelected()) {
+        clsGameData gameData;
+        clsScene points;
+        points.init("IMAGES/landscapes/top-10.jpg", 0, 0);
+        points.paste(screen.getPtr());
+        int posY = 250;
+        unsigned int position = 0;
+        gameData.read("Game_Data/points.b", "rb", position);
+        for (int i = 0; gameData.wasRead && i < 10; i++) {
+            position++;
+            int points = ((gameData.enemiesKilled + 1) * 1300) + (gameData.enemiesKilled == 0 ? gameData.time : gameData.time * -1);
+            scene.writeText(&screen, gameData.playierName, 75, posY);
+            scene.writeText(&screen, gameData.enemiesKilled, 500, posY);
+            scene.writeText(&screen, gameData.time, 850, posY);
+            scene.writeText(&screen,points, 1150, posY);
+            posY += 49;
+            gameData.read("Game_Data/points.b", "rb", position);
+        }
+
+        screen.refresh();
+        scene.timer.waitForKey(KEY_ENTER);
+
+        this->run(true);
+    }
+
     event.setEventType(KEY_FREE);
     int enemiesKilled = 0;
     int energyEvolution = 0;
     int energyLife = 100;
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < 11; i++)
         pressableKey[i] > false;
 
     scene.startTimer();
 
     if (2 == scene.getOptionSelected()) {
-        clsGame game;
+        clsGameData game;
         game.read("Game_Data/resume.b", "rb");
+
+        if (! game.wasRead) {
+            clsScene continueError;
+            continueError.init("IMAGES/landscapes/404.png", 0, 0);
+            continueError.paste(screen.getPtr());
+            screen.refresh();
+            scene.timer.waitForKey(KEY_ENTER);
+            this->run(true);
+        }
+
         enemiesKilled = game.enemiesKilled;
         energyEvolution = game.evolutionEnergy;
         energyLife = game.life;
         scene.setTime(game.time);
+        enemie[35].energy->setLife(game.bossLife);
         for (int i = 0; i < 36; i++) {
             enemie[i].setX(game.enemies[i][0]);
             enemie[i].setY(game.enemies[i][1]);
@@ -167,9 +209,10 @@ void clsMotor::initializeGame()
         game.removeFile("Game_Data/resume.b"); // Elimino el archivo para que no retome si pierde o gana
     }
 
-    bug.setEnemiesKilled(enemiesKilled);
+    //bug.setEnemiesKilled(enemiesKilled);
+    bug.setEnemiesKilled(35);
     bug.setEvolutionLevel(bug.getEnemiesKilled() / 5);
-    bug.setSpeed((bug.getEvolutionLevel() + 1) * 10);
+    bug.setSpeed((bug.getEvolutionLevel() + 1) * 4);
     bug.energy->setEvolution(energyEvolution);
     bug.energy->setLife(energyLife);
 
@@ -180,9 +223,9 @@ void clsMotor::initializeGame()
     enemie[35].energy->setDamage(50);
 }
 
-bool clsMotor::setKeyPressed(Uint16 key, bool status)
+bool clsEngine::setKeyPressed(Uint16 key, bool status)
 {
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < 11; i++)
         if (this->pressableKey[i].getKey() == (int) key) {
             pressableKey[i] > status;
             return true;
@@ -191,33 +234,37 @@ bool clsMotor::setKeyPressed(Uint16 key, bool status)
     return false;
 }
 
-void clsMotor::bringGameToLife(clsScreen* screen, clsScene* scene, clsMusic* music, clsRandom* random, clsBug* bug, clsBug* enemie)
+void clsEngine::bringGameToLife()
 {
-    scene->move(screen);
+    scene.move(&screen);
 
-    bug->setI(bug->getEvolutionLevel());
-    bug->paste(screen->getPtr());
+    bug.setI(bug.getEvolutionLevel());
+    bug.paste(screen.getPtr());
 
-    if (bug->getEvolutionLevel() == 7) {
-        enemie[35].fly(screen, random);
-        enemie[35].enemyFire(bug, scene, screen, music);
+    if (bug.getEvolutionLevel() == 7) {
+        enemie[35].fly(&screen, &random, 1050, 500);
+        enemie[35].enemyFire(&bug, &scene, &screen, &music);
     } else {
         for (int i = 0; i < 35; i++) {
-            enemie[i].fly(screen, random);
-            enemie[i].enemyFire(bug, scene, screen, music);
+            enemie[i].fly(&screen, &random);
+            enemie[i].enemyFire(&bug, &scene, &screen, &music);
         }
     }
 
-    bug->energy->updateStatusBar(screen, scene, bug->getEnemiesKilled());
+    bug.energy->updateStatusBar(&screen, &scene, bug.getEnemiesKilled(), enemie[35].energy->getLife());
+
+    if (bug.mucus->isAttacking())
+        bug.fire(enemie, &scene, &screen, &event, &music, &random);
 }
 
-void clsMotor::saveOnExit()
+void clsEngine::saveOnExit()
 {
-    clsGame game;
+    clsGameData game;
     game.enemiesKilled = bug.getEnemiesKilled();
     game.life = bug.energy->getLife();
     game.evolutionEnergy = bug.energy->getEvolution();
     game.time = scene.getTime();
+    game.bossLife = enemie[35].energy->getLife();
     for (int i = 0; i < 36; i++) {
         game.enemies[i][0] = enemie[i].getX();
         game.enemies[i][1] = enemie[i].getY();
@@ -225,28 +272,88 @@ void clsMotor::saveOnExit()
     game.save("Game_Data/resume.b", "wb+");
 }
 
-void clsMotor::gameOver() {
-    int playiedTime = scene.timer.getPlayiedTime();
+void clsEngine::gameOver() {
+    int playiedTime = scene.timer.getPlayiedTime() / 1000;
     clsScene gameOver[3];
     gameOver[0].init("IMAGES/landscapes/gameOver.png", 50, -50);
     gameOver[1].init("IMAGES/landscapes/start-text.png", 500, 600);
     gameOver[2].init("IMAGES/landscapes/points.png", 750, 95);
 
     bool ascendant = true;
-    while (event.getKey() != KEY_ENTER) {
-        event.wasEvent();
+    char name[5];
+    for (int i = 0; i < 5; i++)
+        name[i] = '\0';
+
+    int i = 0;
+
+    while (event.getKey() != KEY_ENTER || name[2] == '\0') {
+        if (event.wasEvent()) {
+            if (event.getEventType() == KEY_PRESSED && event.getKey() != KEY_BACKSPACE) {
+                int letter = (int) event.getKey();
+                if (i < 4 && ((letter >= 65 && letter <= 90) || (letter >= 97 && letter <= 122))) {
+                    name[i] = (char) letter;
+                    i++;
+                }
+            } else if (event.getEventType() == KEY_PRESSED && event.getKey() == KEY_BACKSPACE) {
+                if (i > 0) {
+                    i--;
+                    name[i] = (char) '\0';
+                }
+            }
+        }
 
         gameOver[0].setY(gameOver[0].getY() + (ascendant ? 1 : - 1));
 
         if (gameOver[0].getY() == -50 || gameOver[0].getY() == 0)
             ascendant = ! ascendant;
 
+        int points = ((bug.getEnemiesKilled() + 1) * 1300) + (bug.getEnemiesKilled() == 0 ? playiedTime : playiedTime * -1);
+
         scene.paste(screen.getPtr());
         gameOver[0].paste(screen.getPtr());
         gameOver[1].paste(screen.getPtr());
         gameOver[2].paste(screen.getPtr());
-        scene.writeText(&screen, playiedTime / 1000, 885, 130);
+        scene.writeText(&screen, playiedTime, 885, 130);
         scene.writeText(&screen, bug.getEnemiesKilled(), 885, 250);
+        scene.writeText(&screen, points, 875, 370);
+        if (name[0] != '\0')
+            scene.writeText(&screen, name, 875, 450);
         screen.refresh();
     }
+
+    clsGameData* game = new clsGameData();
+    game->enemiesKilled = bug.getEnemiesKilled();
+    game->time = playiedTime;
+    strcpy(game->playierName, name);
+    game->arrangedSave("Game_Data/points.b", "ab+");
+    game->removeFile("Game_Data/resume.b");
+}
+
+void clsEngine::pause() {
+    for (int i = 0; i < 11; i++) pressableKey[i] > false;
+    scene.timer.pause(true);
+    clsScene* goodBye = new clsScene();
+    goodBye->init("IMAGES/landscapes/paused.png", 0, 0);
+    goodBye->paste(screen.getPtr());
+    screen.refresh();
+
+    event.wasEvent();
+    while (event.getKey() != KEY_ENTER && event.getKey() != KEY_ESCAPE) event.wasEvent();
+    scene.timer.pause(false);
+
+    if (event.getKey() == KEY_ESCAPE) {
+        this->saveOnExit();
+        this->init();
+        this->run(true);
+    }
+}
+
+void clsEngine::comeBackSoon() {
+    screen.clean(BLACK);
+    clsScene* goodBye = new clsScene();
+    const char* comeBack = bug.getEnemiesKilled() == 36 ? "IMAGES/landscapes/ByeWon.png" : "IMAGES/landscapes/ByeLose.png";
+    goodBye->init(comeBack, 0, 0);
+    goodBye->paste(screen.getPtr());
+    screen.refresh();
+    scene.timer.waitForKey(KEY_ESCAPE);
 }

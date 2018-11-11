@@ -72,6 +72,8 @@ class clsTimer
 protected:
     clsEvent event;  // administrador de eventos
     int additionalTime = 0; // Valor adicional.
+    int pausedTotalTime = 0; // Tiempo total pausado.
+    int pausedTime = 0; // Tiempo pausado.
     int initialtime; // contiene el valor de arranque.
     int now;         // contiene el tiempo transcurrido desde el arranque.
 
@@ -82,6 +84,7 @@ public:
     // parametro.
     void waitForKey(Uint16); // Espera que se presione una tecla pasada como
     // parametro.
+    void pause(bool);        // Pone en pausa y almacena el tiempo pausado final.
     void start();            // Pone en marcha el timer.
     void setTime(int);       // Establece el tiempo de partida.
     void update();           // Actualiza el tiempo del timer.

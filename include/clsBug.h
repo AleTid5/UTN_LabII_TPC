@@ -11,7 +11,7 @@ class clsBug : public clsScene
 {
 public:
     void fly(clsScreen*);
-    void fly(clsScreen*, clsRandom*);
+    void fly(clsScreen*, clsRandom*, int maxWidth = 1200, int maxHeight = 700);
     void move(direction, clsScene*, clsScreen*);
     void fire(clsBug*, clsScene*, clsScreen*, clsEvent*, clsMusic*, clsRandom*);
     void enemyFire(clsBug*, clsScene*, clsScreen*, clsMusic*);

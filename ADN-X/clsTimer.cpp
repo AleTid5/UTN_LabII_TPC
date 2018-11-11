@@ -84,7 +84,7 @@ int clsTimer::getTicks()
 //-----------------------------------------------------------------------------
 int clsTimer::getPlayiedTime()
 {
-    return this->getTicks() - this->initialtime + this->additionalTime;
+    return this->getTicks() - this->initialtime + this->additionalTime - this->pausedTotalTime;
 }
 
 //=============================================================================
@@ -107,6 +107,8 @@ void clsTimer::wait(int mls)
 //-----------------------------------------------------------------------------
 void clsTimer::start()
 {
+    this->pausedTime = 0;
+    this->pausedTotalTime = 0;
     this->additionalTime = 0;
     initialtime=getTicks();
 }
@@ -123,6 +125,22 @@ void clsTimer::setTime(int time)
 }
 
 //=============================================================================
+// METODO    : void pause(bool start)
+// ACCION    : Establece el tiempo de pausa.
+// PARAMETROS: bool start -> Determina si es el ppio.
+// DEVUELVE  : NADA.
+//-----------------------------------------------------------------------------
+void clsTimer::pause(bool start)
+{
+    if (start) {
+        pausedTime = this->getTicks();
+    } else {
+        pausedTime = this->getTicks() - pausedTime;
+        pausedTotalTime += pausedTime;
+    }
+}
+
+//=============================================================================
 // METODO    : void update()
 // ACCION    : Actualiza el tiempo transcurrido desde la puesta en marcha.
 // PARAMETROS: NADA.
@@ -130,7 +148,7 @@ void clsTimer::setTime(int time)
 //-----------------------------------------------------------------------------
 void clsTimer::update()
 {
-    now = getTicks() - initialtime + additionalTime;
+    now = getTicks() - initialtime + additionalTime - pausedTotalTime;
 }
 
 //=============================================================================

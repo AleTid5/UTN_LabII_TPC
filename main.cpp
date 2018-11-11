@@ -96,7 +96,7 @@
 #include <adnConsts.h>      // Tipos de datos del sistema adn-X.
 #include <clsLog.h>         // stdout.txt para Linux.
 #include <clsError.h>       // Administrador de errores.
-#include <clsMotor.h>       // Motor principal del juego.
+#include <clsEngine.h>       // Motor principal del juego.
 
 using namespace std;        // Espacio de nombres estandar.
 
@@ -126,18 +126,17 @@ int main (int argc, char **argv)
     //-------------------------------------
     // OBJETOS NECESARIOS PARA EL PROGRAMA
     clsError error;   // Administrador de errores  (necesario).
-    clsMotor motor;   // Motor
+    clsEngine engine; // Motor
 
     //--------------------------------
     // CODIGO DEL PROGRAMA PRINCIPAL
     try {
 
-        motor.init(); //Inicio el motor
-        motor.run(); //Ejecuto el motor
+        engine.init(); //Inicio el motor
+        engine.run(); //Ejecuto el motor
 
     } catch (int errorCode) {
-        motor.stopRun();
-        //motor.bug.save();
+        engine.stopRun();
 
         if (errorCode > 0) {
             cout << endl;
@@ -147,10 +146,12 @@ int main (int argc, char **argv)
             return errorCode;
         }
     } catch (...) {
-        motor.stopRun();
+        engine.stopRun();
         cout << "Ha ocurrido un error no controlado" << endl;;
         return -1;
     }
+
+    engine.comeBackSoon();
 
     //----------------------------
     // FIN DEL PROGRAMA PRINCIPAL
