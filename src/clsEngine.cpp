@@ -212,7 +212,7 @@ void clsEngine::initializeGame()
     bug.setEnemiesKilled(enemiesKilled);
     bug.setEvolutionLevel(bug.getEnemiesKilled() / 5);
     bug.setSpeed((bug.getEvolutionLevel() + 1) * 4);
-    bug.energy->setEvolution(energyEvolution );
+    bug.energy->setEvolution(energyEvolution);
     bug.energy->setLife(energyLife);
 
     for (int i = 0; i < 35; i++)
