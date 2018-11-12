@@ -134,7 +134,6 @@ void clsMusic::stopMusic()
 void clsMusic::closeMusic()
 {
     Mix_FreeMusic(music);
-
 }
 
 //### FIN DE ARCHIVO ##########################################################

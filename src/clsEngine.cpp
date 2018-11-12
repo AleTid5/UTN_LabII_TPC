@@ -209,8 +209,7 @@ void clsEngine::initializeGame()
         game.removeFile("Game_Data/resume.b"); // Elimino el archivo para que no retome si pierde o gana
     }
 
-    //bug.setEnemiesKilled(enemiesKilled);
-    bug.setEnemiesKilled(35);
+    bug.setEnemiesKilled(enemiesKilled);
     bug.setEvolutionLevel(bug.getEnemiesKilled() / 5);
     bug.setSpeed((bug.getEvolutionLevel() + 1) * 4);
     bug.energy->setEvolution(energyEvolution);
