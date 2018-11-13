@@ -274,7 +274,8 @@ void clsEngine::saveOnExit()
 void clsEngine::gameOver() {
     int playiedTime = scene.timer.getPlayiedTime() / 1000;
     clsScene gameOver[3];
-    gameOver[0].init("IMAGES/landscapes/gameOver.png", 50, -50);
+    const char* gameCompleted = bug.getEnemiesKilled() == 36 ? "IMAGES/landscapes/gameWon.png" : "IMAGES/landscapes/gameOver.png";
+    gameOver[0].init(gameCompleted, 50, -50);
     gameOver[1].init("IMAGES/landscapes/start-text.png", 500, 600);
     gameOver[2].init("IMAGES/landscapes/points.png", 750, 95);
 
