@@ -3,9 +3,9 @@
 /*******************************************************************
 *                         FUNCIONES PUBLICAS                       *
 *******************************************************************/
-clsMucus::clsMucus()
+clsMucus::clsMucus(bool isEnemy)
 {
-    this->init("IMAGES/bugs/mucus.png", 50, 100);
+    this->init((isEnemy ? "IMAGES/enemies/mucus.png" : "IMAGES/bugs/mucus.png"), 50, 100);
 }
 
 void clsMucus::spit(clsMusic* music)

@@ -59,7 +59,7 @@ void clsBug::fire(clsBug* enemies, clsScene* scene, clsScreen* screen, clsEvent*
 
     if (this->mucus->getX() <= (screen->getWidth() - this->mucus->getWidth() - 75) && this->mucus->isAttacking()) {
         this->paste(screen->getPtr());
-        this->mucus->setX(this->mucus->getX() + 15);
+        this->mucus->setX(this->mucus->getX() + this->mucus->getFireSpeed());
         this->mucus->paste(screen->getPtr());
         this->checkEnemieKilled(enemies, screen, scene);
         return;
@@ -215,6 +215,7 @@ void clsBug::checkEnemieKilled(clsBug* enemies, clsScreen* screen, clsScene* sce
                 this->evolutionLevel++;
                 this->energy->setLife(100);
                 this->movement += 4;
+                this->mucus->setFireSpeed(15 + (this->evolutionLevel * 2));
                 for (int j = 0; j < 35; j++)
                     enemies[j].mucus->setFireSpeed(enemies[j].mucus->getFireSpeed() + 5);
 

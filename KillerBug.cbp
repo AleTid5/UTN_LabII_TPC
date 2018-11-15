@@ -159,7 +159,6 @@ Fecha de entrega: 15/11/2018
 		<Unit filename="include/clsMucus.h" />
 		<Unit filename="include/clsPressableKey.h" />
 		<Unit filename="include/clsScene.h" />
-		<Unit filename="include/clsStatusBar.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/clsBug.cpp" />
 		<Unit filename="src/clsEnergy.cpp" />
@@ -168,8 +167,6 @@ Fecha de entrega: 15/11/2018
 		<Unit filename="src/clsMucus.cpp" />
 		<Unit filename="src/clsPressableKey.cpp" />
 		<Unit filename="src/clsScene.cpp" />
-		<Unit filename="src/clsStatusBar.cpp" />
-		<Unit filename="src/clsStatusBar.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

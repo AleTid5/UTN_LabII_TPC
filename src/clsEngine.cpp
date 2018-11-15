@@ -46,14 +46,14 @@ void clsEngine::init()
         }
         enemie[i].init(enemiePath, posX, posY);
         enemie[i].energy = new clsEnergy(25);
-        enemie[i].mucus = new clsMucus();
+        enemie[i].mucus = new clsMucus(true);
         enemie[i].mucus->setX(posX);
         enemie[i].mucus->setY(posY + 125);
     }
 
     enemie[35].init("IMAGES/enemies/boss.png", 1000, 100);
     enemie[35].energy = new clsEnergy(500);
-    enemie[35].mucus = new clsMucus();
+    enemie[35].mucus = new clsMucus(true);
 
     pressableKey[0] = KEY_w;
     pressableKey[1] = KEY_UP;
@@ -212,6 +212,7 @@ void clsEngine::initializeGame()
     bug.setEnemiesKilled(enemiesKilled);
     bug.setEvolutionLevel(bug.getEnemiesKilled() / 5);
     bug.setSpeed((bug.getEvolutionLevel() + 1) * 4);
+    bug.mucus->setFireSpeed(15 + (bug.getEvolutionLevel() * 2));
     bug.energy->setEvolution(energyEvolution);
     bug.energy->setLife(energyLife);
 
@@ -290,7 +291,7 @@ void clsEngine::gameOver() {
         if (event.wasEvent()) {
             if (event.getEventType() == KEY_PRESSED && event.getKey() != KEY_BACKSPACE) {
                 int letter = (int) event.getKey();
-                if (i < 4 && ((letter >= 65 && letter <= 90) || (letter >= 97 && letter <= 122))) {
+                if (i < 5 && ((letter >= 65 && letter <= 90) || (letter >= 97 && letter <= 122) || (letter >= 48 && letter <= 57))) {
                     name[i] = (char) letter;
                     i++;
                 }
