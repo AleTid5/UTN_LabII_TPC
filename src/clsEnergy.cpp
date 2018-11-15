@@ -20,10 +20,9 @@
 #include "clsEnergy.h"
 
 //=============================================================================
-// METODO    : void wait(int mls)
-// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
-//             parametro.
-// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
+// METODO    : clsEnergy(unsigned int life)
+// ACCION    : Constructor de energia
+// PARAMETROS: unsigned int life -> Vida a establecer.
 // DEVUELVE  : NADA.
 //-----------------------------------------------------------------------------
 clsEnergy::clsEnergy(unsigned int life)
@@ -38,10 +37,12 @@ clsEnergy::clsEnergy(unsigned int life)
 }
 
 //=============================================================================
-// METODO    : void wait(int mls)
-// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
-//             parametro.
-// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
+// METODO    : void updateStatusBar(clsScreen* screen, clsScene* scene, unsigned int enemiesKilled, int bossLife)
+// ACCION    : Actualiza el tablero de energia
+// PARAMETROS: clsScreen* screen -> Puntero a la pantalla.
+//             clsScene* scene -> Puntero a la escena.
+//             unsigned int enemiesKilled -> Enemigos aniquilados.
+//             int bossLife -> Vida del jefe.
 // DEVUELVE  : NADA.
 //-----------------------------------------------------------------------------
 void clsEnergy::updateStatusBar(clsScreen* screen, clsScene* scene, unsigned int enemiesKilled, int bossLife)
@@ -83,11 +84,10 @@ void clsEnergy::updateStatusBar(clsScreen* screen, clsScene* scene, unsigned int
 }
 
 //=============================================================================
-// METODO    : void wait(int mls)
-// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
-//             parametro.
-// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
-// DEVUELVE  : NADA.
+// METODO    : unsigned int getDamage()
+// ACCION    : Devuelve el daño que realizan los personajes
+// PARAMETROS: NADA.
+// DEVUELVE  : Entero sin signo de daño que realiza.
 //-----------------------------------------------------------------------------
 unsigned int clsEnergy::getDamage()
 {
@@ -95,11 +95,10 @@ unsigned int clsEnergy::getDamage()
 }
 
 //=============================================================================
-// METODO    : void wait(int mls)
-// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
-//             parametro.
-// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
-// DEVUELVE  : NADA.
+// METODO    : int getEvolution()
+// ACCION    : Devuelve la energia de evolución
+// PARAMETROS: NADA.
+// DEVUELVE  : Entero de energia de evolucion.
 //-----------------------------------------------------------------------------
 int clsEnergy::getEvolution()
 {
@@ -107,11 +106,10 @@ int clsEnergy::getEvolution()
 }
 
 //=============================================================================
-// METODO    : void wait(int mls)
-// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
-//             parametro.
-// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
-// DEVUELVE  : NADA.
+// METODO    : unsigned int getPlusEnergy()
+// ACCION    : Devuelve el aumento de energia evolutiva
+// PARAMETROS: NADA.
+// DEVUELVE  : Entero sin signo energia que aumenta.
 //-----------------------------------------------------------------------------
 unsigned int clsEnergy::getPlusEnergy()
 {
@@ -119,11 +117,10 @@ unsigned int clsEnergy::getPlusEnergy()
 }
 
 //=============================================================================
-// METODO    : void wait(int mls)
-// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
-//             parametro.
-// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
-// DEVUELVE  : NADA.
+// METODO    : int getLife()
+// ACCION    : Devuelve la energia de vida
+// PARAMETROS: NADA.
+// DEVUELVE  : Entero energia de vida.
 //-----------------------------------------------------------------------------
 int clsEnergy::getLife()
 {
@@ -131,10 +128,9 @@ int clsEnergy::getLife()
 }
 
 //=============================================================================
-// METODO    : void wait(int mls)
-// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
-//             parametro.
-// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
+// METODO    : void setDamage(unsigned int damage)
+// ACCION    : Establece el daño que realizan los personajes
+// PARAMETROS: unsigned int damage -> Daño que realiza.
 // DEVUELVE  : NADA.
 //-----------------------------------------------------------------------------
 void clsEnergy::setDamage(unsigned int damage)
@@ -143,10 +139,9 @@ void clsEnergy::setDamage(unsigned int damage)
 }
 
 //=============================================================================
-// METODO    : void wait(int mls)
-// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
-//             parametro.
-// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
+// METODO    : void setEvolution(int evolution)
+// ACCION    : Establece la energia de evolución
+// PARAMETROS: int evolution -> Energia de evolucion que tiene.
 // DEVUELVE  : NADA.
 //-----------------------------------------------------------------------------
 void clsEnergy::setEvolution(int evolution)
@@ -155,10 +150,9 @@ void clsEnergy::setEvolution(int evolution)
 }
 
 //=============================================================================
-// METODO    : void wait(int mls)
-// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
-//             parametro.
-// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
+// METODO    : void setLife(int life)
+// ACCION    : Establece la energia de vida
+// PARAMETROS: int life -> Vida que tiene.
 // DEVUELVE  : NADA.
 //-----------------------------------------------------------------------------
 void clsEnergy::setLife(int life)

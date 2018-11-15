@@ -20,10 +20,9 @@
 #include "clsEngine.h"
 
 //=============================================================================
-// METODO    : void wait(int mls)
-// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
-//             parametro.
-// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
+// METODO    : void init()
+// ACCION    : Inicio del motor
+// PARAMETROS: NADA.
 // DEVUELVE  : NADA.
 //-----------------------------------------------------------------------------
 void clsEngine::init()
@@ -100,10 +99,9 @@ void clsEngine::init()
 }
 
 //=============================================================================
-// METODO    : void wait(int mls)
-// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
-//             parametro.
-// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
+// METODO    : void run(bool playAgain)
+// ACCION    : Vida del motor
+// PARAMETROS: bool playAgain -> Determina si es una partida nueva.
 // DEVUELVE  : NADA.
 //-----------------------------------------------------------------------------
 void clsEngine::run(bool playAgain)
@@ -144,16 +142,17 @@ void clsEngine::run(bool playAgain)
 }
 
 //=============================================================================
-// METODO    : void wait(int mls)
-// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
-//             parametro.
-// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
+// METODO    : void keyCommand()
+// ACCION    : Manejo de las teclas presionadas
+// PARAMETROS: NADA.
 // DEVUELVE  : NADA.
 //-----------------------------------------------------------------------------
 void clsEngine::keyCommand()
 {
     if (pressableKey[9].isKeyPressed()) {
         this->saveOnExit();
+        this->init();
+        this->run(true);
         throw 0;
     }
 
@@ -174,10 +173,9 @@ void clsEngine::keyCommand()
 }
 
 //=============================================================================
-// METODO    : void wait(int mls)
-// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
-//             parametro.
-// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
+// METODO    : void stopRun()
+// ACCION    : Manejo al dejar de jugar
+// PARAMETROS: NADA.
 // DEVUELVE  : NADA.
 //-----------------------------------------------------------------------------
 void clsEngine::stopRun()
@@ -188,10 +186,9 @@ void clsEngine::stopRun()
 }
 
 //=============================================================================
-// METODO    : void wait(int mls)
-// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
-//             parametro.
-// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
+// METODO    : void initializeGame()
+// ACCION    : Inicializador de juego
+// PARAMETROS: NADA.
 // DEVUELVE  : NADA.
 //-----------------------------------------------------------------------------
 void clsEngine::initializeGame()
@@ -279,10 +276,10 @@ void clsEngine::initializeGame()
 }
 
 //=============================================================================
-// METODO    : void wait(int mls)
-// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
-//             parametro.
-// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
+// METODO    : bool setKeyPressed(Uint16 key, bool status)
+// ACCION    : Establece la/s teclas presionadas
+// PARAMETROS: Uint16 key -> Tecla presionada.
+//             bool status -> Estado de la tecla presionada.
 // DEVUELVE  : NADA.
 //-----------------------------------------------------------------------------
 bool clsEngine::setKeyPressed(Uint16 key, bool status)
@@ -297,10 +294,9 @@ bool clsEngine::setKeyPressed(Uint16 key, bool status)
 }
 
 //=============================================================================
-// METODO    : void wait(int mls)
-// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
-//             parametro.
-// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
+// METODO    : void bringGameToLife()
+// ACCION    : Animacion del juego
+// PARAMETROS: NADA.
 // DEVUELVE  : NADA.
 //-----------------------------------------------------------------------------
 void clsEngine::bringGameToLife()
@@ -327,10 +323,9 @@ void clsEngine::bringGameToLife()
 }
 
 //=============================================================================
-// METODO    : void wait(int mls)
-// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
-//             parametro.
-// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
+// METODO    : void saveOnExit()
+// ACCION    : Administrador del guardado del juego al salir
+// PARAMETROS: NADA.
 // DEVUELVE  : NADA.
 //-----------------------------------------------------------------------------
 void clsEngine::saveOnExit()
@@ -349,13 +344,13 @@ void clsEngine::saveOnExit()
 }
 
 //=============================================================================
-// METODO    : void wait(int mls)
-// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
-//             parametro.
-// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
+// METODO    : void gameOver()
+// ACCION    : Pantalla de juego terminado
+// PARAMETROS: NADA.
 // DEVUELVE  : NADA.
 //-----------------------------------------------------------------------------
-void clsEngine::gameOver() {
+void clsEngine::gameOver()
+{
     int playiedTime = scene.timer.getPlayiedTime() / 1000;
     clsScene gameOver[3];
     const char* gameCompleted = bug.getEnemiesKilled() == 36 ? "IMAGES/landscapes/gameWon.png" : "IMAGES/landscapes/gameOver.png";
@@ -374,7 +369,7 @@ void clsEngine::gameOver() {
         if (event.wasEvent()) {
             if (event.getEventType() == KEY_PRESSED && event.getKey() != KEY_BACKSPACE) {
                 int letter = (int) event.getKey();
-                if (i < 5 && ((letter >= 65 && letter <= 90) || (letter >= 97 && letter <= 122) || (letter >= 48 && letter <= 57))) {
+                if (i < 4 && ((letter >= 65 && letter <= 90) || (letter >= 97 && letter <= 122) || (letter >= 48 && letter <= 57))) {
                     name[i] = (char) letter;
                     i++;
                 }
@@ -414,13 +409,13 @@ void clsEngine::gameOver() {
 }
 
 //=============================================================================
-// METODO    : void wait(int mls)
-// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
-//             parametro.
-// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
+// METODO    : void pause()
+// ACCION    : Manejo de la pausa del juego
+// PARAMETROS: NADA.
 // DEVUELVE  : NADA.
 //-----------------------------------------------------------------------------
-void clsEngine::pause() {
+void clsEngine::pause()
+{
     for (int i = 0; i < 11; i++) pressableKey[i] > false;
     scene.timer.pause(true);
     clsScene* goodBye = new clsScene();
@@ -440,13 +435,13 @@ void clsEngine::pause() {
 }
 
 //=============================================================================
-// METODO    : void wait(int mls)
-// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
-//             parametro.
-// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
+// METODO    : void comeBackSoon()
+// ACCION    : Pantalla de salida
+// PARAMETROS: NADA.
 // DEVUELVE  : NADA.
 //-----------------------------------------------------------------------------
-void clsEngine::comeBackSoon() {
+void clsEngine::comeBackSoon()
+{
     screen.clean(BLACK);
     clsScene* goodBye = new clsScene();
     const char* comeBack = bug.getEnemiesKilled() == 36 ? "IMAGES/landscapes/ByeWon.png" : "IMAGES/landscapes/ByeLose.png";

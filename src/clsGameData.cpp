@@ -20,13 +20,14 @@
 #include "clsGameData.h"
 
 //=============================================================================
-// METODO    : void wait(int mls)
-// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
-//             parametro.
-// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
+// METODO    : void arrangedSave(const char*, const char*)
+// ACCION    : Funcion que guarda los datos arreglados (Ascendente por puntos)
+// PARAMETROS: const char * filename -> Ruta al archivo a guardar.
+//             const char * mode -> Modo de guardado.
 // DEVUELVE  : NADA.
 //-----------------------------------------------------------------------------
-void clsGameData::arrangedSave(const char * filename, const char * mode) {
+void clsGameData::arrangedSave(const char * filename, const char * mode)
+{
     FILE * file;
     file = fopen(filename, mode);
     fwrite(this, sizeof * this, 1, file);
@@ -60,13 +61,14 @@ void clsGameData::arrangedSave(const char * filename, const char * mode) {
 }
 
 //=============================================================================
-// METODO    : void wait(int mls)
-// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
-//             parametro.
-// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
+// METODO    : void save(const char*, const char*)
+// ACCION    : Funcion que guarda los datos ingresados
+// PARAMETROS: const char * filename -> Ruta al archivo a guardar.
+//             const char * mode -> Modo de guardado.
 // DEVUELVE  : NADA.
 //-----------------------------------------------------------------------------
-void clsGameData::save(const char * filename, const char * mode) {
+void clsGameData::save(const char * filename, const char * mode)
+{
     FILE * file;
     file = fopen(filename, mode);
     fwrite(this, sizeof * this, 1, file);
@@ -74,13 +76,14 @@ void clsGameData::save(const char * filename, const char * mode) {
 }
 
 //=============================================================================
-// METODO    : void wait(int mls)
-// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
-//             parametro.
-// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
+// METODO    : void read(const char*, const char*)
+// ACCION    : Funcion que lee el archivo 1 vez
+// PARAMETROS: const char * filename -> Ruta al archivo a leer.
+//             const char * mode -> Modo de lectura.
 // DEVUELVE  : NADA.
 //-----------------------------------------------------------------------------
-void clsGameData::read(const char * filename, const char * mode) {
+void clsGameData::read(const char * filename, const char * mode)
+{
     FILE * file;
     file = fopen(filename, mode);
     if (file == NULL)
@@ -90,13 +93,15 @@ void clsGameData::read(const char * filename, const char * mode) {
 }
 
 //=============================================================================
-// METODO    : void wait(int mls)
-// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
-//             parametro.
-// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
+// METODO    : void read(const char*, const char*, unsigned int)
+// ACCION    : Funcion que lee el archivo N veces
+// PARAMETROS: const char * filename -> Ruta al archivo a leer.
+//             const char * mode -> Modo de lectura.
+//             unsigned int position -> Posicion a leer.
 // DEVUELVE  : NADA.
 //-----------------------------------------------------------------------------
-void clsGameData::read(const char * filename, const char * mode, unsigned int position) {
+void clsGameData::read(const char * filename, const char * mode, unsigned int position)
+{
     FILE * file;
     file = fopen(filename, mode);
     if (file == NULL)
@@ -107,12 +112,12 @@ void clsGameData::read(const char * filename, const char * mode, unsigned int po
 }
 
 //=============================================================================
-// METODO    : void wait(int mls)
-// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
-//             parametro.
-// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
+// METODO    : void removeFile(const char*)
+// ACCION    : Funcion que elimina el archivo
+// PARAMETROS: const char * file -> Ruta del archivo a eliminar.
 // DEVUELVE  : NADA.
 //-----------------------------------------------------------------------------
-void clsGameData::removeFile(const char * file) {
+void clsGameData::removeFile(const char * file)
+{
     remove(file);
 }

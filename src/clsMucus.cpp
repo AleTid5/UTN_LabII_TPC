@@ -20,10 +20,9 @@
 #include "clsMucus.h"
 
 //=============================================================================
-// METODO    : void wait(int mls)
-// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
-//             parametro.
-// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
+// METODO    : clsMucus(bool isEnemy)
+// ACCION    : Constructor del objeto de moco
+// PARAMETROS: bool isEnemy -> Determina si es un personaje de tipo enemigo.
 // DEVUELVE  : NADA.
 //-----------------------------------------------------------------------------
 clsMucus::clsMucus(bool isEnemy)
@@ -32,10 +31,9 @@ clsMucus::clsMucus(bool isEnemy)
 }
 
 //=============================================================================
-// METODO    : void wait(int mls)
-// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
-//             parametro.
-// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
+// METODO    : bool isAttacking()
+// ACCION    : Devuelve si hay un ataque en curso
+// PARAMETROS: clsMusic* music -> Puntero de musica.
 // DEVUELVE  : NADA.
 //-----------------------------------------------------------------------------
 void clsMucus::spit(clsMusic* music)
@@ -44,11 +42,10 @@ void clsMucus::spit(clsMusic* music)
 }
 
 //=============================================================================
-// METODO    : void wait(int mls)
-// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
-//             parametro.
-// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
-// DEVUELVE  : NADA.
+// METODO    : void spit(clsMusic*)
+// ACCION    : Realiza el sonido de escupitajo
+// PARAMETROS: NADA.
+// DEVUELVE  : Booleano si está atacando.
 //-----------------------------------------------------------------------------
 bool clsMucus::isAttacking()
 {
@@ -56,11 +53,10 @@ bool clsMucus::isAttacking()
 }
 
 //=============================================================================
-// METODO    : void wait(int mls)
-// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
-//             parametro.
-// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
-// DEVUELVE  : NADA.
+// METODO    : unsigned int getFireSpeed()
+// ACCION    : Devuelve la velocidad actual de disparo
+// PARAMETROS: NADA.
+// DEVUELVE  : Entero sin signo de velocidad de disparo.
 //-----------------------------------------------------------------------------
 unsigned int clsMucus::getFireSpeed()
 {
@@ -68,10 +64,9 @@ unsigned int clsMucus::getFireSpeed()
 }
 
 //=============================================================================
-// METODO    : void wait(int mls)
-// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
-//             parametro.
-// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
+// METODO    : void setAttackStatus(bool)
+// ACCION    : Establece el estado de ataque en curso
+// PARAMETROS: bool attacking -> Estado de ataque.
 // DEVUELVE  : NADA.
 //-----------------------------------------------------------------------------
 void clsMucus::setAttackStatus(bool attacking)
@@ -80,10 +75,9 @@ void clsMucus::setAttackStatus(bool attacking)
 }
 
 //=============================================================================
-// METODO    : void wait(int mls)
-// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
-//             parametro.
-// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
+// METODO    : void setFireSpeed(unsigned int)
+// ACCION    : Establece la velocidad de disparo
+// PARAMETROS: unsigned int fireSpeed -> Velocidad de disparo.
 // DEVUELVE  : NADA.
 //-----------------------------------------------------------------------------
 void clsMucus::setFireSpeed(unsigned int fireSpeed)
