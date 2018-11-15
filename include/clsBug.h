@@ -3,7 +3,7 @@
 // AUTOR               : Alejandro Marcelo Tidele.
 // VERSION             : v. 1.0 estable.
 // FECHA DE CREACION   : 14/11/2018.
-// ULTIMA ACTUALIZACION: 14/11/2018.          .
+// ULTIMA ACTUALIZACION: 14/11/2018.
 // LICENCIA            : GPL (General Public License) - Version 3.
 //=============================================================================
 // SISTEMA OPERATIVO   : Linux / Windows.
@@ -32,11 +32,11 @@ public:
     void fly(clsScreen*); // Vuelo normal del personaje
     void fly(clsScreen*, clsRandom*, int maxWidth = 1200, int maxHeight = 700); // Vuelo aleatorio del enemigo
     void move(direction, clsScene*, clsScreen*); // Movimiento del personaje o del enemigo
-    void fire(clsBug*, clsScene*, clsScreen*, clsEvent*, clsMusic*, clsRandom*); // Ataque del personajes
-    void enemyFire(clsBug*, clsScene*, clsScreen*, clsMusic*); // Ataque del enemigo
+    void fire(clsBug*, clsScene*, clsScreen*, clsMusic*); // Ataque del personajes
+    void enemyFire(clsBug*, clsScreen*); // Ataque del enemigo
     void die(clsScreen*); // Muerte del personaje o del enemigo
-    unsigned int getEnemiesKilled(); // Devuelve los enemigos aniquilados
     unsigned int getEvolutionLevel(); // Devuelve el nivel del personaje
+    unsigned int getEnemiesKilled(); // Devuelve los enemigos aniquilados
     void setEnemiesKilled(unsigned int); // Establece los enemigos aniquilidos
     void setEvolutionLevel(unsigned int); // Establece el nivel
     void setSpeed(unsigned int); // Establece la velocidad
@@ -44,7 +44,7 @@ public:
     clsMucus* mucus; // Moco del personajes o del enemigo
 
 private:
-    bool canMove(direction, clsScene*, clsScreen*); // Verifica si puede moverse en la dirección seleccionada
+    bool canMove(direction, clsScreen*); // Verifica si puede moverse en la dirección seleccionada
     void checkEnemieKilled(clsBug*, clsScreen*, clsScene*); // Verifica si el enemigo murió
 
 protected:

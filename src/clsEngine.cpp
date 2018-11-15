@@ -1,5 +1,31 @@
+//#############################################################################
+// ARCHIVO             : clsEngine.cpp
+// AUTOR               : Alejandro Marcelo Tidele.
+// VERSION             : v. 1.0 estable.
+// FECHA DE CREACION   : 14/11/2018.
+// ULTIMA ACTUALIZACION: 14/11/2018.
+// LICENCIA            : GPL (General Public License) - Version 3.
+//=============================================================================
+// SISTEMA OPERATIVO   : Linux / Windows.
+// IDE                 : Code::Blocks.
+// COMPILADOR          : GNU GCC Compiler (Linux) / MinGW (Windows).
+//=============================================================================
+// DESCRIPCION: Este archivo contiene la definicion de los metodos de la clase
+//              "clsEngine".
+//
+//              "clsEngine" consta de los metodos necesarios para administrar
+//              el motor del juego en su totalidad.
+//
+///////////////////////////////////////////////////////////////////////////////
 #include "clsEngine.h"
 
+//=============================================================================
+// METODO    : void wait(int mls)
+// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
+//             parametro.
+// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
+// DEVUELVE  : NADA.
+//-----------------------------------------------------------------------------
 void clsEngine::init()
 {
     error.set(mode.init(1366, 750, 0)); //Inicio el modo grafico (Quito 18px de altura por la bara del titulo)
@@ -69,9 +95,17 @@ void clsEngine::init()
 
     error.set(audio.init());
     error.set(music.loadMusic("SOUNDS/bugs/spit.mp3"));
-    error.set(scene.initText());
+    scene.initText();
     random.init();
 }
+
+//=============================================================================
+// METODO    : void wait(int mls)
+// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
+//             parametro.
+// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
+// DEVUELVE  : NADA.
+//-----------------------------------------------------------------------------
 void clsEngine::run(bool playAgain)
 {
     screen.clean(BLACK); // Limpio la pantalla
@@ -109,6 +143,13 @@ void clsEngine::run(bool playAgain)
     this->run(true);
 }
 
+//=============================================================================
+// METODO    : void wait(int mls)
+// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
+//             parametro.
+// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
+// DEVUELVE  : NADA.
+//-----------------------------------------------------------------------------
 void clsEngine::keyCommand()
 {
     if (pressableKey[9].isKeyPressed()) {
@@ -125,13 +166,20 @@ void clsEngine::keyCommand()
     if (pressableKey[6].isKeyPressed() || pressableKey[7].isKeyPressed())
         bug.move(LEFT, &scene, &screen);
     if (pressableKey[8].isKeyPressed() && ! bug.mucus->isAttacking())
-        bug.fire(enemie, &scene, &screen, &event, &music, &random);
+        bug.fire(enemie, &scene, &screen, &music);
     if (pressableKey[10].isKeyPressed())
         this->pause();
 
     error.set(error.get());
 }
 
+//=============================================================================
+// METODO    : void wait(int mls)
+// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
+//             parametro.
+// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
+// DEVUELVE  : NADA.
+//-----------------------------------------------------------------------------
 void clsEngine::stopRun()
 {
     music.stopMusic();
@@ -139,6 +187,13 @@ void clsEngine::stopRun()
     audio.closeAudio();
 }
 
+//=============================================================================
+// METODO    : void wait(int mls)
+// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
+//             parametro.
+// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
+// DEVUELVE  : NADA.
+//-----------------------------------------------------------------------------
 void clsEngine::initializeGame()
 {
     if (5 == scene.getOptionSelected()) {
@@ -223,6 +278,13 @@ void clsEngine::initializeGame()
     enemie[35].energy->setDamage(50);
 }
 
+//=============================================================================
+// METODO    : void wait(int mls)
+// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
+//             parametro.
+// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
+// DEVUELVE  : NADA.
+//-----------------------------------------------------------------------------
 bool clsEngine::setKeyPressed(Uint16 key, bool status)
 {
     for (int i = 0; i < 11; i++)
@@ -234,6 +296,13 @@ bool clsEngine::setKeyPressed(Uint16 key, bool status)
     return false;
 }
 
+//=============================================================================
+// METODO    : void wait(int mls)
+// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
+//             parametro.
+// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
+// DEVUELVE  : NADA.
+//-----------------------------------------------------------------------------
 void clsEngine::bringGameToLife()
 {
     scene.move(&screen);
@@ -243,20 +312,27 @@ void clsEngine::bringGameToLife()
 
     if (bug.getEvolutionLevel() == 7) {
         enemie[35].fly(&screen, &random, 1050, 500);
-        enemie[35].enemyFire(&bug, &scene, &screen, &music);
+        enemie[35].enemyFire(&bug, &screen);
     } else {
         for (int i = 0; i < 35; i++) {
             enemie[i].fly(&screen, &random);
-            enemie[i].enemyFire(&bug, &scene, &screen, &music);
+            enemie[i].enemyFire(&bug, &screen);
         }
     }
 
     bug.energy->updateStatusBar(&screen, &scene, bug.getEnemiesKilled(), enemie[35].energy->getLife());
 
     if (bug.mucus->isAttacking())
-        bug.fire(enemie, &scene, &screen, &event, &music, &random);
+        bug.fire(enemie, &scene, &screen, &music);
 }
 
+//=============================================================================
+// METODO    : void wait(int mls)
+// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
+//             parametro.
+// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
+// DEVUELVE  : NADA.
+//-----------------------------------------------------------------------------
 void clsEngine::saveOnExit()
 {
     clsGameData game;
@@ -272,6 +348,13 @@ void clsEngine::saveOnExit()
     game.save("Game_Data/resume.b", "wb+");
 }
 
+//=============================================================================
+// METODO    : void wait(int mls)
+// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
+//             parametro.
+// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
+// DEVUELVE  : NADA.
+//-----------------------------------------------------------------------------
 void clsEngine::gameOver() {
     int playiedTime = scene.timer.getPlayiedTime() / 1000;
     clsScene gameOver[3];
@@ -330,6 +413,13 @@ void clsEngine::gameOver() {
     game->removeFile("Game_Data/resume.b");
 }
 
+//=============================================================================
+// METODO    : void wait(int mls)
+// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
+//             parametro.
+// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
+// DEVUELVE  : NADA.
+//-----------------------------------------------------------------------------
 void clsEngine::pause() {
     for (int i = 0; i < 11; i++) pressableKey[i] > false;
     scene.timer.pause(true);
@@ -349,6 +439,13 @@ void clsEngine::pause() {
     }
 }
 
+//=============================================================================
+// METODO    : void wait(int mls)
+// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
+//             parametro.
+// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
+// DEVUELVE  : NADA.
+//-----------------------------------------------------------------------------
 void clsEngine::comeBackSoon() {
     screen.clean(BLACK);
     clsScene* goodBye = new clsScene();

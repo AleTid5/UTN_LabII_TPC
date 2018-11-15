@@ -1,5 +1,31 @@
+//#############################################################################
+// ARCHIVO             : clsGameData.cpp
+// AUTOR               : Alejandro Marcelo Tidele.
+// VERSION             : v. 1.0 estable.
+// FECHA DE CREACION   : 14/11/2018.
+// ULTIMA ACTUALIZACION: 14/11/2018.
+// LICENCIA            : GPL (General Public License) - Version 3.
+//=============================================================================
+// SISTEMA OPERATIVO   : Linux / Windows.
+// IDE                 : Code::Blocks.
+// COMPILADOR          : GNU GCC Compiler (Linux) / MinGW (Windows).
+//=============================================================================
+// DESCRIPCION: Este archivo contiene la definicion de los metodos de la clase
+//              "clsGameData".
+//
+//              "clsGameData" consta de los metodos necesarios para salvaguardar
+//              la información necesaria del juego (partida y puntaje/s)
+//
+///////////////////////////////////////////////////////////////////////////////
 #include "clsGameData.h"
 
+//=============================================================================
+// METODO    : void wait(int mls)
+// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
+//             parametro.
+// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
+// DEVUELVE  : NADA.
+//-----------------------------------------------------------------------------
 void clsGameData::arrangedSave(const char * filename, const char * mode) {
     FILE * file;
     file = fopen(filename, mode);
@@ -33,6 +59,13 @@ void clsGameData::arrangedSave(const char * filename, const char * mode) {
     fclose(file);
 }
 
+//=============================================================================
+// METODO    : void wait(int mls)
+// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
+//             parametro.
+// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
+// DEVUELVE  : NADA.
+//-----------------------------------------------------------------------------
 void clsGameData::save(const char * filename, const char * mode) {
     FILE * file;
     file = fopen(filename, mode);
@@ -40,6 +73,13 @@ void clsGameData::save(const char * filename, const char * mode) {
     fclose(file);
 }
 
+//=============================================================================
+// METODO    : void wait(int mls)
+// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
+//             parametro.
+// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
+// DEVUELVE  : NADA.
+//-----------------------------------------------------------------------------
 void clsGameData::read(const char * filename, const char * mode) {
     FILE * file;
     file = fopen(filename, mode);
@@ -49,6 +89,13 @@ void clsGameData::read(const char * filename, const char * mode) {
     fclose(file);
 }
 
+//=============================================================================
+// METODO    : void wait(int mls)
+// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
+//             parametro.
+// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
+// DEVUELVE  : NADA.
+//-----------------------------------------------------------------------------
 void clsGameData::read(const char * filename, const char * mode, unsigned int position) {
     FILE * file;
     file = fopen(filename, mode);
@@ -59,6 +106,13 @@ void clsGameData::read(const char * filename, const char * mode, unsigned int po
     fclose(file);
 }
 
+//=============================================================================
+// METODO    : void wait(int mls)
+// ACCION    : Hace una pausa de la cantidad de milisegundos establecidos como
+//             parametro.
+// PARAMETROS: int mls -> cantidad de millisegundos de duracion de la pausa.
+// DEVUELVE  : NADA.
+//-----------------------------------------------------------------------------
 void clsGameData::removeFile(const char * file) {
     remove(file);
 }

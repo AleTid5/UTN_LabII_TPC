@@ -3,7 +3,7 @@
 // AUTOR               : Alejandro Marcelo Tidele.
 // VERSION             : v. 1.0 estable.
 // FECHA DE CREACION   : 14/11/2018.
-// ULTIMA ACTUALIZACION: 14/11/2018.          .
+// ULTIMA ACTUALIZACION: 14/11/2018.
 // LICENCIA            : GPL (General Public License) - Version 3.
 //=============================================================================
 // SISTEMA OPERATIVO   : Linux / Windows.
@@ -29,17 +29,17 @@ class clsScene : public clsSprite
 public:
     int init(const char*, unsigned int posX = 0, unsigned int posY = 0); // Inicia una sola imagen
     int init(const char path[100][100], unsigned int, unsigned int posX = 0, unsigned int posY = 0); // Inicia varias imagenes al mismo tiempo
-    int initText(); // Inicia el modo texto
-    void writeText(clsScreen*, unsigned int, unsigned int, unsigned int); // Escribe un texto de valor entero
-    void writeText(clsScreen*, const char*, unsigned int, unsigned int); // Escribe un texto de valor caracteres
+    void initText(); // Inicia el modo texto
     void loadWallpaper(clsScreen*, clsEvent*); // Carga el Wallpaper principal
     void move(clsScreen*); // Mueve la escena de fondo
     void startTimer(); // Inicia el tiempo de partida
-    void showTimer(clsScreen*); // Muestra el tiempo de partida
+    void writeText(clsScreen*, unsigned int, unsigned int, unsigned int); // Escribe un texto de valor entero
+    void writeText(clsScreen*, const char*, unsigned int, unsigned int); // Escribe un texto de valor caracteres
     void showMenu(clsScreen*); // Muestra el menu principal
+    void showTimer(clsScreen*); // Muestra el tiempo de partida
     int getTime(); // Devuelve el tiempo de partida
-    void setTime(int); // Establece el tiempo de partida
     int getOptionSelected(); // Devuelve la opción seleccionada en el menú principal
+    void setTime(int); // Establece el tiempo de partida
     clsTimer timer; // Manejo del tiempo
 
 protected:

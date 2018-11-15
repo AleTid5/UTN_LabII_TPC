@@ -1,15 +1,45 @@
+//#############################################################################
+// ARCHIVO             : clsBug.cpp
+// AUTOR               : Alejandro Marcelo Tidele.
+// VERSION             : v. 1.0 estable.
+// FECHA DE CREACION   : 14/11/2018.
+// ULTIMA ACTUALIZACION: 14/11/2018.
+// LICENCIA            : GPL (General Public License) - Version 3.
+//=============================================================================
+// SISTEMA OPERATIVO   : Linux / Windows.
+// IDE                 : Code::Blocks.
+// COMPILADOR          : GNU GCC Compiler (Linux) / MinGW (Windows).
+//=============================================================================
+// DESCRIPCION: Este archivo contiene la definicion de los metodos de la clase
+//              "clsBug".
+//
+//              "clsBug" consta de los metodos necesarios para administrar
+//              el funcionamiento de los personajes (bichos).
+//
+///////////////////////////////////////////////////////////////////////////////
 #include "clsBug.h"
 
-/*******************************************************************
-*                         FUNCIONES PUBLICAS                       *
-*******************************************************************/
-
+//=============================================================================
+// METODO    : fly(clsScreen* screen)
+// ACCION    : Vuelo normal del personaje
+// PARAMETROS: clsScreen* screen -> Puntero a la pantalla.
+// DEVUELVE  : NADA.
+//-----------------------------------------------------------------------------
 void clsBug::fly(clsScreen* screen)
 {
     this->setI(0);
     this->paste(screen->getPtr());
 }
 
+//=============================================================================
+// METODO    : fly(clsScreen* screen, clsRandom* random, int maxWidth, int maxHeight)
+// ACCION    : Vuelo aleatorio del enemigo
+// PARAMETROS: clsScreen* screen -> Puntero a la pantalla
+//             clsRandom* random -> Puntero a los eventos random
+//             int maxWidth -> Tamaño maximo ancho
+//             int maxHeight -> Tamaño maximo de alto
+// DEVUELVE  : NADA.
+//-----------------------------------------------------------------------------
 void clsBug::fly(clsScreen* screen, clsRandom* random, int maxWidth, int maxHeight)
 {
     this->setI(0);
@@ -32,9 +62,17 @@ void clsBug::fly(clsScreen* screen, clsRandom* random, int maxWidth, int maxHeig
     }
 }
 
+//=============================================================================
+// METODO    : void move(direction dir, clsScene* scene, clsScreen* screen)
+// ACCION    : Movimiento del personaje o del enemigo
+// PARAMETROS: direction dir -> Direccion seleccionada
+//             clsScene* scene -> Puntero a la escena
+//             clsScreen* screen -> Puntero a la pantalla
+// DEVUELVE  : NADA.
+//-----------------------------------------------------------------------------
 void clsBug::move(direction dir, clsScene* scene, clsScreen* screen)
 {
-    if (this->canMove(dir, scene, screen)) {
+    if (this->canMove(dir, screen)) {
         if (dir == UP)
             this->setY(this->getY() - this->movement);
         if (dir == DOWN)
@@ -48,7 +86,16 @@ void clsBug::move(direction dir, clsScene* scene, clsScreen* screen)
     this->paste(screen->getPtr());
 }
 
-void clsBug::fire(clsBug* enemies, clsScene* scene, clsScreen* screen, clsEvent* event, clsMusic* music, clsRandom* random)
+//=============================================================================
+// METODO    : void fire(clsBug* enemies, clsScene* scene, clsScreen* screen, clsMusic* music)
+// ACCION    : Ataque del personajes
+// PARAMETROS: clsBug* enemies -> Puntero a los enemigos
+//             clsScene* scene -> Puntero a la escena
+//             clsScreen* screen -> Puntero a la pantalla
+//             clsMusic* music -> Puntero de la musica
+// DEVUELVE  : NADA.
+//-----------------------------------------------------------------------------
+void clsBug::fire(clsBug* enemies, clsScene* scene, clsScreen* screen, clsMusic* music)
 {
     if (! this->mucus->isAttacking()) {
         this->mucus->setAttackStatus(true);
@@ -68,7 +115,14 @@ void clsBug::fire(clsBug* enemies, clsScene* scene, clsScreen* screen, clsEvent*
     this->mucus->setAttackStatus(false);
 }
 
-void clsBug::enemyFire(clsBug* bug, clsScene* scene, clsScreen* screen, clsMusic* music)
+//=============================================================================
+// METODO    : void enemyFire(clsBug* bug, clsScreen* screen)
+// ACCION    : Ataque del enemigo
+// PARAMETROS: clsBug* bug -> Puntero al personaje principal
+//             clsScreen* screen -> Puntero a la pantalla
+// DEVUELVE  : NADA.
+//-----------------------------------------------------------------------------
+void clsBug::enemyFire(clsBug* bug, clsScreen* screen)
 {
     if (this->getX() < 1200 && this->getX() > 0 && this->getY() > 50 && this->getY() < 750) {
         if (! this->mucus->isAttacking() && ((bug->getY() - 50) <= this->getY() && (bug->getY() + 50) >= this->getY())) {
@@ -95,42 +149,81 @@ void clsBug::enemyFire(clsBug* bug, clsScene* scene, clsScreen* screen, clsMusic
     }
 }
 
+//=============================================================================
+// METODO    : void die(clsScreen* screen)
+// ACCION    : Muerte del personaje o del enemigo
+// PARAMETROS: clsScreen* screen -> Puntero a la pantalla
+// DEVUELVE  : NADA.
+//-----------------------------------------------------------------------------
 void clsBug::die(clsScreen* screen)
 {
     this->setY(3000);
     this->paste(screen->getPtr());
 }
 
+//=============================================================================
+// METODO    : unsigned int getEvolutionLevel()
+// ACCION    : Devuelve el nivel del personaje
+// PARAMETROS: NADA.
+// DEVUELVE  : Entero sin signo.
+//-----------------------------------------------------------------------------
 unsigned int clsBug::getEvolutionLevel()
 {
     return this->evolutionLevel;
 }
 
+//=============================================================================
+// METODO    : unsigned int getEnemiesKilled()
+// ACCION    : Devuelve los enemigos aniquilados
+// PARAMETROS: NADA.
+// DEVUELVE  : Entero sin signo.
+//-----------------------------------------------------------------------------
 unsigned int clsBug::getEnemiesKilled()
 {
     return this->enemiesKilled;
 }
 
+//=============================================================================
+// METODO    : void setEnemiesKilled(unsigned int enemiesKilled)
+// ACCION    : Establece los enemigos aniquilidos
+// PARAMETROS: unsigned int enemiesKilled -> Cantidad de enemigos aniquilados
+// DEVUELVE  : NADA.
+//-----------------------------------------------------------------------------
 void clsBug::setEnemiesKilled(unsigned int enemiesKilled)
 {
     this->enemiesKilled = enemiesKilled;
 }
 
+//=============================================================================
+// METODO    : void setEvolutionLevel(unsigned int evolutionLevel)
+// ACCION    : Establece el nivel del personaje principal
+// PARAMETROS: unsigned int evolutionLevel -> Nivel de juego
+// DEVUELVE  : NADA.
+//-----------------------------------------------------------------------------
 void clsBug::setEvolutionLevel(unsigned int evolutionLevel)
 {
     this->evolutionLevel = evolutionLevel;
 }
 
+//=============================================================================
+// METODO    : void setSpeed(unsigned int speed)
+// ACCION    : Establece la velocidad
+// PARAMETROS: unsigned int speed -> Velocidad de movimiento
+// DEVUELVE  : NADA.
+//-----------------------------------------------------------------------------
 void clsBug::setSpeed(unsigned int speed)
 {
     this->movement = speed;
 }
 
-/*******************************************************************
-*                         FUNCIONES PRIVADAS                       *
-*******************************************************************/
-
-bool clsBug::canMove(direction dir, clsScene* scene, clsScreen* screen)
+//=============================================================================
+// METODO    : bool canMove(direction dir, clsScreen* screen)
+// ACCION    : Verifica si puede moverse en la dirección seleccionada
+// PARAMETROS: direction dir -> Direccion seleccionada
+//             clsScreen* screen -> Puntero a la pantalla
+// DEVUELVE  : Booleano si puede moverse o no.
+//-----------------------------------------------------------------------------
+bool clsBug::canMove(direction dir, clsScreen* screen)
 {
     int posX = this->getX();
     int posY = this->getY();
@@ -167,6 +260,14 @@ bool clsBug::canMove(direction dir, clsScene* scene, clsScreen* screen)
     return canMove;
 }
 
+//=============================================================================
+// METODO    : void checkEnemieKilled(clsBug* enemies, clsScreen* screen, clsScene* scene)
+// ACCION    : Verifica si el enemigo murió
+// PARAMETROS: clsBug* enemies -> Puntero a los enemigos
+//             clsScreen* screen -> cantidad de millisegundos de duracion de la pausa.
+//             clsScene* scene -> cantidad de millisegundos de duracion de la pausa.
+// DEVUELVE  : NADA.
+//-----------------------------------------------------------------------------
 void clsBug::checkEnemieKilled(clsBug* enemies, clsScreen* screen, clsScene* scene)
 {
     if (this->evolutionLevel == 7) {

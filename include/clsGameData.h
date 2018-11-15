@@ -3,7 +3,7 @@
 // AUTOR               : Alejandro Marcelo Tidele.
 // VERSION             : v. 1.0 estable.
 // FECHA DE CREACION   : 14/11/2018.
-// ULTIMA ACTUALIZACION: 14/11/2018.          .
+// ULTIMA ACTUALIZACION: 14/11/2018.
 // LICENCIA            : GPL (General Public License) - Version 3.
 //=============================================================================
 // SISTEMA OPERATIVO   : Linux / Windows.

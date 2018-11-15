@@ -1,5 +1,32 @@
+//#############################################################################
+// ARCHIVO             : clsScene.cpp
+// AUTOR               : Alejandro Marcelo Tidele.
+// VERSION             : v. 1.0 estable.
+// FECHA DE CREACION   : 14/11/2018.
+// ULTIMA ACTUALIZACION: 14/11/2018.
+// LICENCIA            : GPL (General Public License) - Version 3.
+//=============================================================================
+// SISTEMA OPERATIVO   : Linux / Windows.
+// IDE                 : Code::Blocks.
+// COMPILADOR          : GNU GCC Compiler (Linux) / MinGW (Windows).
+//=============================================================================
+// DESCRIPCION: Este archivo contiene la definicion de los metodos de la clase
+//              "clsScene".
+//
+//              "clsScene" consta de los metodos necesarios para administrar
+//              el manejo de la escena del juego.
+//
+///////////////////////////////////////////////////////////////////////////////
 #include "clsScene.h"
 
+//=============================================================================
+// METODO    : int init(const char* path, unsigned int posX, unsigned int posY)
+// ACCION    : Inicia una sola imagen
+// PARAMETROS: const char* path -> Ruta al archivo a cargar.
+//             unsigned int posX -> Posicion en el eje X.
+//             unsigned int posY -> Posicion en el eje Y.
+// DEVUELVE  : Codigo de error.
+//-----------------------------------------------------------------------------
 int clsScene::init(const char* path, unsigned int posX, unsigned int posY)
 {
     setItems(1);  // Cantidad de imagenes 1.
@@ -16,6 +43,15 @@ int clsScene::init(const char* path, unsigned int posX, unsigned int posY)
     return error.get();
 }
 
+//=============================================================================
+// METODO    : int init(const char path[100][100], unsigned int countOfImages, unsigned int posX, unsigned int posY)
+// ACCION    : Inicia varias imagenes al mismo tiempo
+// PARAMETROS: const char path[100][100] -> Matriz de rutas de archivos a cargar.
+//             unsigned int countOfImages -> Cantidad enviada.
+//             unsigned int posX -> Posicion en el eje X.
+//             unsigned int posY -> Posicion en el eje Y.
+// DEVUELVE  : Codigo de error.
+//-----------------------------------------------------------------------------
 int clsScene::init(const char path[100][100], unsigned int countOfImages, unsigned int posX, unsigned int posY)
 {
     setItems(countOfImages);
@@ -31,15 +67,26 @@ int clsScene::init(const char path[100][100], unsigned int countOfImages, unsign
     return error.get();
 }
 
-int clsScene::initText()
+//=============================================================================
+// METODO    : void initText()
+// ACCION    : Inicia el modo texto
+// PARAMETROS: NADA.
+// DEVUELVE  : NADA.
+//-----------------------------------------------------------------------------
+void clsScene::initText()
 {
     error.set(this->text.init());
 
     error.set(this->text.loadFont("FONTS/FreeMono.ttf", 25));
-
-    return 0;
 }
 
+//=============================================================================
+// METODO    : void loadWallpaper(clsScreen* screen, clsEvent* event)
+// ACCION    : Carga el Wallpaper principal
+// PARAMETROS: clsScreen* screen -> Puntero a la pantalla.
+//             clsEvent* event -> Puntero a los eventos.
+// DEVUELVE  : NADA.
+//-----------------------------------------------------------------------------
 void clsScene::loadWallpaper(clsScreen* screen, clsEvent* event)
 {
     const char pathes[100][100] = {
@@ -92,6 +139,12 @@ void clsScene::loadWallpaper(clsScreen* screen, clsEvent* event)
     screen->refresh();
 }
 
+//=============================================================================
+// METODO    : void move(clsScreen* screen)
+// ACCION    : Mueve la escena de fondo
+// PARAMETROS: clsScreen* screen -> Puntero a la pantalla.
+// DEVUELVE  : NADA.
+//-----------------------------------------------------------------------------
 void clsScene::move(clsScreen* screen)
 {
     this->setI(1);
@@ -107,26 +160,56 @@ void clsScene::move(clsScreen* screen)
     this->showTimer(screen);
 }
 
+//=============================================================================
+// METODO    : void startTimer()
+// ACCION    : Inicia el tiempo de partida
+// PARAMETROS: NADA.
+// DEVUELVE  : NADA.
+//-----------------------------------------------------------------------------
 void clsScene::startTimer()
 {
     this->timer.start();
 }
 
+//=============================================================================
+// METODO    : void setTime(int time)
+// ACCION    : Establece el tiempo de partida
+// PARAMETROS: int time -> Tiempo jugado de partida.
+// DEVUELVE  : NADA.
+//-----------------------------------------------------------------------------
 void clsScene::setTime(int time)
 {
     this->timer.setTime(time);
 }
 
+//=============================================================================
+// METODO    : int getTime()
+// ACCION    : Devuelve el tiempo de partida
+// PARAMETROS: NADA.
+// DEVUELVE  : Entero del tiempo jugado.
+//-----------------------------------------------------------------------------
 int clsScene::getTime()
 {
     return this->timer.getPlayiedTime();
 }
 
+//=============================================================================
+// METODO    : int getOptionSelected()
+// ACCION    : Devuelve la opción seleccionada en el menú principal
+// PARAMETROS: NADA.
+// DEVUELVE  : Entero de la opcion seleccionada.
+//-----------------------------------------------------------------------------
 int clsScene::getOptionSelected()
 {
     return this->optionSelected;
 }
 
+//=============================================================================
+// METODO    : void showTimer(clsScreen* screen)
+// ACCION    : Muestra el tiempo de partida
+// PARAMETROS: clsScreen* screen -> Puntero a la pantalla.
+// DEVUELVE  : NADA.
+//-----------------------------------------------------------------------------
 void clsScene::showTimer(clsScreen* screen)
 {
     this->timer.update();
@@ -136,14 +219,32 @@ void clsScene::showTimer(clsScreen* screen)
     this->text.write(number, screen->getWidth() / 2 - this->text.getWidth() / 2, 15, screen->getPtr());
 }
 
-void clsScene::writeText(clsScreen* screen, unsigned int killedNumber, unsigned int posX, unsigned int posY)
+//=============================================================================
+// METODO    : void writeText(clsScreen* screen, unsigned int killedNumber, unsigned int posX, unsigned int posY)
+// ACCION    : Escribe un texto de valor entero
+// PARAMETROS: clsScreen* screen -> Puntero a la pantalla.
+//             unsigned int number -> Numero a escribir.
+//             unsigned int posX -> Posicion en el eje X.
+//             unsigned int posY -> Posicion en el eje Y.
+// DEVUELVE  : NADA.
+//-----------------------------------------------------------------------------
+void clsScene::writeText(clsScreen* screen, unsigned int number, unsigned int posX, unsigned int posY)
 {
     char killedBugs[5];
-    itoa(killedNumber, killedBugs, 10);
+    itoa(number, killedBugs, 10);
     this->text.setFontColor(WHITE);
     this->text.write(killedBugs, posX, posY, screen->getPtr());
 }
 
+//=============================================================================
+// METODO    : void writeText(clsScreen* screen, const char* text, unsigned int posX, unsigned int posY)
+// ACCION    : Escribe un texto de valor caracteres
+// PARAMETROS: clsScreen* screen -> Puntero a la pantalla.
+//             const char* text -> Cadena a escribir.
+//             unsigned int posX -> Posicion en el eje X.
+//             unsigned int posY -> Posicion en el eje Y.
+// DEVUELVE  : NADA.
+//-----------------------------------------------------------------------------
 void clsScene::writeText(clsScreen* screen, const char* text, unsigned int posX, unsigned int posY)
 {
     char textArray[5];
@@ -152,6 +253,12 @@ void clsScene::writeText(clsScreen* screen, const char* text, unsigned int posX,
     this->text.write(textArray, posX, posY, screen->getPtr());
 }
 
+//=============================================================================
+// METODO    : void showMenu(clsScreen* screen)
+// ACCION    : Muestra el menu principal
+// PARAMETROS: clsScreen* screen -> Puntero a la pantalla.
+// DEVUELVE  : NADA.
+//-----------------------------------------------------------------------------
 void clsScene::showMenu(clsScreen* screen)
 {
     const char pathes[100][100] = {
@@ -171,6 +278,13 @@ void clsScene::showMenu(clsScreen* screen)
     this->dispatchOption(menu, screen);
 }
 
+//=============================================================================
+// METODO    : void dispatchOption(clsScene* menu, clsScreen* screen)
+// ACCION    : Establece la opcion a seleccionar en el menu principal
+// PARAMETROS: clsScene* menu -> Puntero al menu.
+//             clsScreen* screen -> Puntero a la pantalla.
+// DEVUELVE  : NADA.
+//-----------------------------------------------------------------------------
 void clsScene::dispatchOption(clsScene* menu, clsScreen* screen)
 {
     clsEvent* event = new clsEvent;
